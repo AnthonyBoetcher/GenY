@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <title>GenY</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="MDA1.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+</head>
+<body>
+<header>
+    <h2>Select your portal</h2>
+<h4><em>G : Construction<br>E : LinkedIn<br>N: Web Dev<br>Y: Why?<br>&#8595 &#8595 &#8595 &#8595<br></em></h4>
+<div id="landing-screen">
+    <a name="G" class="one" href="https://genyltd.wixsite.com/e-portfolio" target="_blank">
+        <button class="G"id="Bootstrap-download" href="">G</button>
+    </a>
+     <a name="E" class="one" href="https://www.linkedin.com/in/anthony-boetcher-3aba7197/" target="_blank">
+        <button class="E" id="Bootstrap-download" type="button">E</button>
+    </a>
+    <a name="N"class="one" href="https://genyltd.wixsite.com/geny" target="download">
+        <button class="N" name="resume" id="Bootstrap-download">N</button>
+    </a>
+    <a class="one" href="Ypage" target="download">
+        <button class="Y" name="resume" id="Bootstrap-download">Y</button>
+    </a><br><br><br>
+<input id="search-bar" type="text" placeholder="I'm looking for...">
+<button id="search-bar-submit">SEARCH</button>
+<img id="logo" src="/images/transparent a.png"/>
+</input>
+<p id="signature">&copy; Anthony Boetcher 2022</p>
+</div>
+</header>
+</body>
+</HTML> 
+<style>
+header {
+    color: white;
+    text-align: center;
+    opacity: 0; 
+    transition: 2s; 
+    text-shadow: 10px 10px 10px rgba(95, 52, 52, 0.5); 
+    font-family: 'Times New Roman', Times, serif; 
+    line-height: 15px; 
+    
+}
+img {
+    display: inline-block;
+    height: 120px; 
+    width: 120px;  
+    opacity: 0.9; 
+    margin: 40px; 
+    animation: logo-animation; 
+    animation-duration: 4s; 
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    transition-delay: 2s ;
+    transition: ease-in-out;
+    display: inline-block;
+}
+@keyframes logo-animation { 
+    0% {opacity: 0.95;
+    }
+    10% {opacity: 0.85;
+    }
+    20% {opacity: 0.75; 
+    }
+    30% {opacity: 0.65; 
+    }
+    40% {opacity: 0.55;
+    }
+    50% {opacity: 0.45;
+    }
+    60% {opacity: 0.35;
+    }
+    70% {opacity: 0.25; 
+    }
+    80% {opacity: 0.15; 
+    }
+    100% {opacity: 0.05; 
+    }
+}
+#landing-screen {
+    position: relative;
+    margin-left: -200px; 
+    align-items: center;
+    align-content: center;
+}
+body {
+    background-image: url("/images/1.gif");
+    background-repeat:repeat; 
+    opacity: 0.9;
+    object-fit: contain; 
+    max-width: 100%;
+    max-height: 100%;
+    padding:0;
+    margin: 0 0 0 -20px;
+    object-position: top;
+}
+h2 {
+    margin: 40px 0 0 0; 
+}
+h4 {
+    color: white; 
+    line-height: 20px;
+}
+header:hover {
+    opacity: 0.9;
+}
+#landing-screen {
+    margin: 10% 0 0 10%;
+}
+#Bootstrap-download {
+    margin: 10px 0 0 30px; 
+    width: 40%; 
+    height: auto;
+    background-color: #000000;
+    border: 4px double gold; 
+    color: #ffffff; 
+    height: 60px; 
+    width: 60px; 
+    border-radius: 30px; 
+    font-weight: 1000; 
+    font-family: 'Times New Roman', Times, serif;
+    Display: inline-block;
+    vertical-align: center;
+    font-family:'Times New Roman', Times, serif; 
+    font-size: xx-large; 
+    animation-name: change-color; 
+    animation-duration: 18s;
+    animation-iteration-count: infinite;
+    animation-direction: forwards; 
+    position: relative; 
+    opacity: 0.9; 
+    transition: opacity 7s
+    transition-duration: 7s;
+    animation-delay: 10s;
+}
+
+#Bootstrap-download:hover {
+    cursor: pointer; 
+    transform:scale(1.3); 
+    background-color: white;
+    color: gold; 
+    opacity: 1; 
+    font-style: italic;
+    box-shadow: 0 0 20px black;
+    font-size: auto;
+    animation-name: change-color; 
+    animation-duration: 18s;
+    animation-iteration-count: infinite;
+    animation-direction: forwards; 
+    position: relative; 
+    animation-timing-function: cubic-bezier(1, 0.5, 1, 1);
+    transition: opacity 3s;
+    transition-delay: 10s; 
+    animation-delay: 10s;
+}
+a {
+    color:none; 
+}
+@keyframes change-color {
+    0% {
+        background-color: black;
+        color: white;
+        transition-delay: 10s;
+        border: 4px double gold; 
+    }
+    10% {
+        background-color: black;
+        color: white;
+        border: 4px double gold; 
+            }
+    20% {
+        background-color: white; 
+        color: black; 
+        border: 4px double black; 
+    }
+    30% {
+        background-color: white; 
+        color: black; 
+        border: 4px double black; 
+    }
+    40% {
+        background-color: red; 
+        border: 4px double turquoise;
+        color: white; 
+    }
+    50% {
+        background-color: red; 
+        border: 4px double turquoise; 
+        color: white; 
+    }
+    60% {
+        background-color: turquoise; 
+        border: 4px double red; 
+        color: black; 
+    }
+    70% {
+        background-color: turquoise;
+        border: 4px double red; 
+        color: black;  
+    }
+    80% {
+        background-color: goldenrod;
+        border: 4px double white;  
+    }
+    90% {background-color: goldenrod; 
+        border: 4px double white; 
+    }
+    100% {
+        background-color: #000000;
+        color: white;
+        border: 4px double white; 
+        transform:rotate(360deg); 
+        transform-origin: center; 
+        transition-delay: 10s;
+    }
+}
+#search-bar {
+    width: 300px; 
+    height: 30px;
+    border: 4px double goldenrod; 
+    border-radius: 15px; 
+    margin-left: 24px;
+    opacity: 0.9; 
+}
+#search-bar-submit {
+    height: 30px;
+    width:auto;
+    border: 4px double goldenrod; 
+    border-radius: 15px;
+    opacity: 0.90;  
+}
+#search-bar:hover {
+    opacity: 0.95; 
+    border: 4px double goldenrod; 
+}
+#search-bar-submit:hover {
+    cursor: pointer;
+    opacity: 0.95; 
+    border: 4px double goldenrod; 
+}
+#signature {
+    margin-bottom: 20px;
+    opacity: 0.7;  
+}
+.G {
+    border-color: gold; 
+}
+</style>
