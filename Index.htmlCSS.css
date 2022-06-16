@@ -1,0 +1,621 @@
+#GenY-logo {
+    display: flex; 
+    align-items:center; 
+    justify-content: center;
+    position: relative;
+    border: none; 
+    opacity: 0.7; 
+    margin-top: 5vw; 
+}
+#GenY {
+    width: 20vw;
+    animation-name: logo-animation; 
+    animation-duration: 10s; 
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-delay: 5s; 
+    opacity: 0; 
+}
+@keyframes logo-animation { 
+    0% {opacity: 0.95;
+    }
+    10% {opacity: 0.85;
+    }
+    20% {opacity: 0.75; 
+    }
+    30% {opacity: 0.65; 
+    }
+    40% {opacity: 0.55;
+    }
+    50% {opacity: 0.45;
+    }
+    60% {opacity: 0.35;
+    }
+    70% {opacity: 0.25; 
+    }
+    80% {opacity: 0.15; 
+    }
+    100% {opacity: 0; 
+    }
+}
+h2 {
+    color: white; 
+    style: block; 
+    font-family: 'Times New Roman', Times, serif; 
+    text-shadow: 0px 0px 5px white, 0px 0px 3px goldenrod;
+}
+#headings {
+    display: inline-block; 
+    display: flex; 
+    align-items:right; 
+    justify-content: right;
+    position: relative;
+    border: none; 
+}
+.G {
+    margin: 0 0 0 30px; 
+    font-size: ; 
+    background-color: #000000;
+    border: 4px double gold; 
+    color: #ffffff; 
+    width: 8vw; 
+    height: 8vw; 
+    border-radius: 4vw; 
+    font-weight: 1000; 
+    font-family: 'Times New Roman', Times, serif;
+    Display: inline-block;
+    font-family:'Times New Roman', Times, serif; 
+    font-size: 4vw; 
+    animation-name: change-colorG; 
+    animation-duration: 18s;
+    animation-iteration-count: infinite;
+    animation-direction: forwards; 
+    position: relative; 
+    opacity: 0.9; 
+    transition: opacity 7s
+    transition-duration: 7s;
+    animation-delay: 7s;
+}
+@keyframes change-colorG {
+    0% {
+        background-color: black;
+        color: white;
+        transition-delay: 10s;
+        border: 4px double gold; 
+        left: 0px;
+        top: 0px;  
+        right: 0px; 
+        bottom: 0px; 
+    }
+    10% {
+        background-color: black;
+        color: white;
+        border: 4px double gold; 
+        left: 0px;
+        top: 0px;  
+        right: 0px; 
+        bottom: 0px; 
+        
+       }
+    20% {
+        background-color: white; 
+        color: black; 
+        border: 4px double black;
+        left: 0px;
+        top: 0px;  
+        right: 0px; 
+        bottom: 0px; 
+    }
+    30% {
+        background-color: white; 
+        color: black; 
+        border: 4px double black; 
+        left: 0px;
+        top: 50px;  
+        right: 0px; 
+        bottom: 0px; 
+        
+    }
+    40% {
+        background-color: red; 
+        border: 4px double turquoise;
+        color: white;
+        left: 0px;
+        top: 0px;  
+        right: 0px; 
+        bottom: 0px; 
+    }
+    50% {
+        background-color: red; 
+        border: 4px double turquoise; 
+        color: white; 
+        left: 0px;
+        top: 50px;  
+        right: 0px; 
+        bottom: 0px; 
+    }
+    60% {
+        background-color: turquoise; 
+        border: 4px double red; 
+        color: black; 
+        left: 0px;
+        top: 0px;  
+        right: 0px; 
+        bottom: 0px; 
+    }
+    70% {
+        background-color: turquoise;
+        border: 4px double red; 
+        color: black;
+        left: 0px;
+        top: 50px;  
+        right: 0px; 
+        bottom: 0px; 
+    }
+    80% {
+        background-color: goldenrod;
+        border: 4px double white; 
+        left: 0px;
+        top: 0px;  
+        right: 0px; 
+        bottom: 0px;  
+    }
+    90% {background-color: goldenrod; 
+        border: 4px double white; 
+        left: 0px;
+        top: 0px;  
+        right: 0px; 
+        bottom: 0px; 
+    }
+    100% {
+        background-color: #000000;
+        color: white;
+        border: 4px double white; 
+        transform:rotate(360deg); 
+        transform-origin: center; 
+        transition-delay: 10s;
+        left: 0px;
+        top: 0px;  
+        right: 0px; 
+        bottom: 0px; 
+    }
+}
+.E {
+    margin: 0 0 0 30px; 
+    font-size: ; 
+    background-color: #000000;
+    border: 4px double gold; 
+    color: #ffffff; 
+    width: 8vw; 
+    height: 8vw; 
+    border-radius: 4vw; 
+    font-weight: 1000; 
+    font-family: 'Times New Roman', Times, serif;
+    Display: inline-block;
+    font-family:'Times New Roman', Times, serif; 
+    font-size: 4vw; 
+    animation-name: change-colorE; 
+    animation-duration: 18s;
+    animation-iteration-count: infinite;
+    animation-direction: forwards; 
+    position: relative; 
+    opacity: 0.9; 
+    transition: opacity 7s
+    transition-duration: 7s;
+    animation-delay: 8s;
+}
+@keyframes change-colorE {
+    0% {
+        background-color: black;
+        color: white;
+        transition-delay: 10s;
+        border: 4px double gold; 
+        left: 0px;
+        top: 0px;  
+        right: 0px; 
+        bottom: 0px; 
+    }
+    10% {
+        background-color: black;
+        color: white;
+        border: 4px double gold; 
+        left: 0px;
+        top: 0px;  
+        right: 0px; 
+        bottom: 0px; 
+        
+       }
+    20% {
+        background-color: white; 
+        color: black; 
+        border: 4px double black;
+        left: 0px;
+        top: 0px;  
+        right: 0px; 
+        bottom: 0px; 
+    }
+    30% {
+        background-color: white; 
+        color: black; 
+        border: 4px double black; 
+        left: 0px;
+        top: 50px;  
+        right: 0px; 
+        bottom: 0px; 
+        
+    }
+    40% {
+        background-color: red; 
+        border: 4px double turquoise;
+        color: white;
+        left: 0px;
+        top: 0px;  
+        right: 0px; 
+        bottom: 0px; 
+    }
+    50% {
+        background-color: red; 
+        border: 4px double turquoise; 
+        color: white; 
+        left: 0px;
+        top: 50px;  
+        right: 0px; 
+        bottom: 0px; 
+    }
+    60% {
+        background-color: turquoise; 
+        border: 4px double red; 
+        color: black; 
+        left: 0px;
+        top: 0px;  
+        right: 0px; 
+        bottom: 0px; 
+    }
+    70% {
+        background-color: turquoise;
+        border: 4px double red; 
+        color: black;
+        left: 0px;
+        top: 50px;  
+        right: 0px; 
+        bottom: 0px; 
+    }
+    80% {
+        background-color: goldenrod;
+        border: 4px double white; 
+        left: 0px;
+        top: 0px;  
+        right: 0px; 
+        bottom: 0px;  
+    }
+    90% {background-color: goldenrod; 
+        border: 4px double white; 
+        left: 0px;
+        top: 0px;  
+        right: 0px; 
+        bottom: 0px; 
+    }
+    100% {
+        background-color: #000000;
+        color: white;
+        border: 4px double white; 
+        transform:rotate(360deg); 
+        transform-origin: center; 
+        transition-delay: 10s;
+        left: 0px;
+        top: 0px;  
+        right: 0px; 
+        bottom: 0px; 
+    }
+}
+.N {
+    margin: 0 0 0 30px; 
+    font-size: ; 
+    background-color: #000000;
+    border: 4px double gold; 
+    color: #ffffff; 
+    width: 8vw; 
+    height: 8vw; 
+    border-radius: 4vw; 
+    font-weight: 1000; 
+    font-family: 'Times New Roman', Times, serif;
+    Display: inline-block;
+    font-family:'Times New Roman', Times, serif; 
+    font-size: 4vw; 
+    animation-name: change-colorN; 
+    animation-duration: 18s;
+    animation-iteration-count: infinite;
+    animation-direction: forwards; 
+    position: relative; 
+    opacity: 0.9; 
+    transition: opacity 7s
+    transition-duration: 7s;
+    animation-delay: 9s;
+}
+@keyframes change-colorN {
+    0% {
+        background-color: black;
+        color: white;
+        transition-delay: 10s;
+        border: 4px double gold; 
+        left: 0px;
+        top: 0px;  
+        right: 0px; 
+        bottom: 0px; 
+    }
+    10% {
+        background-color: black;
+        color: white;
+        border: 4px double gold; 
+        left: 0px;
+        top: 0px;  
+        right: 0px; 
+        bottom: 0px; 
+        
+       }
+    20% {
+        background-color: white; 
+        color: black; 
+        border: 4px double black;
+        left: 0px;
+        top: 0px;  
+        right: 0px; 
+        bottom: 0px; 
+    }
+    30% {
+        background-color: white; 
+        color: black; 
+        border: 4px double black; 
+        left: 0px;
+        top: 50px;  
+        right: 0px; 
+        bottom: 0px; 
+        
+    }
+    40% {
+        background-color: red; 
+        border: 4px double turquoise;
+        color: white;
+        left: 0px;
+        top: 0px;  
+        right: 0px; 
+        bottom: 0px; 
+    }
+    50% {
+        background-color: red; 
+        border: 4px double turquoise; 
+        color: white; 
+        left: 0px;
+        top: 50px;  
+        right: 0px; 
+        bottom: 0px; 
+    }
+    60% {
+        background-color: turquoise; 
+        border: 4px double red; 
+        color: black; 
+        left: 0px;
+        top: 0px;  
+        right: 0px; 
+        bottom: 0px; 
+    }
+    70% {
+        background-color: turquoise;
+        border: 4px double red; 
+        color: black;
+        left: 0px;
+        top: 50px;  
+        right: 0px; 
+        bottom: 0px; 
+    }
+    80% {
+        background-color: goldenrod;
+        border: 4px double white; 
+        left: 0px;
+        top: 0px;  
+        right: 0px; 
+        bottom: 0px;  
+    }
+    90% {background-color: goldenrod; 
+        border: 4px double white; 
+        left: 0px;
+        top: 0px;  
+        right: 0px; 
+        bottom: 0px; 
+    }
+    100% {
+        background-color: #000000;
+        color: white;
+        border: 4px double white; 
+        transform:rotate(360deg); 
+        transform-origin: center; 
+        transition-delay: 10s;
+        left: 0px;
+        top: 0px;  
+        right: 0px; 
+        bottom: 0px; 
+    }
+}
+.Y{
+    margin: 0 0 0 30px; 
+    font-size: ; 
+    background-color: #000000;
+    border: 4px double gold; 
+    color: #ffffff; 
+    width: 8vw; 
+    height: 8vw; 
+    border-radius: 4vw; 
+    font-weight: 1000; 
+    font-family: 'Times New Roman', Times, serif;
+    Display: inline-block;
+    font-family:'Times New Roman', Times, serif; 
+    font-size: 4vw; 
+    animation-name: change-colorY; 
+    animation-duration: 18s;
+    animation-iteration-count: infinite;
+    animation-direction: forwards; 
+    position: relative; 
+    opacity: 0.9; 
+    transition: opacity 7s
+    transition-duration: 7s;
+    animation-delay: 10s;
+}
+@keyframes change-colorY {
+    0% {
+        background-color: black;
+        color: white;
+        transition-delay: 10s;
+        border: 4px double gold; 
+        left: 0px;
+        top: 0px;  
+        right: 0px; 
+        bottom: 0px; 
+    }
+    10% {
+        background-color: black;
+        color: white;
+        border: 4px double gold; 
+        left: 0px;
+        top: 0px;  
+        right: 0px; 
+        bottom: 0px; 
+        
+       }
+    20% {
+        background-color: white; 
+        color: black; 
+        border: 4px double black;
+        left: 0px;
+        top: 0px;  
+        right: 0px; 
+        bottom: 0px; 
+    }
+    30% {
+        background-color: white; 
+        color: black; 
+        border: 4px double black; 
+        left: 0px;
+        top: 50px;  
+        right: 0px; 
+        bottom: 0px; 
+        
+    }
+    40% {
+        background-color: red; 
+        border: 4px double turquoise;
+        color: white;
+        left: 0px;
+        top: 0px;  
+        right: 0px; 
+        bottom: 0px; 
+    }
+    50% {
+        background-color: red; 
+        border: 4px double turquoise; 
+        color: white; 
+        left: 0px;
+        top: 50px;  
+        right: 0px; 
+        bottom: 0px; 
+    }
+    60% {
+        background-color: turquoise; 
+        border: 4px double red; 
+        color: black; 
+        left: 0px;
+        top: 0px;  
+        right: 0px; 
+        bottom: 0px; 
+    }
+    70% {
+        background-color: turquoise;
+        border: 4px double red; 
+        color: black;
+        left: 0px;
+        top: 50px;  
+        right: 0px; 
+        bottom: 0px; 
+    }
+    80% {
+        background-color: goldenrod;
+        border: 4px double white; 
+        left: 0px;
+        top: 0px;  
+        right: 0px; 
+        bottom: 0px;  
+    }
+    90% {background-color: goldenrod; 
+        border: 4px double white; 
+        left: 0px;
+        top: 0px;  
+        right: 0px; 
+        bottom: 0px; 
+    }
+    100% {
+        background-color: #000000;
+        color: white;
+        border: 4px double white; 
+        transform:rotate(360deg); 
+        transform-origin: center; 
+        transition-delay: 10s;
+        left: 0px;
+        top: 0px;  
+        right: 0px; 
+        bottom: 0px; 
+    }
+}
+#explainer {
+    text-align: center; 
+    opacity: 0.9; 
+    display: inline-block; 
+    font-size: 2vw; 
+}
+body {
+    background-image:url("/images/Cube\ explosion\ in\ space\ gif.webp"); 
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.2) 100%), url(Images/Cube\ explosion\ in\ space\ gif.webp); 
+    opacity: 0.8;
+    width: 100%; 
+    height: 100%; 
+    contain: content;
+    margin: none; 
+}
+.vertical-main { 
+    border: none; 
+    width: 100%; 
+    height: 100vh; 
+    display: inline-block; 
+    margin-top: 3vw; 
+}
+.horizontal-main {
+    background:linear-gradient(45deg, black, goldenrod); 
+    border: none; 
+    display: inline-block; 
+    width: 8%; 
+    height: 8vw; 
+    margin: 20px;
+    opacity: 0.4;
+    transition: 4s;
+    box-shadow: 0px 0px 30px white; 
+    border-radius: 4vw; 
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    text-align: center;
+
+}
+.horizontal-main:hover {
+    opacity: 0.7;
+    background:linear-gradient(45deg, black, goldenrod); 
+    transform: scale(1.5);
+    box-shadow: 0px 0px 15px white, 0px 0px 30px black, 0px 0px 60px gold;
+    cursor: pointer;  
+}
+H1 {
+    color: white; 
+    flex: content;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 3vw; 
+}
