@@ -1,0 +1,13 @@
+#topdiv {
+    width: 200px;
+    display: grid;
+    grid-template-columns: 1fr 30px 30px 30px 30px ;
+    background-color: blue;
+}
+.top {
+    background-color: blue; 
+}
+#middlediv {
+    display: grid; 
+    grid-template-rows: 1fr 50px 50px 50px;
+}
