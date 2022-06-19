@@ -571,8 +571,8 @@ h2 {
     font-size: 2vw; 
 }
 body {
-    background-image:url("/Cube explosion in space gif.webp"); 
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.2) 100%), url(Images/velocity-icegif-1); 
+    background-image:url("/Images/velocity-icegif-1.gif"); 
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.2) 100%), url(Images/velocity-icegif-1.gif); 
     opacity: 0.8;
     width: 100%; 
     height: 100%; 
