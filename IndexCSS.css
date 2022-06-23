@@ -47,8 +47,8 @@ h2 {
 #headings {
     display: inline-block; 
     display: flex; 
-    align-items:right; 
-    justify-content: right;
+    align-items:center; 
+    justify-content: center;
     position: relative;
     border: none; 
 }
