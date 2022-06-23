@@ -9,15 +9,8 @@
 </head>
 <body>
     <header>
-        <nav>
-            <div><button class="nav-item"><a href="#top">Home</a></button></div>
-            <div><button class="nav-item"><a href="#about-us">About Us</a></div>
-            <div><button class="nav-item"><a href="#products">Products</a></div>
-            <div><button class="nav-item"><a href="#contact-us">Contact us</a></div>
-        </nav>
     </header>
 <!-- BLINDS-->
-<div class="lever"></div>
 <div class="main-blinds">
     <div class="blind"></div>
     <div class="blind"></div>
@@ -44,58 +37,48 @@
 </div>
 <div class="string"></div>
 <main>
-    <section class="home">
-    <img class="home-image" src="blind-background.jpg">
-    <p class="home-caption1">Defining simplicity</p>
-    <p class="home-caption2">Elegance in execution</p>
-    <p class="home-caption3">Seamless integration</p>
-    </img></div>
-    </section>
-    <section class="about-us">
-        <h2>About Us</h2>
-        <p>Brians Blinds was founded in 2022 by a Capetownian who is SERIOUSLY passionate about 
-            blinds. The only thing Brian is more passionate about, is SUNBLOCK! (see his other startup, BriansSkinShade)
-            Brian, being the keen engineer that he is, has grown increasingly concerned with the lack of quality blind suppliers
-            and blind engineers in Cape Town, and so he has taken it upon himself to singlehandedly address this very alarming deficit.
-            Brian studied Engineering, and consequently decided to complete his Masters and Doctorate in Blind Engineering and Mechanics,
-            with a special interest in the action of sunlight on... Everything!
-            <br><br>
-        Now we might not all be as passionate about blinds as Brian. But you know that you are in safe hands.
-        </p>
-    </section>
+    <div id="head"><img id="logo" src="finallogo.png"/><h2 id="one">BRIANS BLINDS</h2></div>
     <section class="products">
-        <h2>Products</h2>
+        <h2>Venetian Blinds</h2>
        <img class="product-image" src="venetian-blind.jpg"/>
-       <img class="product-image" src="Roman-Blind.jpg"/>
-       <img class="product-image" src="fabric-blind.jpg"/>
-       <img class="product-image" src="Brian-blind.jpg"/>
-    </section>
-    </section>
-     <table class="table">
-        <tr>
-            <th>Venetian Blinds</th>
-            <td>typically R500 per m<sup>2</sup></td>
-        </tr>
-        <tr>
-            <th>Roller Blinds</th>
-            <td>typically R300 per m<sup>2</sup></td>
-        </tr>
-        <tr>
-            <th>Roman Blinds</th>
-            <td>typically R450 per m<sup>2</sup></td>
-        </tr>
-        <tr>
-            <th>Pleated Blinds</th>
-            <td>typically R400 per m<sup>2</sup></td>
-        </tr>
-        <tr>
-            <th>Brians custom Blinds</th>
-            <td>R500-R800 per m<sup>2</sup></td>
-        </tr>
-     </table>
-    <section class="contact-us">
-        <h2>Contact us</h2>
-        <p>Don't worry, we'll contact you!</p>
+       <div><p>Today, the emergence of Venetian blinds and 
+        Vertical blinds covered in fabric are incredibly popular 
+        with modern interiors. Their functional advantages coupled 
+        with versatility in terms of style, make them excellent window 
+        decorations. Motorised blinds provide the home owner with the 
+        very best in home automation capability combined with 
+        ease of use.</p></div>
+        <img  id="pdf" src="pdf.png"><p class="download">Download Catalogue</p></img>
+        <h2>Roman Blinds</h2>
+        <img class="product-image" src="Roman-Blind.jpg"/>
+       <div><p>Roman blinds were now stylish homewares, and the industry
+        flourished. Drawstring mechanisms were also attached to the 
+        slats, making for easy raising and lowering. This allowed 
+        people total control over the amount of light and air into 
+        their home. Now, Roman blinds remain one of the most popular,
+         stylish window dressings, and there is a huge choice of 
+         fabrics and patterns to suit every room.</p></div>
+         <img  id="pdf" src="pdf.png"><p class="download">Download Catalogue</p></img>
+         <h2>Vertical Blinds</h2>
+         <img class="product-image" src="vert-blind.jpg"/>
+       <div><p>Vertical blinds were first invented to overcome 
+        the weakness of the horizontal blinds. Some of the weaknesses 
+        these blinds have overcome is their ability to remain clean. 
+        Horizontal blinds easily collect dust and dirt while the 
+        smooth surfaces of the vertical blinds help to minimize this 
+        dust collection. Today they have evolved into one of the most 
+        sought out for treatments in window decor. Their various styles 
+        fit all home owners needs!</p></div>
+        <img  id="pdf" src="pdf.png"><p class="download">Download Catalogue</p></img>
+        <h2>Pleated Blinds</h2>
+        <img class="product-image" src="pleat-blind.jpg"/>
+       <div><p>Pleated Blinds combine the soft appeal of a 
+        curtain with the versatility and simplicity of a blind. 
+        The ideal solution for heat and light control, and the 
+        blind almost disappears when raised. Simple and elegant, 
+        with a small stack height and short projection, giving you 
+        an uninterrupted view from your home or office window.</p></div>
+        <img id="pdf" src="pdf.png"><p class="download">Download Catalogue</p></img>
     </section>
 </main>
 <footer></footer>
@@ -103,155 +86,91 @@
 </html>
 
 <style>
-.contact-us {
-    background-color: beige;
-    color: black;
-    font-family: arial; 
-    font-size: large; 
-    font-style:oblique;
-    text-align: center;
-    padding: 3px; 
-    border: 1px solid black;
-    width: 85vw;
-    margin: 15px;
-    opacity: 0.8;
+#one {
     display: inline-block;
+    margin: 0;
+    color:rgb(31, 31, 31);
+}
+#logo {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    padding: 20px 0px 0 20px;
+}
+#head {
+    display: inline-block;
+    justify-content: center;
+    vertical-align: center;
+    text-align: center;
     animation-name: body-reveal;
     animation-duration: 10s;
     transition: ease-in-out;
+    padding: 0 20px 0 20px;
+    opacity: 0.8;
+}
+h2 {
+    justify-content: center;
+    vertical-align: center;
+    text-align: center;
+    padding-top: 80px;
+}
+.download {
+    padding-top: 85px;
+}
+#pdf {
+    width: 40px; 
+    height: 40px;
+    padding-right: 0;
+    padding-top: 100px;
+}
+#pdf:hover {
+    cursor: pointer;
+    opacity: 0.6;
 }
 body {
     justify-content: center;
-    background-color: whitesmoke;
+    background-color: #d4c59c75;
+    opacity: 0.6;
+    animation-duration: 10s;
+    transition: ease-in-out;
     }
+main {
+    animation-duration: 10s;
+    transition: ease-in-out;
+}
 .products {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    color: black;
+    grid-template-columns: 100px 300px 300px 30px 100px;
+    grid-template-rows: 300px 300px 300px 300px;
+    height: 80%;
+    color: rgb(75, 75, 75);
     font-family: arial; 
+    row-gap: 60px; 
+    column-gap: 60px; 
     font-size: large; 
-    font-style:oblique;
-    text-align: center;
-    padding: 0; 
-    width: 85vw;
-    margin: 0;
-    display: inline-block;
     animation-name: body-reveal;
+    animation-duration: 10s;
+    transition: ease-in-out;
+    place-self: center;
+    justify-content: center;
+    padding: 60px 0 0 20px;
+    margin-bottom: 70px;
+}
+p {
     animation-duration: 10s;
     transition: ease-in-out;
 }
 .product-image {
     width: 40vw;
     height: 40vh;
+    max-width: 300px;
+    max-height: auto;
     animation-name: body-reveal;
     animation-duration: 10s;
     transition: ease-in-out;
+    border: 3px solid white;
 }
-.about-us {
-    background-color: beige;
-    color: black;
-    font-family: arial; 
-    font-size: large; 
-    font-style:oblique;
-    text-align: center;
-    padding: 3px; 
-    border: 1px solid black;
-    width: 85vw;
-    margin: 15px;
-    opacity: 0.8;
-    display: inline-block;
-    animation-name: body-reveal;
-    animation-duration: 10s;
-    transition: ease-in-out;
-}
-.table {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    animation-name: body-reveal;
-    animation-duration: 10s;
-    transition: ease-in-out;
-    row-gap: 5px;
-    width: 800px;
-}
-th {
-    background-color: beige;
-    width: 500px;
-    padding: 3px;
-}
-td {
-    background-color: beige;
-    width: 90vw;
-    justify-content: right;
-
-}
-main {
-    width: 100vw;
-}
-.home {
-    animation-name: body-reveal;
-    animation-duration: 10s;
-    transition: ease-in-out;
-    width: 100%;
-}
-.home-image {
-    position: relative;
-    z-index: 0;
-    animation-name: body-reveal;
-    animation-duration: 10s;
-    transition: ease-in-out;
-    width: 92vw;
-    object-fit: contain;
-    max-width: 1200px;
-}
- .home-caption1 {
- position: absolute; 
- top: 16vh; 
- left: 30vw;
- z-index: 1;
- color: white;
- font-size: 3.5vh; 
- text-shadow: 6px solid rgb(92, 92, 92);
- background-color:black;
- border-radius: 4px; 
- padding: 1px;
- opacity: 0.4;
- animation-name: body-reveal;
-    animation-duration: 10s;
-    transition: ease-in-out;
-}
-.home-caption2 {
-    position: absolute; 
- top: 26vh; 
- left: 45vw;
- z-index: 1;
- color: white;
- font-size: 3.5vh; 
- text-shadow: 6px solid rgb(92, 92, 92);
- background-color:black;
- border-radius: 4px; 
- padding: 1px;
- opacity: 0.4;
- animation-name: body-reveal;
-    animation-duration: 10s;
-    transition: ease-in-out;
-}
-.home-caption3 {
-    position: absolute; 
- top: 36vh; 
- left: 60vw;
- z-index: 1;
- color: white;
- font-size: 3.5vh; 
- text-shadow: 6px solid rgb(92, 92, 92);
- background-color:black;
- border-radius: 4px; 
- padding: 1px;
- opacity: 0.4;
- animation-name: body-reveal;
-    animation-duration: 10s;
-    transition: ease-in-out;
-}
-    @keyframes body-reveal {
+@keyframes body-reveal {
         0% {opacity:0;}
         70% {opacity: 0;}
         75% {opacity:0.5;}
@@ -261,45 +180,6 @@ main {
         95% {opacity:0.9;}
         100%{opacity:1;}
     }
-nav {
-    display: flex; 
-    position: fixed;
-    flex-direction: column; 
-    justify-content: center;
-    height: 150px;
-    width: 150px; 
-    background-color: none;
-    animation-name: body-reveal;
-    animation-duration: 10s;
-    transition: ease-in-out;
-    color: white;
-    background-color: black;
-    text-align: center;
-    margin-left: 2vw;
-    margin-top: 2vh;
-    font-size: x-large;
-    border: none;
-    opacity: 0.5;
-    z-index: 1;
-}
-nav:hover {
-    opacity: 1;
-    cursor: pointer;
-}
-.nav-item {
-    padding: 3px; 
-    font-weight: light;
-    background-color: transparent;
-    color: white;
-    cursor: pointer;
-    font-size: x-large;
-    border: none;
-    font-family: arial;
-}
-.nav-item:hover {
-    cursor: pointer;
-    color: goldenrod;
-}
     @keyframes blinds {
         0% {background-image: linear-gradient(180deg,rgb(216, 216, 216),rgb(182, 182, 182),rgb(119, 119, 119), rgb(92, 92, 92));
             transform: rotatez(30deg);
@@ -367,26 +247,6 @@ nav:hover {
            opacity: 0;
         }
     }
-
-/*
-.lever {
-    height: 80vh;
-    width:0.5vw; 
-    z-index:2;
-    background-color:black;
-    margin-left: 1vw; 
-}
-
-.string {
-    height: 80vh;
-    width:1vw; 
-    z-index:2;
-    border:2px solid black;
-    border-radius: 10px;
-    margin-right: 0;
-    margin-top: 1vh; 
-}
-*/
 .main-blinds {
     display: grid;
     position: absolute;
