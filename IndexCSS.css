@@ -594,7 +594,7 @@ body {
     border: none; 
     display: inline-block; 
     width: 5vw; 
-    height: 5vw; 
+    height: 6vw; 
     margin: 20px;
     opacity: 0.1;
     transition: 4s;
@@ -604,8 +604,10 @@ body {
     align-items: center;
     vertical-align: middle;
     text-align: center;
+    justify-content: center;
     margin-right: 1vw;
     padding-right: 1vw;
+    text-decoration: none;
 }
 .horizontal-main:hover {
     opacity: 0.6;
@@ -613,14 +615,15 @@ body {
     transform: scale(3.0);
     box-shadow: 0px 0px 15px white, 0px 0px 30px black, 0px 0px 60px gold;
     cursor: pointer;  
+    text-decoration: none;
 }
 H1 {
     color: white; 
-    flex: content;
     align-items: center;
     justify-content: center;
     text-align: center;
     vertical-align: middle;
     font-size: 0.6vw; 
     padding: 1vh 1.5vw 0 1.5vw;
+    text-decoration: none;
 }
