@@ -572,6 +572,8 @@ h2 {
     font-size: 1.5vw; 
     padding-right: 1vw;
     padding-left: 1vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
 }
 body {
     background-image:url("b-wBEST2.gif"); 
@@ -619,5 +621,5 @@ H1 {
     justify-content: center;
     text-align: center;
     vertical-align: middle;
-    font-size: 0.5vw; 
+    font-size: 0.2vw; 
 }
