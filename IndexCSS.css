@@ -601,7 +601,9 @@ body {
     align-items: center;
     vertical-align: middle;
     text-align: center;
-    font-size: 1vh;
+    font-size: 1.5vw; 
+    margin-right: 1vw;
+    padding-right: 1vw;
 }
 .horizontal-main:hover {
     opacity: 0.6;
@@ -617,5 +619,4 @@ H1 {
     justify-content: center;
     text-align: center;
     vertical-align: middle;
-    font-size: 3vw; 
 }
