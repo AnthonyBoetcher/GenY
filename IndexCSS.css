@@ -599,7 +599,7 @@ body {
     opacity: 0.1;
     transition: 4s;
     box-shadow: 0px 0px 30px white; 
-    border-radius: 2.5vw; 
+    border-radius: 3vw; 
     justify-content: center;
     align-items: center;
     vertical-align: middle;
@@ -624,6 +624,9 @@ H1 {
     text-align: center;
     vertical-align: middle;
     font-size: 0.6vw; 
-    padding: 1vh 1.5vw 0 1.5vw;
+    padding: 2vh 2vw 0 2vw;
     text-decoration: none;
+}
+a {
+     text-decoration: none;
 }
