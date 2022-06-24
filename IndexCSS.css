@@ -592,7 +592,7 @@ body {
 .horizontal-main {
     background:linear-gradient(45deg, black, goldenrod); 
     border: none; 
-    display: inline-block; 
+    display: flex; /*inline-block*/
     width: 5vw; 
     height: 6vw; 
     margin: 20px;
