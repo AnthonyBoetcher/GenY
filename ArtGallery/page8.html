@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta charset="utf-8"/>
+</head>
+<body>
+<div id="main">
+    <div class="door">
+        <div id="one"><div id="three"></div><div id="two"></div></div>
+        <div id="four"></div>
+        <div id="five"><h1>No.8</h1></div>
+       
+    </div> 
+  <div class="key">
+       <div id="six"></div>
+       <div id="seven"></div>
+       <div id="eight"></div>
+  </div>
+  <div id="nine"><img id="nine-one"src="rock1.png"/></div>
+  <!--ARTPIECE IN TEN-->
+  <div id="ten">
+    <div id="twelve"><h1><br>Easter Eve.</h1></div>
+    <div id="eleven"><p id="moon">&#127761;</p><p id="island"> &#128511;</p></div>
+  </div>
+</div>
+</body>
+</html>
+<style>
+:root {
+ --dark-gold: rgba(255, 217, 0, 0.596);
+ --darkgreen: rgb(2, 97, 2); 
+ --lightblue: rgb(111, 111, 255); 
+ --darkred: rgb(150, 30, 30); 
+ --pink: rgba(255, 143, 161, 0.733);
+ --purple: rgba(134, 9, 134, 0.774); 
+ --yellow: rgba(228, 228, 98, 0.808); 
+ --brown: rgb(66, 17, 17); 
+ --orange: rgb(141, 95, 9); 
+}
+#twelve {
+    color: white;
+    font-size: 1px;
+    margin-top: 7px;
+    margin-left: 1px;
+}
+#moon {
+    font-size: 3px;
+    margin-left: -10px;
+    margin-top: 6px; 
+}
+#island {
+    font-size: 10px;
+    margin-top: -4px;
+    margin-left: -2px;
+}
+#ten {
+    width: 30px; 
+    height: 40px; 
+    background-color: black;
+    margin-top: 610px;
+    margin-left: -270px;
+    z-index: 970; 
+    opacity: 0;
+    display: flex; 
+    justify-content: center;
+}
+#ten:hover {
+    cursor: pointer; 
+    transform: scale(30.0);
+    transition: 4s;
+    background-color: black;
+    opacity: 1;
+    z-index: 999;
+}
+.key {
+    border: none;
+    width: 70px; 
+    height: 70px; 
+    margin-left: 200px; 
+    margin-top: 690px;
+    z-index: 960;
+    background-color: transparent;
+}
+.key:hover{
+    animation-name: unlock2; 
+    animation-duration: 20s; 
+    animation-iteration-count: 1;
+    transition: ease-in-out;
+}
+@keyframes unlock2{
+    0%{}
+    10%{transform: translate(30px,30px);}
+    20%{transform: translate(-100px,30px);}
+    30% {transform: translate(-200px,30px);}
+    40% {transform: translate(-300px,30px);}
+    50%{transform: translate(-300px,-50px);}
+    60% {transform: translate(-300px,-120px);}
+    70%{transform: translate(-300px,-200px);}
+    80% {transform: translate(-300px,-200px);}
+    90% {transform: translate(-300px,-200px);}
+    100%{transform: translate(-300px,-300px);}
+} 
+#six {
+    width: 10px; 
+    height: 10px; 
+    border-radius: 50%; 
+    background-color: white;
+    border: 3px solid goldenrod;
+    box-shadow: 0 0 2px 1px goldenrod;
+    margin-left: 24px;
+    margin-top: 20px;
+}
+#seven {
+    width: 20px; 
+    height: 2px; 
+    border-radius: 10%; 
+    background-color: goldenrod;
+    box-shadow: 0 0 2px 1px goldenrod;
+    margin-left: 7px; 
+    margin-top: -15px;
+    transform: rotate(20deg)
+}
+#eight {
+    width: 5px; 
+    height: 10px; 
+    background-image: linear-gradient(white, goldenrod, white, goldenrod, white, goldenrod);
+    border: none;
+    margin-top: -8px;
+    margin-left: 0px;
+    border-left: 4px solid goldenrod;
+    transform: rotate(110deg);
+}
+#main {
+    width: 95vw; 
+    height: 95vh; 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-grow: 1;
+    flex-shrink: 0.5;
+    border: none;
+}
+.door{
+    display: relative;
+    width: 40vw;
+    max-width: 250px;
+    height: 70vh;
+    max-height: 750px;
+    border: 20px solid var(--brown);
+    border-bottom: none;
+    background-image: linear-gradient(0deg, rgb(70, 61, 61), rgb(26, 7, 7) 30%);
+    z-index: 980;
+    animation-name: open; 
+    animation-duration: 5s;
+    opacity: 0.8;
+    box-shadow: 0px 20px 20px 0px rgb(211, 172, 74); 
+}
+#one {
+    display: absolute; 
+    width: 20px;
+    height: 50px;
+    z-index: 999;
+    margin-top: 190px; 
+    margin-left: 210px;
+    border: 1px solid rgba(102, 102, 102, 0.3);
+    background-color: black;
+    border-radius: 3px;
+}
+#two {
+    background-color: white; 
+    width: 5px;
+    height: 10px;
+    border-radius: 2.5px;
+    z-index: 999;
+    margin-top: 10px; 
+    margin-left: 8px;
+    box-shadow: inset 0 0 5px gold;
+}
+#three {
+    background-color: black; 
+    border: 1px solid rgba(102, 102, 102, 0.3);
+    width: 40px;
+    height: 5px;
+    border-radius: 2.5px;
+    z-index: 999;
+    margin-top: 15px; 
+    margin-left: -28px; 
+}
+#nine { 
+    width: 10px; 
+    height: 10px; 
+    margin-left: -130px;
+    margin-top: 460px;
+    z-index: 970;
+}
+#nine:hover {
+    opacity: 1;
+    animation-name: unlock; 
+    animation-duration: 8s; 
+    animation-iteration-count: infinite;
+}
+@keyframes unlock {
+    0%{}
+    25%{}
+    50%{}
+    75%{transform: rotate(-90deg)}
+    100%{}
+}
+#nine-one{
+    width:260px; 
+    height:120px;
+}
+#three:hover {
+    cursor: pointer;
+    animation-name: door-handle;
+    animation-duration: 4s;
+}
+@keyframes door-handle {
+    0%{}
+    40%{}
+    80%{transform: matrix(1, -0.3, 0, 1, 0.1, 0.2)}  
+    100%{}
+}
+#five {
+    background-color: black; 
+    width: 70px; 
+    height: 30px;
+    margin-left: 100px;
+    margin-top: -56px;
+    box-shadow: 0 0 7px 1px gold;
+    color: white;
+    text-align: center;
+    padding-bottom: 5px;
+}
+#four {
+    background-image: radial-gradient(white 50%, gold); 
+    width: 70px; 
+    height: 35px;
+    margin-left: 100px;
+    margin-top: 50px;
+    box-shadow: 0 0 7px 1px gold;
+}
+#five:hover {
+    animation-name: post; 
+    animation-duration: 3s; 
+    cursor: pointer;
+}
+@keyframes post {
+    0%{}
+    50%{}
+    80%{height: 10px;
+        font-size: 8px;}
+    100%{}
+}
+</style>
