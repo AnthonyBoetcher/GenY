@@ -621,6 +621,6 @@ H1 {
     justify-content: center;
     text-align: center;
     vertical-align: middle;
-    font-size: 1vw; 
-    padding: 2vh 1vw 2vh 1vw;
+    font-size: 0.7vw; 
+    padding: 1.5vh 1.5vw 0 1.5vw;
 }
