@@ -601,12 +601,12 @@ body {
     align-items: center;
     vertical-align: middle;
     text-align: center;
-
+    font-size: 1vh;
 }
 .horizontal-main:hover {
     opacity: 0.6;
     background:linear-gradient(45deg, black, goldenrod); 
-    transform: scale(1.5);
+    transform: scale(2.0);
     box-shadow: 0px 0px 15px white, 0px 0px 30px black, 0px 0px 60px gold;
     cursor: pointer;  
 }
