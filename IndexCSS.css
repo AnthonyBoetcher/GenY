@@ -570,7 +570,8 @@ h2 {
     opacity: 0.9; 
     display: inline-block; 
     font-size: 1.5vw; 
-    padding-right: 10px;
+    padding-right: 1vw;
+    padding-left: 1vw;
 }
 body {
     background-image:url("b-wBEST2.gif"); 
@@ -601,7 +602,6 @@ body {
     align-items: center;
     vertical-align: middle;
     text-align: center;
-    font-size: 1.5vw; 
     margin-right: 1vw;
     padding-right: 1vw;
 }
@@ -619,4 +619,5 @@ H1 {
     justify-content: center;
     text-align: center;
     vertical-align: middle;
+    font-size: 0.5vw; 
 }
