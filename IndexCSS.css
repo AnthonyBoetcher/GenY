@@ -593,8 +593,8 @@ body {
     background:linear-gradient(45deg, black, goldenrod); 
     border: none; 
     display: inline-block; 
-    width: 8vw; 
-    height: 8vw; 
+    width: 6vw; 
+    height: 6vw; 
     margin: 20px;
     opacity: 0.1;
     transition: 4s;
