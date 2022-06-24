@@ -51,6 +51,7 @@ h2 {
     justify-content: center;
     position: relative;
     border: none; 
+    margin-left: 20px;
 }
 .G {
     margin: 0 0 0 30px; 
@@ -569,6 +570,7 @@ h2 {
     opacity: 0.9; 
     display: inline-block; 
     font-size: 2vw; 
+    margin-right: 20px;
 }
 body {
     background-image:url("b-wBEST2.gif"); 
