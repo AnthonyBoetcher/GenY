@@ -593,7 +593,7 @@ body {
     background:linear-gradient(45deg, black, goldenrod); 
     border: none; 
     display: inline-block; 
-    width: 8%; 
+    width: 8vw; 
     height: 8vw; 
     margin: 20px;
     opacity: 0.1;
@@ -621,5 +621,6 @@ H1 {
     justify-content: center;
     text-align: center;
     vertical-align: middle;
-    font-size: 1.5vw; 
+    font-size: 1vw; 
+    padding: 2vh 1vw 2vh 1vw;
 }
