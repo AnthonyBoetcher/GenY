@@ -588,6 +588,10 @@ body {
     height: 100vh; 
     display: inline-block; 
     margin-top: 3vw; 
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    text-align: center;
 }
 .horizontal-main {
     background:linear-gradient(45deg, black, goldenrod); 
@@ -604,7 +608,6 @@ body {
     align-items: center;
     vertical-align: middle;
     text-align: center;
-    justify-content: center;
     margin-right: 1vw;
     padding-right: 1vw;
     text-decoration: none;
