@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="utf-8"/>
+    <link rel="icon" type="image" href="icon2 (2).png"/>
+    <title>Blue Crane</title>
+  </head>
+<body>
+ <div class="main">
+<div class="crane">
+    <div id="one"></div>
+    <div id="two">
+              <div id="three-one"></div>
+              <div id="three-two"></div>
+              <div id="three-three"></div>
+              <div id="three-four"></div>
+              <div id="three-five"></div>
+              <div id="three-six"></div>
+              <div id="three-seven"></div>
+              <div id="three-eight"></div>
+    </div>
+    <div id="three-one"></div>
+    <div id="three-two"></div>
+    <div id="three-three"></div>
+    <div id="three-four"></div>
+    <div id="three-five"></div>
+    <div id="three-six"></div>
+    <div id="three-seven"></div>
+    <div id="three-eight"></div>
+    <div id="four"></div>
+    <div id="nine"></div>
+    <div id="ten"></div>
+    <div id="eleven"></div>
+    <div id="twelve"></div>
+    <div class="cabin"><div id="six"></div><div id="seven"></div></div>
+    <div class="counter-weight">
+        <div id="cw1"></div>
+        <div id="cw1"></div>
+        <div id="cw1"></div>
+        <div class="crane-leg"></div>
+</div>
+</div>
+</div>
+</body>
+</html>
+<style>
+#three-one {
+    width: 10px;
+    height: 10px; 
+    border-radius: 5px; 
+    background-image: radial-gradient(white, grey, black); 
+    z-index: -1;
+}
+#three-two {
+    width: 10px;
+    height: 10px; 
+    border-radius: 5px; 
+    background-image: radial-gradient(white, grey, black);
+    margin-left: 30px; 
+    margin-top: -10px;
+}
+#three-three {
+    width: 15px; 
+        height: 25px; 
+        border-radius: 10px;
+        margin-left: 41.5vw;
+        margin-top: -24px;
+        background-color: transparent;
+        display: inline-block;
+        position: absolute;
+        animation-name: pulley; 
+        animation-duration: 15s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+}
+#three-four {
+    width: 10px;
+    height: 10px; 
+    border-radius: 5px; 
+    background-image: transparent;
+    margin-left: 290px;
+    margin-top: -10px;
+    position: absolute;
+    animation-name: pulley; 
+        animation-duration: 15s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+}
+#three-five {
+    width: 20px; 
+    height: 1px;
+    background-color: transparent;
+    position: absolute;
+    transform: rotate(-30deg);
+    margin-left: 300px;
+    margin-top: -10px;
+    animation-name: pulley; 
+        animation-duration: 15s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+}
+#three-six {
+    width: 20px; 
+    height: 1px;
+    background-color: transparent;
+    position: absolute;
+    transform: rotate(210deg);
+    margin-top: 6px; 
+    margin-left: -2px;
+}
+#three-seven {
+    width: 40vw; 
+    height: 4px;
+    background-color:transparent;
+    border: 2px solid black;
+    border-radius: 3px;
+    position: absolute;
+    transform: rotate(180deg);
+    margin-left: 14vw;
+    margin-top: -24px;
+    z-index: -1;
+}
+#three-eight {
+    width: 2px; 
+    height: 500px;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 3px; 
+    position: absolute;
+    margin-top: -22px; 
+    margin-left: 41.5vw;
+    animation-name: chain-swing;
+    animation-duration: 15s; 
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    z-index: 0;
+    transition: ease-in-out;
+}
+@keyframes chain-swing {
+    0%{}
+    10%{}
+    18%{}
+    19%{}
+    20%{}
+    21%{transform: translate(50px, 0) rotate(2deg)}
+    22%{transform: translate(50px, 0) rotate(-2deg)}
+    23% {}
+    30%{}
+    40%{}
+    50%{transform: translate(-80px,0) rotate(-2deg)}
+    51% {transform: translate(-80px,0) rotate(2deg)}
+    60%{}
+    70%{}
+    80%{}
+    90%{transform: translate(-20px, 0) rotate(-2deg)}
+    91% {transform: translate(-20px, 0) rotate(2deg)}
+    100%{}     
+}
+#two {
+        width: 40px; 
+        height: 10px; 
+        border-radius: 5px;
+        border: 2px solid black; 
+        margin-left: 40vw;
+        margin-top: 5px;
+        background-color: black;
+        display: relative;
+        overflow: hidden;
+        animation-name: pulley; 
+        animation-duration: 15s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        z-index: 0;
+    }
+@keyframes pulley {
+    0%{}
+    10%{}
+    20%{transform: translate(50px, 0)}
+    30%{}
+    40%{}
+    50%{transform: translate(-80px, 0)}
+    60%{}
+    70%{}
+    80%{}
+    90%{transform: translate(-20px, 0)}
+    100%{}       
+}
+#cw1 {
+    width:0.5px; 
+    height: 47px;
+    background-color: #79796f;
+    border: none;
+    margin-left: 7px;
+    margin-top: 2px;
+    z-index: -1;
+    display: inline-block;
+    box-shadow: 0 0 1px 1px #79796f;
+}
+.counter-weight {
+    margin-top: -36px;
+    margin-left: 0;
+    width: 40px;
+    height: 50px; 
+    display: inline-block;
+    background-color: #808076;
+    z-index: -1;
+    border-radius: 2px;
+}
+.cabin {
+    margin-top: -25px;
+    margin-left: 87px;
+    width: 40px;
+    height: 40px; 
+    display: relative;
+    border: 2px solid blue;
+    background-color: lightblue;
+}
+#six {
+    width: 36px;
+    height: 20px; 
+    transform: rotate(135deg);
+    background-color: white; 
+    border-bottom: 2px solid blue;
+    margin-top: 25px;
+    margin-left: 18px;
+}
+#seven {
+    width: 20px; 
+    height: 20px; 
+    background-color: white; 
+    border: 1px solid blue;
+    margin-left: 3px;
+    margin-top: -45px;
+    border-radius: 5px;
+}
+#one {
+    width: 34vw; 
+    height: 5px;
+    border-left: 2px solid blue;
+    border-bottom: 2px solid blue;
+    margin-left: 21vw;
+    margin-top: -2px;
+    background-color: white;
+}
+#five {
+    width: 15vw; 
+    height: 7px;
+    border-left: 2px solid blue;
+    border-bottom: 2px solid blue;
+    margin-left: 20vw;
+    margin-top: 100px;
+    background-color: black;
+}
+.main {
+    width: 95vw; 
+    height: 95vh; 
+    border: 1px solid black;
+    display: absolute;
+}
+.crane {
+    margin-top: 20px;
+    width: 55vw;
+    height: 20px; 
+    display: relative;
+    border: 2px solid blue;
+    z-index: 1;
+    background-size: 40px 20px;
+    background-image: 
+    repeating-linear-gradient(-25deg, transparent 0 45%, blue 0 50%, transparent 0 50%),
+    repeating-linear-gradient(25deg, transparent 0 45%, blue 0 50%, transparent 0 50%);
+    animation-name: crane-rotate;
+    animation-duration: 25s; 
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes crane-rotate {
+    0%{}
+    10%{}
+    20%{}
+    30%{}
+    40%{}
+    50%{transform: rotateY(180deg)}
+    60%{}
+    70%{}
+    80%{}
+    90%{}
+    100%{}   
+}
+.crane-leg{
+    margin-top: -51px;
+    margin-left: 22.5vw;
+    width: 25px;
+    height: 80vh; 
+    display: absolute;
+    border: 2px solid blue;
+    background-color: white;
+    z-index: 2;
+    background-size: 25px 25px;
+    background-image: 
+    repeating-linear-gradient(-40deg, transparent 0 45%, blue 0 50%, transparent 0 50%),
+    repeating-linear-gradient(40deg, transparent 0 45%, blue 0 50%, transparent 0 50%);
+    animation-name: crane-rotate;
+}
+</style>
