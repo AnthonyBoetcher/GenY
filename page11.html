@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">        
+        <link rel="icon" type="image/x-icon" href="1a.gif">
+    </head>
+        <nav id="navbar">
+            <nav-link><a><link="#home">HOME</link></a></nav-link>
+            <nav-link><a link="#about">ABOUT</a></nav-link>
+            <nav-link><a link="#the-team">THE TEAM</a></nav-link>
+            <nav-link><a link="#products">PRODUCTS</a></nav-link>
+            <nav-link><a link="contact">CONTACT</a></nav-link>
+        </nav>
+<body>
+  <div  id="main">
+        <main>
+       </main>
+  </div>
+    <div class="home">
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+    </div>
+</body>
+</html>
+<style>
+.home {
+    background-color: black;
+    width: 100vw; 
+    height: 500px;
+    margin: 0px 0 0 -8px;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 400px 400px;
+    gap: 20px;
+}
+.tile {
+    border: 1px solid white;
+    min-width: 400px;
+    min-height: 200px;
+}
+#navbar {
+    width: 100%; 
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    vertical-align: center;
+    align-items: center; 
+    align-content: center;
+    border: none;
+    animation: flicker 1.5s infinite alternate;
+    color: rgb(0, 255, 255);
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    transition: ease-in-out;
+    position: fixed;
+    top: 0;
+    margin-top: 200px;
+    transition: top 0.5s;
+    z-index: 999;
+    text-decoration: none;
+}
+nav-link {
+    width: 15vw; 
+    height: 60px; 
+    font-family: 'Concert One', cursive;
+    font-size: 25px; 
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    vertical-align: center;
+    margin-top: 0px;
+    padding: 25px 0 0 0 ;
+    font-weight: normal;
+    animation: flicker 1.5s infinite alternate;
+    color: white;
+    z-index: 999;
+    border-radius: 5%;
+    opacity: 0.7;
+    text-decoration: none;
+}
+nav-link:hover {
+    cursor: pointer;
+    transform: scale(1.5);
+    opacity: 0.9;
+    transition: 1s;
+}
+ html {
+    height: 100%; 
+    width: 100%;
+   background-image: linear-gradient(white, rgb(0, 255, 255) 1%, black 20%);
+   background-size: 100% 100%;
+   z-index: -9;
+ }
+ main {
+    background-image: url("3a.gif");
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+    width: 35vw; 
+    max-width: 250px;
+    min-width: 200px;
+    max-height: 300px;
+    min-height: 250px;
+    height: 35vh;
+    margin: 40vh auto 25vh auto;
+    opacity: 0.7;
+    z-index: -9;
+ } 
+
+/* Flickering animation */
+@keyframes flicker {
+    
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+
+      text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px rgb(0, 255, 255),
+      0 0 80px rgb(0, 255, 255),
+      0 0 90px rgb(0, 255, 255),
+      0 0 100px rgb(0, 255, 255),
+      0 0 150px rgb(0, 255, 255);
+  }
+  20%, 24%, 55% {        
+      text-shadow: none;
+  }    
+}
+</style>
+<script>
+     
+     var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-260px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+
+$(window).scroll(function() {
+        if ($(this).scrollTop()> 20) {
+            $('#main').fadeOut();
+         }
+        else {
+          $('#main').fadeIn();
+         }
+    })
+</script>
