@@ -25,13 +25,13 @@
        </main>
   </div>
     <div class="home">
-        <h2 id="about">ABOUT : OUR TENENTS</h2>
-        <h3 id="tenet">Seamless intergration of our turn-key packages with existing systems and processes</h3>
-        <div class="tile"><img src="12.gif"/></div>
+        <h2 id="about">OUR TENENTS</h2>
+        <h3 id="tenet">Seamless integration of our turn-key packages with existing systems and processes</h3>
+        <h1>Integration</h1><div class="tile"><img src="12.gif"/></div>
         <h3 id="tenet">Scalable solutions and custom suites based on operational requirements</h3>
-        <div class="tile"><img src="14.gif"/></div>
+        <h1>Scalability</h1><div class="tile"><img src="14.gif"/></div>
         <h3 id="tenet">Synergy of system wide components to form fully functional solutions</h3>
-        <div class="tile"><img src="15.gif"/></div>
+        <h1>Synergy</h1><div class="tile"><img src="15.gif"/></div>
     </div>
 <div class="products" id="products">
     <ul>
@@ -69,7 +69,7 @@
     <div class="tile2"><h4></h4><img src="av5.png"/></div>
 </div>
 <div class="contact" id="contact">
-    <h2>Don't worry we have traced your contact details, we will contact you! </h2>
+    <h2>CONTACT US<BR>Don't worry we have traced your contact details, we will contact you! </h2>
 </div>
 </body>
 </html>
@@ -85,6 +85,23 @@
     font-size: 20px;
     margin: -400px 0 0 0;
     background-color: black;
+}
+h1 {
+    font-family: sans-serif, cursive;
+    font-size: 40px; 
+    color: white;
+    display: absolute;
+    z-index: 8;
+   text-align: center;
+   display: absolute;
+   margin: -200px 0 0 0 ;
+   text-align: center;
+   animation: flicker 1.5s infinite alternate;
+    opacity: 0.9;
+    border-radius: 15px;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    transition: ease-in-out;
 }
 .products {
    width: 100vw; 
@@ -114,10 +131,10 @@ h4 {
     font-size: 20px; 
     color: white;
     display: absolute;
-    z-index: 2;
+    z-index: 11;
    text-align: center;
    display: absolute;
-   margin: 0 0 -50px -160px;
+   top: 5;
 
 }
 #about {
@@ -181,8 +198,8 @@ h3 {
     color: black;
     font-size: 30px;
     display: absolute;
-    margin: -200px auto 0 auto;
-    z-index: 2;
+    margin: 0px auto 0 auto;
+    z-index: -100;
    text-align: center;
    animation: flicker 1.5s infinite alternate;
     opacity: 0.6;
@@ -191,6 +208,7 @@ h3 {
     animation-direction: alternate-reverse;
     transition: ease-in-out;
     width: 400px;
+    pointer-events: none;
 }
 .tile {
     border: none;
@@ -198,6 +216,8 @@ h3 {
     display: relative;
     margin: 100px 0 0 0;
     color: transparent;
+    color: white;
+    font-size: 30px;
 }
 .tile img {
     animation: flicker2 1.5s infinite alternate;
@@ -209,14 +229,12 @@ h3 {
    margin: -460px 0 150px 0; 
    z-index: -9;
    opacity: 1;
-   color: black;
 }
 .tile:hover, .tile img:hover {
     cursor: pointer;
-    transform: rotateY(90deg);
-    opacity: 1;
+    opacity: 0;
     transition: ease-in-out;
-    transition-duration: 1.5s;
+    transition-duration: 2s;
     color: white;
     font-size: 30px;
 }
