@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <header class="banner">
+          <span class="logo"><img src="logo.png"></span>
+          <span class="beforetopright"></span>
+          <nav class="navlink">
+            <div class="notifications"><img src="notification.png"></div><img></div>
+            <div class="sites"><img src="sites.png"></img></div>
+            <div class="account"><img src="Account.png"></img><p>&#128516;</p></div>
+          </nav>
+        </header>
+        <ul class="subjects">
+            <li class="subject" id="home"><img src="home.png"/>Home<br><img src="dropdown1.png"/></li>
+            <li class="subject"><img id="left" src="star.png"/>SCI2005(2)<br><img src="dropdown.png"/></li>
+            <li class="subject"><img id="left" src="star.png"/>LIFE1090S<br><img src="dropdown.png"/></li>
+            <li class="subject"><img id="left" src="star.png"/>TECH101(0)<br><img src="dropdown.png"/></li>
+            <li class="subject"><img id="left" src="star.png"/>MAM1010F(0)<br><img src="dropdown.png"/></li>
+            <li class="subject"><img id="left" src="star.png"/>CON1111F(1)<br><img src="dropdown.png"/></li>
+            <li class="subject"><img id="left" src="star.png"/>BIO2005(3)<br><img src="dropdown.png"/></li>
+            <li class="subject"><img id="left" src="star.png"/>RCKSCI(1)<br><img src="dropdown.png"/></li>
+            <li class="subject"><img id="left" src="star.png"/>QUANTS(0)<br><img src="dropdown.png"/></li>
+            <li class="subject"><img id="left" src="star.png"/>STATS1300(4)<br><img src="dropdown.png"/></li>
+            <li class="subject"><img id="left" src="star.png"/>ECON2220(1)<br><img src="dropdown.png"/></li>
+            <li class="subject"><img id="left" src="star.png"/>ACCSCI1501(0)<br><img src="dropdown.png"/></li>
+            <li class="subject"><img id="left" src="star.png"/>STRENG(3)<br><img src="dropdown.png"/></li>
+            <li class="subject"><img id="left" src="star.png"/>BLEH999(1)<br><img src="dropdown.png"/></li>
+            <li class="subject"><img id="left" src="star.png"/>MEH666(9)<br><img src="dropdown.png"/></li>
+            <li class="subject"><img id="left" src="star.png"/>SIGH300(2)<br><img src="dropdown.png"/></li>
+        </ul>
+        <br> 
+        <hr>
+<div id="main">
+      <div id="sidebar">
+            <div class="sidenav" class="subject" id="home"><img src="aaa1.png">Overview</div>
+            <div class="sidenav"><img src="aaa22.png">Announcements<img id="lock" id="lock" src="e.png"/></div>
+            <div class="sidenav"><img src="aaa33.png">Calendar<img id="lock" id= "lock" src="e.png"/></div>
+            <div class="sidenav"><img src="aaa44.png">Resources<img id="lock"src="e.png"/></div>
+            <div class="sidenav"><img src="aaa55.png">Membership</div>
+            <div class="sidenav"><img src="aaa66.png">Worksite Setup</div>
+            <div class="sidenav"><img src="aaa77.png">Profile</div>
+            <div class="sidenav"><img src="aaa88.png">Preferences</div>
+            <div class="sidenav"><img src="aaa99.png">LearnOnline</div>
+            <div class="sidenav"><img id="key" src="aaa1010.png">Trusted Applications</div>
+            <div class="sidenav"><img src="aaa1111.png">Help</div>
+    </div>
+    <div id="timeout"><img src="Timeoutnotice.png"/></div>
+    <div id="title"><img src="o.png"><H2>OVERVIEW</H2></div>
+    <div id="content">
+      <div id="a"><img src="tile1.png"/></div> 
+      <div id="b"><img src="tile2.png"/></div> 
+    </div>
+</div>
+    </body>
+</html>
+
+<style>
+p {
+    display: absolute;
+    z-index: 20;
+    margin: -42px 0 0 21px;
+    font-size: 13px;
+}
+#timeout img{
+  margin: -700px 0 1000px 0;
+  width: 1000px;
+  height: auto;
+}
+#timeout {
+    animation-name: timeout; 
+    border: none;
+    background-color: none;
+    animation-delay: 0s; 
+    animation-duration: 20s;
+    animation-iteration-count: 1; 
+    animation-direction: forwards;
+    transition: 0s;
+    width: fit-content;
+    height: fit-content; 
+    z-index: 10;
+    position: absolute;
+    background-repeat: none;
+    justify-content: center;
+    align-content: center;
+    vertical-align: center;
+    align-items: center;
+    display: flex; 
+    flex-direction: row;
+    opacity: 1;
+}
+@keyframes timeout {
+    0%{opacity: 0};
+    49.9%{opacity: 0};
+    50%{opacity: 1};
+    100%{opacity: 1;}
+}
+
+#main {
+    display: flex, 
+}
+#a, #b{
+    border: 1px solid transparent;
+    gap: 20px ;
+    display: absolute; 
+    margin-top: -270px;
+    width: auto;
+}
+#title {
+    border: none;
+    position: absolute; 
+    top: -520px ;
+    width: 100%; 
+    height: 50px;
+    position: absolute;
+    margin: -260px 0 -220px 250px;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    justify-content: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    vertical-align: center;
+    justify-content: left;
+    align-items: center;
+    font-size: 12px;
+    color: #15597e;
+    font-family: sans-serif;
+}
+#title img {
+    width: 50px;
+    height: 50px;
+    margin: -4px -8px 0 -2px;
+}
+#title img:hover, #title h2:hover {
+    cursor: pointer;
+    z-index: 10;
+}
+#content {
+    display: grid; 
+    grid-template-columns: 550px 550px;
+    grid-template-rows: 1fr 1fr; 
+    width: 100%;
+    height: 100%;
+    border: 1px solid transparent;
+    position: absolute;
+    margin: -260px 0 0 250px;
+    z-index: 5;
+}
+#content img{
+    max-width: 500px;
+    min-width: 300px;
+    height: 400px;
+}
+#a {
+    transform: scale(1.2);
+    margin: -5px 0 0 50px;
+}
+#b {
+    transform: scale (1.2);
+    margin: -45px 0 0 20px;
+}
+#key {
+    width: 32px; 
+    height: 32px; 
+}
+    #lock {
+        width: 20px; 
+        height: 20px; 
+        position: absolute;
+        margin: -7px 0 0 190px;
+    }
+.sidenav {
+    width: auto; 
+    height: 45px; 
+    background-color: white; 
+    border: 1px solid transparent;
+    border-radius: 2px;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: arial;
+    font-size: 13px; 
+    font-weight: 400;
+    line-height: 20px; 
+    text-align: left;
+    justify-content: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    vertical-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 3px 0 0 0;
+}
+.sidenav:hover {
+    background-color: rgba(190, 190, 190, 0.3);
+    opacity: 1;
+    box-shadow: 0 2px 1px 0px rgb(202, 201, 201);
+    cursor: pointer;
+}
+.sidenav img {
+    margin: -5px 10px 0px -165px;
+    position: absolute;
+    width: 50px; 
+    height: 50px; 
+}
+#sidebar {
+    border: 1px solid transparent;
+    width: 240px;
+    height: 100vh;
+    display: flex; 
+    flex-direction: column;
+    margin: -9px 0 0 -7px;
+    padding: 0 10px 0 0;
+    text-decoration: italic;
+    border-right: 1px solid rgb(0, 0, 0, 0.1);
+
+}
+hr {
+    background-color: rgb(218, 218, 218);
+    color:rgb(218, 218, 218);
+    opacity: 0.3;
+}
+#home {
+    background-color: rgb(200, 216, 225);
+}
+.banner {
+    background-image: linear-gradient(to right bottom, #15597e, #156089, #146895, #136fa0, #1377ac, #1377ac, #1377ac, #1377ac, #136fa0, #146895, #156089, #15597e);
+    padding: 0 16px;
+    margin: -10px -10px 0 -10px;
+    display: flex;
+    flex-direction: row; 
+    position: fixed;
+    opacity: 1;
+    z-index: 999;
+}
+.subjects {
+    display: flex;
+    background-color: none;
+    flex-wrap: wrap;
+    font-family: arial;
+    font-size: 15px; 
+    font-weight: 500;
+    line-height: 20px; 
+    list-style-image: none;
+list-style-position: outside;
+list-style-type: none;
+margin: 10px 0 0 -20px;
+padding: 55px 0 0 20px;
+text-size-adjust: 100%;
+width: 100vw;
+}
+.subject {
+    border: none;
+    background-color: rgb(227, 228, 229);
+    background-size: auto;
+    width: fit-content; 
+    height: fit-content;
+    min-width: 120px; 
+    min-height: 32px;
+    margin: 10px 10px 0 10px;
+    border-radius: 6px;
+    display: flex; 
+    flex-direction: row;
+    text-align: center;
+    vertical-align: center;
+    justify-content: center;
+    align-items: center;
+    color: rgb(51, 52, 53);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 0 0 0;
+    opacity: 0.7;
+    transition-duration: 0.2s;
+}
+.subject img {
+    margin: -2px 10px 0px 10px;
+    border-radius: 3px;
+    z-index: 2;
+}
+.subject img:hover {
+    box-shadow: inset 0 0 0 99px rgb(94, 93, 93, 0.6);
+}
+.subject:hover {
+    background-color: rgb(227, 228, 229);
+    opacity: 1;
+    box-shadow: 0 2px 1px 0px rgb(202, 201, 201);
+    cursor: pointer;
+}
+.navlink {
+    justify-content: right;
+    margin: 4px 0 0 77vw;
+    display: flex; 
+    flex-direction: row;
+}
+.logo {
+    padding: 5px 0 0 3px;
+}
+.notifications, .sites, .account {
+    border-radius: 50%;
+    background-color: transparent;
+    opacity: 0.7;
+}
+.notifications:hover, .sites:hover, .account:hover {
+   transform: scale(1.1);
+   cursor: pointer;
+}
+.navlink img {background-image: linear-gradient(to right bottom, #15597e, #156089, #146895, #136fa0, #1377ac, #1377ac, #1377ac, #1377ac, #136fa0, #146895, #156089, #15597e);   
+}
+    </style>
