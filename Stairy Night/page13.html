@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>         
+        <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>    
     </head>
     <div id="stars"></div>
     <div id="stars2"></div>
@@ -21,10 +21,7 @@
             <div class="star"></div>
         </div>  
     <div class="astros">
-      <div><img class="astro" id="astro1" src="astro1.png"/></div>
-      <div><img class="astro" id="astro2" src="astro2.png"/></div>
-      <div><img class="astro" id="astro3" src="astro3.png"/></div>
-      <div><img class="astro" id="astro4" src="astro4.png"/></div>
+      <div><img class="astro" id="astro1" src="astro1.png"/></div>     
       <div><img class="astro" id="astro5" src="astro5.png"/></div>
       <div class="astro" id="stair"><img src="a.png"/></div>
     </div>
@@ -34,10 +31,199 @@
       <div><img class="ship" id="ship4" src="j.png"/></div>
     </div>
     </body>
+    <audio controls autoplay>
+      <source src="ringer.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+    </audio>
 </html>
+<div>
+  <div id="sun"></div>
+</div>
 <style>
+img {
+  transform: scale(0.4);
+}
+html {
+    position: relative;
+    width: 100%; 
+    height: 110%;
+    animation-name: background;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 10s;
+  background: radial-gradient(ellipse at bottom, #213142 0%, #090a0f 100%);
+  overflow: hidden;
+}
+body {
+height: 100vh;
+width: 100vw;
+overflow: hidden;
+display: -webkit-box;
+display: flex;
+}
+#sun{
+    animation-name: sunrise;
+    animation-duration: 34s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+
+    animation-delay: 15s;
+    position: absolute;
+    bottom: -15vh;
+    left: -15vw;
+    transition: ease-in-out;
+    overflow: hidden;
+    width: 200px; 
+    height: 200px;
+    border-radius: 100px;
+    background-image: radial-gradient(rgb(255, 240, 0),rgb(255, 240, 0),rgb(255, 230, 0),rgb(255, 220, 0), rgb(255, 210, 0),rgb(255, 200, 0),rgb(255, 190, 0),rgb(255, 180, 0),rgb(255, 170, 0), rgb(250, 160, 0),
+    rgb(240, 150, 0) , rgb(230, 140, 0),rgb(220, 130, 0), rgb(210, 120, 0), 
+    rgb(200, 110, 0),rgb(190, 100, 0), rgb(180, 90, 0), rgb(167, 83, 0), rgb(122, 61, 0) );
+    box-shadow: 0 0 200px 3px orange;
+}
+@keyframes sunrise {
+   0%{transform: translate(0px, 0px)}
+   50%{transform: translate(60vw, -40vh) scale(1.5)}
+   90%{transform: translate(120vw, 0)}
+   100%{transform: translate(120vw, -0)}
+}
+@keyframes background{
+    0% {opacity: 1; 
+      animation-timing-function: 4s ease-in-out;
+      background: radial-gradient(ellipse at bottom, #213142 0%, #090a0f 100%);
+    }
+
+    5% {opacity: 0.8;
+      animation-timing-function: 4s ease-in-out;
+      background: radial-gradient(ellipse at bottom, #213142 0%, #090a0f 100%);
+        background-image:linear-gradient(black 80%, rgb(0, 0, 10) 82%, rgb(0, 0, 20) 84%,rgb(0, 0, 30) 86%,rgb(0, 0, 40) 88%,rgb(0, 0, 50) 90%, rgb(0, 0, 60) 92%,
+        rgb(0, 0, 70) 94%,rgb(0, 0, 80) 96%, rgb(0, 0, 150) 100%);}
+
+    10% {opacity: 0.8;
+      animation-timing-function: 4s ease-in-out;
+      background: radial-gradient(ellipse at bottom, #213142 0%, #090a0f 100%);
+        background-image:linear-gradient(black 70%, rgb(0, 0, 10) 72%, rgb(0, 0, 20) 74%,rgb(0, 0, 30) 76%,rgb(0, 0, 40) 78%,rgb(0, 0, 50) 80%, rgb(0, 0, 60) 82%,
+        rgb(0, 0, 70) 84%,rgb(0, 0, 80) 86%, rgb(0, 0, 90) 88%, rgb(0, 0, 100) 90%, rgb(0, 0, 110) 92%, rgb(0, 0, 120) 94%, rgb(0, 0, 130) 96%, rgb(0, 0, 140) 98%, 
+        orange 100%);}
+
+    15% {opacity: 0.8;
+      animation-timing-function: 4s ease-in-out;
+      background: radial-gradient(ellipse at bottom, #213142 0%, #090a0f 100%);
+        background-image:linear-gradient(black 55%, rgb(0, 0, 10) 62%, rgb(0, 0, 20) 64%,rgb(0, 0, 30) 66%,rgb(0, 0, 40) 68%,rgb(0, 0, 50) 70%, rgb(0, 0, 60) 72%,
+        rgb(0, 0, 70) 74%,rgb(0, 0, 80) 76%, rgb(0, 0, 90) 78%, rgb(0, 0, 100) 80%, rgb(0, 0, 110) 82%, rgb(0, 0, 120) 84%, rgb(0, 0, 130) 86%, rgb(0, 0, 140) 88%, 
+        rgb(0, 0, 150) 90% , rgb(0, 0, 160) 92%, rgb(0, 0, 170) 94%, rgb(0, 0, 180) 96%, rgb(129, 20, 172) 98%,
+        orange 99%, yellow 100%);}
+
+    20% {opacity: 0.8;
+      animation-timing-function: 4s ease-in-out;
+        background-image:linear-gradient(black 40%, rgb(0, 0, 20) 42%,rgb(0, 0, 50) 44%, rgb(0, 0, 60) 46%,
+        rgb(0, 0, 70) 48%,rgb(0, 0, 80) 50%, rgb(0, 0, 90) 52%, rgb(0, 0, 100) 54%, rgb(0, 0, 110) 56%, rgb(0, 0, 120) 58%, rgb(0, 0, 130) 60% , rgb(0, 0, 140) 62%, 
+        rgb(0, 0, 150) 64% , rgb(0, 0, 160) 66%, rgb(0, 0, 170) 68%, rgb(0, 0, 180) 70%, rgb(0, 0, 190) 72%, rgb(0, 0, 200) 74%, rgba(129, 20, 172) 85%, orange 94%, rgb(255, 175, 0) 96%, 
+        rgb(255, 185, 0) 98%, yellow 99%, rgb(250, 250, 149) 100%);}
+
+    25% {opacity: 0.8;
+      animation-timing-function: 4s ease-in-out;
+        background-image:linear-gradient(rgb(0, 0, 10) 22%, rgb(0, 0, 20) 24%,rgb(0, 0, 30) 26%,rgb(0, 0, 40) 28%,rgb(0, 0, 50) 30%, rgb(0, 0, 60) 32%,
+        rgb(0, 0, 70) 34%,rgb(0, 0, 80) 36%, rgb(0, 0, 90) 38%, rgb(0, 0, 100) 40%, rgb(0, 0, 110) 42%, rgb(0, 0, 120) 44%, rgb(0, 0, 130) 46% , rgb(0, 0, 140) 48% , 
+        rgb(0, 0, 150) 50% , rgb(0, 0, 160) 52%, rgb(0, 0, 170) 54%, rgb(0, 0, 180) 56%, rgb(0, 0, 190) 58%, rgb(0, 0, 200) 60%,rgb(129, 20, 172) 75%, orange 89%, rgb(255, 175, 0) 91%, rgb(255, 185, 0) 93%,
+         rgb(255, 195, 0) 95%, rgb(250, 250, 149) 100%);}
+
+     30% {opacity: 0.8;
+      animation-timing-function: 4s ease-in-out;
+        background-image:linear-gradient(black 10%, rgb(0, 0, 10) 12%, rgb(0, 0, 20) 14%,rgb(0, 0, 30) 16%,rgb(0, 0, 40) 18%,rgb(0, 0, 50) 20%, rgb(0, 0, 60) 22%,
+        rgb(0, 0, 70) 24%,rgb(0, 0, 80) 26%, rgb(0, 0, 90) 28%, rgb(0, 0, 100) 30%, rgb(0, 0, 110) 32%, rgb(0, 0, 120) 34%, rgb(0, 0, 130) 36% , rgb(0, 0, 140) 38%, 
+        rgb(0, 0, 150) 40% , rgb(0, 0, 160) 42%, rgb(0, 0, 170) 44%, rgb(0, 0, 180) 46%, rgb(129, 20, 172) 57%, orange 79%, rgb(255, 175, 0) 73%, rgb(255, 185, 0) 72%,
+         rgb(255, 195, 0) 71%, rgb(255, 205, 0) 72% , rgb(255, 215, 0) 73%, rgb(255, 225, 0) 74%, rgb(255, 235, 0) 75%, rgb(255, 245, 0) 76%, rgb(255, 255, 0) 77%, 
+         rgb(255, 255, 40) 78%, rgb(255, 255, 80) 79%, rgb(255, 255, 120) 80%, rgb(255, 255, 160) 81%, rgb(255, 255, 200) 82%, rgb(255, 255, 240) 83%, rgba(130, 169, 240, 0.897) 85%, rgba(100, 169, 240, 0.897) 86%, 88% rgba(68, 169, 236, 0.897), rgba(68, 169, 236, 0.897) 90%, rgba(68, 169, 236, 0.897) 92%, rgba(68, 169, 236, 0.897) 94%,
+          rgba(68, 169, 236, 0.897) 96%, rgba(68, 169, 236, 0.897) 98%,rgba(68, 169, 236, 0.897) 100%);}
+
+    35% {opacity: 0.8;
+      animation-timing-function: 4s ease-in-out;
+        background-image:linear-gradient(rgb(0, 0, 30) 10%,rgb(0, 0, 40) 12%,rgb(0, 0, 50) 14%, rgb(0, 0, 60) 16%,
+        rgb(0, 0, 70) 18%,rgb(0, 0, 80) 20%, rgb(0, 0, 90) 22%, rgb(0, 0, 100) 24%, rgb(0, 0, 110) 26%, rgb(0, 0, 120) 28%, rgb(0, 0, 130) 30% , rgb(0, 0, 140) 32%, 
+        rgb(0, 0, 150) 34% , rgb(0, 0, 160) 36%, rgb(0, 0, 170) 38%, rgb(0, 0, 180) 40%, rgb(129, 20, 172) 60%, rgb(129, 20, 172) 63%, rgb(255, 185, 0) 69%,
+         rgb(255, 195, 0) 71%, rgb(255, 205, 0) 72% , rgb(255, 215, 0) 73%, rgb(255, 225, 0) 74%, rgb(255, 235, 0) 75%, rgb(255, 245, 0) 76%, rgb(255, 255, 0) 77%, 
+         rgb(255, 265, 0) 78%, rgb(255, 275, 0) 79%, rgb(255, 285, 0) 80%, rgb(255, 295, 0) 81%, rgb(255, 305, 0) 82%, rgb(255, 315, 0) 83%,rgb(255, 325, 0) 84%,rgb(255, 335, 0) 85%, 
+         rgb(255, 305, 0) 86%, 88% rgba(68, 169, 236, 0.897), (68, 169, 236, 0.897) 90%, rgba(68, 169, 236, 0.897) 92%, rgba(68, 169, 236, 0.897) 94%, rgba(68, 169, 236, 0.897) 96%, 
+         rgba(68, 169, 236, 0.897) 98%,rgba(68, 169, 236, 0.897) 100%);}
+
+    40%{opacity: 0.8;
+      animation-timing-function: 4s ease-in-out;
+        background-image:linear-gradient(rgb(0, 0, 10) 22%, rgb(0, 0, 20) 24%,rgb(0, 0, 30) 26%,rgb(0, 0, 40) 28%,rgb(0, 0, 50) 30%, rgb(0, 0, 60) 32%,
+        rgb(0, 0, 70) 34%,rgb(0, 0, 80) 36%, rgb(0, 0, 90) 38%, rgb(0, 0, 100) 40%, rgb(0, 0, 110) 42%, rgb(0, 0, 120) 44%, rgb(0, 0, 130) 46% , rgb(0, 0, 140) 48% , 
+        rgb(0, 0, 150) 50% , rgb(0, 0, 160) 52%, rgb(0, 0, 170) 54%, rgb(0, 0, 180) 56%, rgb(0, 0, 190) 58%, rgb(0, 0, 200) 60%,rgb(129, 20, 172) 75%, orange 89%, rgb(255, 175, 0) 91%, rgb(255, 185, 0) 93%, rgb(255, 195, 0) 95%, rgb(250, 250, 149) 100%);}
+
+    45%{opacity: 0.8;
+      animation-timing-function: 4s ease-in-out;
+        background-image:linear-gradient(rgb(0, 0, 30) 10%,rgb(0, 0, 40) 12%,rgb(0, 0, 50) 14%, rgb(0, 0, 60) 16%,rgb(0, 0, 70) 18%,rgb(0, 0, 80) 20%, rgb(0, 0, 90) 22%, rgb(0, 0, 100) 24%, rgb(0, 0, 110) 26%, rgb(0, 0, 120) 28%, rgb(0, 0, 130) 30% , rgb(0, 0, 140) 32%, rgb(0, 0, 150) 34% , rgb(0, 0, 160) 36%, rgb(0, 0, 170) 38%, rgb(0, 0, 180) 40%, rgb(129, 20, 172) 60%, rgb(129, 20, 172) 63%, rgb(255, 185, 0) 69%,rgb(255, 195, 0) 71%, rgb(255, 205, 0) 72% , rgb(255, 215, 0) 73%, rgb(255, 225, 0) 74%, rgb(255, 235, 0) 75%, rgb(255, 245, 0) 76%, rgb(255, 255, 0) 77%, 
+         rgb(255, 265, 0) 78%, rgb(255, 275, 0) 79%, rgb(255, 285, 0) 80%, rgb(255, 295, 0) 81%, rgb(255, 305, 0) 82%, rgb(255, 315, 0) 83%,rgb(255, 325, 0) 84%,rgb(255, 335, 0) 85%, 
+         rgb(255, 305, 0) 86%, 88% rgba(68, 169, 236, 0.897), (68, 169, 236, 0.897) 90%, rgba(68, 169, 236, 0.897) 92%, rgba(68, 169, 236, 0.897) 94%, rgba(68, 169, 236, 0.897) 96%, 
+         rgba(68, 169, 236, 0.897) 98%,rgba(68, 169, 236, 0.897) 100%);}
+
+    50%{opacity: 0.8;
+      animation-timing-function: 4s ease-in-out;
+        background-image:linear-gradient(black 10%, rgb(0, 0, 10) 12%, rgb(0, 0, 20) 14%,rgb(0, 0, 30) 16%,rgb(0, 0, 40) 18%,rgb(0, 0, 50) 20%, rgb(0, 0, 60) 22%,
+        rgb(0, 0, 70) 24%,rgb(0, 0, 80) 26%, rgb(0, 0, 90) 28%, rgb(0, 0, 100) 30%, rgb(0, 0, 110) 32%, rgb(0, 0, 120) 34%, rgb(0, 0, 130) 36% , rgb(0, 0, 140) 38%, 
+        rgb(0, 0, 150) 40% , rgb(0, 0, 160) 42%, rgb(0, 0, 170) 44%, rgb(0, 0, 180) 46%, rgb(129, 20, 172) 57%, orange 79%, rgb(255, 175, 0) 73%, rgb(255, 185, 0) 72%,
+         rgb(255, 195, 0) 71%, rgb(255, 205, 0) 72% , rgb(255, 215, 0) 73%, rgb(255, 225, 0) 74%, rgb(255, 235, 0) 75%, rgb(255, 245, 0) 76%, rgb(255, 255, 0) 77%, 
+         rgb(255, 255, 40) 78%, rgb(255, 255, 80) 79%, rgb(255, 255, 120) 80%, rgb(255, 255, 160) 81%, rgb(255, 255, 200) 82%, rgb(255, 255, 240) 83%, rgba(130, 169, 240, 0.897) 85%, rgba(100, 169, 240, 0.897) 86%, 88% rgba(68, 169, 236, 0.897), rgba(68, 169, 236, 0.897) 90%, rgba(68, 169, 236, 0.897) 92%, rgba(68, 169, 236, 0.897) 94%,
+          rgba(68, 169, 236, 0.897) 96%, rgba(68, 169, 236, 0.897) 98%,rgba(68, 169, 236, 0.897) 100%);}
+   55% {}
+   65% {opacity: 0.8;
+
+        background-image:linear-gradient(rgb(0, 0, 30) 10%,rgb(0, 0, 40) 12%,rgb(0, 0, 50) 14%, rgb(0, 0, 60) 16%,
+        rgb(0, 0, 70) 18%,rgb(0, 0, 80) 20%, rgb(0, 0, 90) 22%, rgb(0, 0, 100) 24%, rgb(0, 0, 110) 26%, rgb(0, 0, 120) 28%, rgb(0, 0, 130) 30% , rgb(0, 0, 140) 32%, 
+        rgb(0, 0, 150) 34% , rgb(0, 0, 160) 36%, rgb(0, 0, 170) 38%, rgb(0, 0, 180) 40%, rgb(129, 20, 172) 60%, rgb(129, 20, 172) 63%, rgb(255, 185, 0) 69%,
+         rgb(255, 195, 0) 71%, rgb(255, 205, 0) 72% , rgb(255, 215, 0) 73%, rgb(255, 225, 0) 74%, rgb(255, 235, 0) 75%, rgb(255, 245, 0) 76%, rgb(255, 255, 0) 77%, 
+         rgb(255, 265, 0) 78%, rgb(255, 275, 0) 79%, rgb(255, 285, 0) 80%, rgb(255, 295, 0) 81%, rgb(255, 305, 0) 82%, rgb(255, 315, 0) 83%,rgb(255, 325, 0) 84%,rgb(255, 335, 0) 85%, 
+         rgb(255, 305, 0) 86%, 88% rgba(68, 169, 236, 0.897), (68, 169, 236, 0.897) 90%, rgba(68, 169, 236, 0.897) 92%, rgba(68, 169, 236, 0.897) 94%, rgba(68, 169, 236, 0.897) 96%, 
+         rgba(68, 169, 236, 0.897) 98%,rgba(68, 169, 236, 0.897) 100%);}
+
+   70% {opacity: 0.8;
+        background-image:linear-gradient(black 10%, rgb(0, 0, 10) 12%, rgb(0, 0, 20) 14%,rgb(0, 0, 30) 16%,rgb(0, 0, 40) 18%,rgb(0, 0, 50) 20%, rgb(0, 0, 60) 22%,
+        rgb(0, 0, 70) 24%,rgb(0, 0, 80) 26%, rgb(0, 0, 90) 28%, rgb(0, 0, 100) 30%, rgb(0, 0, 110) 32%, rgb(0, 0, 120) 34%, rgb(0, 0, 130) 36% , rgb(0, 0, 140) 38%, 
+        rgb(0, 0, 150) 40% , rgb(0, 0, 160) 42%, rgb(0, 0, 170) 44%, rgb(0, 0, 180) 46%, rgb(129, 20, 172) 57%, orange 79%, rgb(255, 175, 0) 73%, rgb(255, 185, 0) 72%,
+         rgb(255, 195, 0) 71%, rgb(255, 205, 0) 72% , rgb(255, 215, 0) 73%, rgb(255, 225, 0) 74%, rgb(255, 235, 0) 75%, rgb(255, 245, 0) 76%, rgb(255, 255, 0) 77%, 
+         rgb(255, 255, 40) 78%, rgb(255, 255, 80) 79%, rgb(255, 255, 120) 80%, rgb(255, 255, 160) 81%, rgb(255, 255, 200) 82%, rgb(255, 255, 240) 83%, rgba(130, 169, 240, 0.897) 85%, rgba(100, 169, 240, 0.897) 86%, 88% rgba(68, 169, 236, 0.897), rgba(68, 169, 236, 0.897) 90%, rgba(68, 169, 236, 0.897) 92%, rgba(68, 169, 236, 0.897) 94%,
+          rgba(68, 169, 236, 0.897) 96%, rgba(68, 169, 236, 0.897) 98%,rgba(68, 169, 236, 0.897) 100%);}
+
+   75%{opacity: 0.8;
+        background-image:linear-gradient(rgb(0, 0, 10) 22%, rgb(0, 0, 20) 24%,rgb(0, 0, 30) 26%,rgb(0, 0, 40) 28%,rgb(0, 0, 50) 30%, rgb(0, 0, 60) 32%,
+        rgb(0, 0, 70) 34%,rgb(0, 0, 80) 36%, rgb(0, 0, 90) 38%, rgb(0, 0, 100) 40%, rgb(0, 0, 110) 42%, rgb(0, 0, 120) 44%, rgb(0, 0, 130) 46% , rgb(0, 0, 140) 48% , 
+        rgb(0, 0, 150) 50% , rgb(0, 0, 160) 52%, rgb(0, 0, 170) 54%, rgb(0, 0, 180) 56%, rgb(0, 0, 190) 58%, rgb(0, 0, 200) 60%,rgb(129, 20, 172) 75%, orange 89%, rgb(255, 175, 0) 91%, rgb(255, 185, 0) 93%,
+         rgb(255, 195, 0) 95%, rgb(250, 250, 149) 100%);}
+
+   80% {opacity: 0.8;
+        background-image:linear-gradient(black 40%, rgb(0, 0, 20) 42%,rgb(0, 0, 50) 44%, rgb(0, 0, 60) 46%,
+        rgb(0, 0, 70) 48%,rgb(0, 0, 80) 50%, rgb(0, 0, 90) 52%, rgb(0, 0, 100) 54%, rgb(0, 0, 110) 56%, rgb(0, 0, 120) 58%, rgb(0, 0, 130) 60% , rgb(0, 0, 140) 62%, 
+        rgb(0, 0, 150) 64% , rgb(0, 0, 160) 66%, rgb(0, 0, 170) 68%, rgb(0, 0, 180) 70%, rgb(0, 0, 190) 72%, rgb(0, 0, 200) 74%, rgba(129, 20, 172) 85%, orange 94%, rgb(255, 175, 0) 96%, 
+        rgb(255, 185, 0) 98%, yellow 99%, rgb(250, 250, 149) 100%);}
+  
+   85% {opacity: 0.8;
+        background-image:linear-gradient(black 55%, rgb(0, 0, 10) 62%, rgb(0, 0, 20) 64%,rgb(0, 0, 30) 66%,rgb(0, 0, 40) 68%,rgb(0, 0, 50) 70%, rgb(0, 0, 60) 72%,
+        rgb(0, 0, 70) 74%,rgb(0, 0, 80) 76%, rgb(0, 0, 90) 78%, rgb(0, 0, 100) 80%, rgb(0, 0, 110) 82%, rgb(0, 0, 120) 84%, rgb(0, 0, 130) 86%, rgb(0, 0, 140) 88%, 
+        rgb(0, 0, 150) 90% , rgb(0, 0, 160) 92%, rgb(0, 0, 170) 94%, rgb(0, 0, 180) 96%, rgb(129, 20, 172) 98%,
+        orange 99%, yellow 100%);}
+
+   90% {opacity: 0.8;
+        background-image:linear-gradient(black 70%, rgb(0, 0, 10) 72%, rgb(0, 0, 20) 74%,rgb(0, 0, 30) 76%,rgb(0, 0, 40) 78%,rgb(0, 0, 50) 80%, rgb(0, 0, 60) 82%,
+        rgb(0, 0, 70) 84%,rgb(0, 0, 80) 86%, rgb(0, 0, 90) 88%, rgb(0, 0, 100) 90%, rgb(0, 0, 110) 92%, rgb(0, 0, 120) 94%, rgb(0, 0, 130) 96%, rgb(0, 0, 140) 98%, 
+        orange 100%);}
+
+    95% {opacity: 0.8; 
+        background-image:linear-gradient(black 80%, rgb(0, 0, 10) 82%, rgb(0, 0, 20) 84%,rgb(0, 0, 30) 86%,rgb(0, 0, 40) 88%,rgb(0, 0, 50) 90%, rgb(0, 0, 60) 92%,
+        rgb(0, 0, 70) 94%,rgb(0, 0, 80) 96%, rgb(0, 0, 150) 100%);}
+
+    100% {opacity: 1;
+      background: radial-gradient(ellipse at bottom, #213142 0%, #090a0f 100%);}
+    }
+audio{
+   margin: 30vh 0 0 45vw;
+}
 #ship4 {
-  width: 10vw;
+  width: 7vw;
   height: 7vh;
   animation: ship4 30s infinite alternate ease-in-out;
   animation-delay: 10s;
@@ -50,31 +236,14 @@
 }
 100% {
 	-webkit-transform: translateX(-1500px);
-	transform: translateX(-1900px) rotate(500deg) translateY(300px);
-}
-}
-#ship3 {
-  width: 16vw;
-  height: 16vh;
-  animation: ship3 4s infinite alternate ease-in-out;
-  animation-delay: 15s;
-  position: relative;
-}
-@keyframes ship3{
-  0% {
-	-webkit-transform: translateX(0), translateY(0);
-	transform: translateX(0), translateY(0);
-}
-100% {
-	-webkit-transform: translateX(-1500px);
-	transform: translateX(-1900px) rotate(20deg) translateY(0px);
+	transform: translateX(-3000px) rotate(500deg) translateY(300px) scale(4.5);
 }
 }
 #ship2 {
   width: 16vw;
   height: 16vh;
   animation: ship2 15s infinite alternate ease-in-out;
-  animation-delay: 20s;
+  animation-delay: 5s;
   position: relative;
 }
 @keyframes ship2{
@@ -84,7 +253,7 @@
 }
 100% {
 	-webkit-transform: translateX(-1500px);
-	transform: translateX(-1500px) rotate(10deg) translateY(0px);
+	transform: translateX(-3000px) rotate(10deg) translateY(0px) scale(4.5);
 }
 }
 #ship1 {
@@ -101,7 +270,7 @@
 }
 100% {
 	-webkit-transform: translateX(-1500px);
-	transform: translateX(-1500px) rotate(900deg) translateY(-30px);
+	transform: translateX(-3000px) rotate(900deg) translateY(-30px) scale(4.5);
 }
 }
 .ships{
@@ -111,6 +280,7 @@
 .ship {
   width: 20vw; 
   height: 20vh;
+  transform: scale(0.4);
 }
 .astros {
   display: relative; 
@@ -118,13 +288,14 @@
 }
 #astro {
   position:absolute;
-  transform: scale(0.9);
+  transform: scale(0.1);
 }
 #astro1{
-  width: 19vw;
-  height: 16vh;
+  width: 17vw;
+  height: 14vh;
+  margin: 80px 0 0 -100px;
   animation: astro1 40s infinite alternate ease-in-out;
-  animation-delay: 3s;
+  animation-delay: 2s;
   position: relative;
 }
 @keyframes astro1{
@@ -132,77 +303,26 @@
 	-webkit-transform: translateX(0), translateY(0);
 	transform: translateX(0), translateY(0);
 }
-100% {
-	-webkit-transform: translateX(1500px);
-	transform: translateX(1500px) rotate(900deg) translateY(-30px);
+100% 	{-webkit-transform: translateX(2500px) rotate(1000deg) translateY(-30px) scale(3.5);
+	transform: translateX(2500px) rotate(1000deg) translateY(-30px) scale(1.5);
 }
 }
-#astro2 {
-  width: 16vw;
-  height: 16vh;
-  animation: astro2 35s infinite alternate ease-in-out;
-  animation-delay: 6s;
-  position: relative;
-}
-@keyframes astro2{
-  0% {
-	-webkit-transform: translateX(0), translateY(0);
-	transform: translateX(0), translateY(0);
-}
-100% {
-	-webkit-transform: translateX(1500px);
-	transform: translateX(1500px) rotate(400deg) translateY(200px);
-}
-}
-#astro3 {width: 20vw;
-  height: 16vh;
-  margin: -20vh 0 0 0;
-  animation: astro3 40s infinite alternate ease-in-out;
-  animation-delay: 35s;
-  position: relative;
-}
-@keyframes astro3{
-  0% {
-	-webkit-transform: translateX(0), translateY(0);
-	transform: translateX(0), translateY(0);
-}
-100% {
-	-webkit-transform: translateX(1700px);
-	transform: translateX(1700px) rotate(-300deg) translateY(-500px);
-}
-}
-#astro4{width: 18vw;
-  height: 28vh;
-  margin: -20vh 0 0 0;
-  animation: astro4 45s infinite alternate ease-in-out;
-  animation-delay: 13s;
-  position: relative;
-}
-@keyframes astro4{
-  0% {
-	-webkit-transform: translateX(0), translateY(0);
-	transform: translateX(0), translateY(0);
-}
-100% {
-	-webkit-transform: translateX(1100px);
-	transform: translateX(1100px) rotate(-180deg) translateY(300px);
-}
-}
-#astro5 {width: 20vw;
+#astro5 {width: 15vw;
   height: 20vh;
   margin: -20vh 0 0 0;
+  margin: -500px 0 0 -50px;
   animation: astro5 50s infinite alternate ease-in-out;
   animation-delay: 11s;
   position: relative;
 }
-@keyframes astro3{
+@keyframes astro5 {
   0% {
 	-webkit-transform: translateX(0), translateY(0);
 	transform: translateX(0), translateY(0);
 }
 100% {
-	-webkit-transform: translateX(1000px);
-	transform: translateX(1000px) rotate(2000deg) translateY(0px);
+	-webkit-transform: translateX(2500px) rotate(900deg) translateY(0px) scale(3.5);
+	transform: translateX(2500px) rotate(900deg) translateY(0px) scale(1.5);
 }
 }
 
@@ -288,15 +408,6 @@
     transform: translateY(-2000px);
   }
 }
-
-body {
-height: 100vh;
-width: 100vw;
-overflow: hidden;
-display: -webkit-box;
-display: flex;
-}
-
 .sky {
 position: relative;
 margin: -70vh 0 0 -50vw;
@@ -511,69 +622,8 @@ for shooting effect */
 }
 }
 
-html {
-    width: 100%; 
-    height: 110%;
-    animation-name: background;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    transition-timing-function: ease-in-out;
-    transition: ease-in-out;
-  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-  overflow: hidden;
- }
-@keyframes background{
-    0% {opacity: 0.8; 
-        background-image:linear-gradient(black 80%, rgb(0, 0, 10) 82%, rgb(0, 0, 20) 84%,rgb(0, 0, 30) 86%,rgb(0, 0, 40) 88%,rgb(0, 0, 50) 90%, rgb(0, 0, 60) 92%,
-        rgb(0, 0, 70) 94%,rgb(0, 0, 80) 96%, rgb(0, 0, 150) 100%);}
 
-    15% {opacity: 0.8;
-        background-image:linear-gradient(black 80%, rgb(0, 0, 10) 82%, rgb(0, 0, 20) 84%,rgb(0, 0, 30) 86%,rgb(0, 0, 40) 88%,rgb(0, 0, 50) 90%, rgb(0, 0, 60) 92%,
-        rgb(0, 0, 70) 94%,rgb(0, 0, 80) 96%, rgb(0, 0, 150) 100%);}
-
-    25% {opacity: 0.8;
-        background-image:linear-gradient(black 70%, rgb(0, 0, 10) 72%, rgb(0, 0, 20) 74%,rgb(0, 0, 30) 76%,rgb(0, 0, 40) 78%,rgb(0, 0, 50) 80%, rgb(0, 0, 60) 82%,
-        rgb(0, 0, 70) 84%,rgb(0, 0, 80) 86%, rgb(0, 0, 90) 88%, rgb(0, 0, 100) 90%, rgb(0, 0, 110) 92%, rgb(0, 0, 120) 94%, rgb(0, 0, 130) 96%, rgb(0, 0, 140) 98%, 
-        orange 100%);}
-
-    35% {opacity: 0.8;
-        background-image:linear-gradient(black 55%, rgb(0, 0, 10) 62%, rgb(0, 0, 20) 64%,rgb(0, 0, 30) 66%,rgb(0, 0, 40) 68%,rgb(0, 0, 50) 70%, rgb(0, 0, 60) 72%,
-        rgb(0, 0, 70) 74%,rgb(0, 0, 80) 76%, rgb(0, 0, 90) 78%, rgb(0, 0, 100) 80%, rgb(0, 0, 110) 82%, rgb(0, 0, 120) 84%, rgb(0, 0, 130) 86%, rgb(0, 0, 140) 88%, 
-        rgb(0, 0, 150) 90% , rgb(0, 0, 160) 92%, rgb(0, 0, 170) 94%, rgb(0, 0, 180) 96%, rgb(129, 20, 172) 98%,
-        orange 99%, yellow 100%);}
-
-    45% {opacity: 0.8;
-        background-image:linear-gradient(black 40%, rgb(0, 0, 20) 42%,rgb(0, 0, 50) 44%, rgb(0, 0, 60) 46%,
-        rgb(0, 0, 70) 48%,rgb(0, 0, 80) 50%, rgb(0, 0, 90) 52%, rgb(0, 0, 100) 54%, rgb(0, 0, 110) 56%, rgb(0, 0, 120) 58%, rgb(0, 0, 130) 60% , rgb(0, 0, 140) 62%, 
-        rgb(0, 0, 150) 64% , rgb(0, 0, 160) 66%, rgb(0, 0, 170) 68%, rgb(0, 0, 180) 70%, rgb(0, 0, 190) 72%, rgb(0, 0, 200) 74%, rgba(129, 20, 172) 85%, orange 94%, rgb(255, 175, 0) 96%, 
-        rgb(255, 185, 0) 98%, yellow 99%, rgb(250, 250, 149) 100%);}
-
-    55% {opacity: 0.8;
-        background-image:linear-gradient(rgb(0, 0, 10) 22%, rgb(0, 0, 20) 24%,rgb(0, 0, 30) 26%,rgb(0, 0, 40) 28%,rgb(0, 0, 50) 30%, rgb(0, 0, 60) 32%,
-        rgb(0, 0, 70) 34%,rgb(0, 0, 80) 36%, rgb(0, 0, 90) 38%, rgb(0, 0, 100) 40%, rgb(0, 0, 110) 42%, rgb(0, 0, 120) 44%, rgb(0, 0, 130) 46% , rgb(0, 0, 140) 48% , 
-        rgb(0, 0, 150) 50% , rgb(0, 0, 160) 52%, rgb(0, 0, 170) 54%, rgb(0, 0, 180) 56%, rgb(0, 0, 190) 58%, rgb(0, 0, 200) 60%,rgb(129, 20, 172) 75%, orange 89%, rgb(255, 175, 0) 91%, rgb(255, 185, 0) 93%,
-         rgb(255, 195, 0) 95%, rgb(250, 250, 149) 100%);}
-
-     65% {opacity: 0.8;
-        background-image:linear-gradient(black 10%, rgb(0, 0, 10) 12%, rgb(0, 0, 20) 14%,rgb(0, 0, 30) 16%,rgb(0, 0, 40) 18%,rgb(0, 0, 50) 20%, rgb(0, 0, 60) 22%,
-        rgb(0, 0, 70) 24%,rgb(0, 0, 80) 26%, rgb(0, 0, 90) 28%, rgb(0, 0, 100) 30%, rgb(0, 0, 110) 32%, rgb(0, 0, 120) 34%, rgb(0, 0, 130) 36% , rgb(0, 0, 140) 38%, 
-        rgb(0, 0, 150) 40% , rgb(0, 0, 160) 42%, rgb(0, 0, 170) 44%, rgb(0, 0, 180) 46%, rgb(129, 20, 172) 57%, orange 79%, rgb(255, 175, 0) 73%, rgb(255, 185, 0) 72%,
-         rgb(255, 195, 0) 71%, rgb(255, 205, 0) 72% , rgb(255, 215, 0) 73%, rgb(255, 225, 0) 74%, rgb(255, 235, 0) 75%, rgb(255, 245, 0) 76%, rgb(255, 255, 0) 77%, 
-         rgb(255, 255, 40) 78%, rgb(255, 255, 80) 79%, rgb(255, 255, 120) 80%, rgb(255, 255, 160) 81%, rgb(255, 255, 200) 82%, rgb(255, 255, 240) 83%, rgba(130, 169, 240, 0.897) 85%, 
-         rgba(100, 169, 240, 0.897) 86%, 88% rgba(68, 169, 236, 0.897), rgba(68, 169, 236, 0.897) 90%, rgba(68, 169, 236, 0.897) 92%, rgba(68, 169, 236, 0.897) 94%,
-          rgba(68, 169, 236, 0.897) 96%, rgba(68, 169, 236, 0.897) 98%,rgba(68, 169, 236, 0.897) 100%);}
-
-    75% {opacity: 0.8;
-        background-image:linear-gradient(rgb(0, 0, 30) 10%,rgb(0, 0, 40) 12%,rgb(0, 0, 50) 14%, rgb(0, 0, 60) 16%,
-        rgb(0, 0, 70) 18%,rgb(0, 0, 80) 20%, rgb(0, 0, 90) 22%, rgb(0, 0, 100) 24%, rgb(0, 0, 110) 26%, rgb(0, 0, 120) 28%, rgb(0, 0, 130) 30% , rgb(0, 0, 140) 32%, 
-        rgb(0, 0, 150) 34% , rgb(0, 0, 160) 36%, rgb(0, 0, 170) 38%, rgb(0, 0, 180) 40%, rgb(129, 20, 172) 60%, rgb(129, 20, 172) 63%, rgb(255, 185, 0) 69%,
-         rgb(255, 195, 0) 71%, rgb(255, 205, 0) 72% , rgb(255, 215, 0) 73%, rgb(255, 225, 0) 74%, rgb(255, 235, 0) 75%, rgb(255, 245, 0) 76%, rgb(255, 255, 0) 77%, 
-         rgb(255, 265, 0) 78%, rgb(255, 275, 0) 79%, rgb(255, 285, 0) 80%, rgb(255, 295, 0) 81%, rgb(255, 305, 0) 82%, rgb(255, 315, 0) 83%,rgb(255, 325, 0) 84%,rgb(255, 335, 0) 85%, 
-         rgb(255, 305, 0) 86%, 88% rgba(68, 169, 236, 0.897), (68, 169, 236, 0.897) 90%, rgba(68, 169, 236, 0.897) 92%, rgba(68, 169, 236, 0.897) 94%, rgba(68, 169, 236, 0.897) 96%, 
-         rgba(68, 169, 236, 0.897) 98%,rgba(68, 169, 236, 0.897) 100%);}
-    80%{}
-    90%{}
-    100%{}
-    }
 </style>
+<script>
+  alert("This webpage contains audio to ENHANCE the experience!")
+</script>
