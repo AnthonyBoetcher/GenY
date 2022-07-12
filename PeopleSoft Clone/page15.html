@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="icon1.png" type="image/png" sizes="50x50">
+    </head>
+    <body>
+        <div id="toptop"></div>
+     <nav id="top">
+        <div id="left"><img src="topright uctlogo.png"/></div>
+        <div id="centernav"><img src="homepage.png"/></div>
+        <div id="right"><img src="house top right.png"/><img src="threedots top right.png"/><img src="compass top right.png"</div>
+     </nav>   
+<div id="center">
+ <div id="tile"><img src="a.png"/></div>
+ <div id="tile"><img src="e1.png"/></div>
+ <div id="tile"><img src="i.png"/></div>
+ <div id="tile"><img src="m.png"/></div>
+ <div id="tile"><img src="b.png"/></div>
+ <div id="tile"><img src="f.png"/></div>
+ <div id="tile"><img src="j.png"/></div>
+ <div id="tile"><img src="n.png"/></div>
+ <div id="tile"><img src="c.png"/></div>
+ <div id="tile"><img src="g.png"/></div>
+ <div id="tile"><img src="k.png"/></div>
+ <div id="tile"><img src="o.png"/></div>
+ <div id="tile"><img src="d.png"/></div>
+ <div id="tile"><img src="h.png"/></div>
+ <div id="tile"><img src="l.png"/></div>
+ <div id="tile"><img src="p.png"/></div>
+</div> 
+     <div id="bottom"><img id="dot" src="dot.png"/><img id="reload" src="reload.png"/></div>
+    </body>
+</html>
+<style>
+#dot {
+    position: absolute;
+    justify-content: center;
+    opacity: 0.7;
+}
+#tile {
+    border: none;
+    border-radius: 7px; 
+    background-color: white;
+    box-shadow: none;
+    width: 220px;
+    border: none;
+    height: 170px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    vertical-align: center;
+    justify-content: center;
+    box-shadow: 3px 3px 10px 0px  rgba(151, 151, 151, 0.74);
+}
+#tile:hover {
+    cursor: pointer;
+    }
+#tile.img {
+    background-color: transparent;
+    border-radius: 7px; 
+    display: flex;
+    border: none;
+    z-index: 1;
+}
+#center{
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(240px, 240px)) ;
+    grid-template-rows: repeat(auto-fit, minmax(200px, 200px)) ;
+    justify-content: center;
+    width: 80vw;
+    height: 100vh; 
+    row-gap: 10px;
+    column-gap: 15px;
+    position: absolute;
+    margin: 50px 0 50px 0;
+    padding: 0 0 0 0;
+    z-index: -1;    
+}
+#right {
+    justify-content: center;
+    vertical-align: center;
+    align-items: center;
+    margin: -5px 40px 0 0;
+    display: flex;
+    flex-direction: row;
+}
+#right img{
+    margin: 0 5px 0 5px;
+    border-radius: 50%;
+    opacity: 0.4
+}
+#right img:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+body{
+    border: none;
+    outline: none;
+    background-color:rgb(223, 236, 255);
+    display: flex;
+    justify-content: center;
+    
+}
+#centernav {
+    margin: 0 auto 0 auto;
+    opacity: 0.4;
+}
+#centernav:hover {
+    opacity: 0.7;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: inset 0 10px 0 white;
+    opacity: 0.7;
+}
+#left {
+    margin: 3px 0 0 20px;
+}
+    #toptop {
+        background-image: linear-gradient(to right, rgb(180, 236, 81) 0%, rgb(83, 160, 253) 100%);
+        width: 101vw; 
+        height: 5px;
+        margin: -10px 0 0 -10px;
+        padding: 0;
+        position: fixed;       
+    }
+    #bottom {
+        background-color: rgba(47, 83, 112, 0.8);
+        height: 38px;
+        width: 101vw;
+        padding: 0;
+        margin: 0px 0 0 -10px;
+        position: fixed;
+        bottom: 0;
+        display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    vertical-align: center;
+    align-items: center;
+    overflow: hidden;
+    }
+#reload {
+        position: absolute; 
+        right: 0;
+        margin: -5px 30px 0 0;
+    }
+#reload:hover {
+    cursor: pointer;
+}
+    #top{
+        background-image: linear-gradient(rgb(57,106,144),rgb(23,54,81));
+        height: 38px;
+        width: 101vw;
+        padding: 0;
+        margin: -5px 0 0 -10px;
+        display: flex; 
+        position: fixed;
+    flex-direction: row;
+    justify-content: center;
+    vertical-align: center;
+    align-items: center;
+    overflow: hidden;
+
+    }
+</style>
