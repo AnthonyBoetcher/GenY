@@ -1,0 +1,3163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <link rel="icon" type="image" href="download1.png">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Measurement Virtual Assistant</title>
+        <meta name="description" content="MDA1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <link rel="icon" type="image" href="download1.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href=
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity=
+"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    </head>
+<!--TOP BANNER-->
+<header>
+  <div id="top">
+    <a href='http://www.uct.ac.za/' target='_blank'><img id="logo" src="uct-logo-white.png"></a>
+    <div class="topwriting">
+    <H1>Construction Economics and Management<br>Measurement virtual assistant</H1> 
+    <a target="_blank" href="http://www.cons.uct.ac.za/"><h4><u>Home</u></a>&nbsp; &nbsp;<a target="_blank" href="https://ebe.uct.ac.za/"><u>Engineering and the Built Environment</u></h4></a>
+  </div> 
+ <img id="overlay" src="top overlay.png">
+</header>
+<!--TABS BANNER-->
+<body>
+<!--start side navbar-->
+<nav id="navbar"><img id="logonav" src="smartsheetlogofinal.png"><p>Key:<br>Blue - CEM assist<br>Red - Reveal on plan/section<br>Green - Standard System<br>Lightning - Definition</p>
+</nav>
+<style> /*STYLE FOR NAVBAR*/
+  #navbar {
+    width: 250px ;
+    height: 200px; 
+    background-color:rgb(99, 175, 201); 
+    border-radius: 10px; 
+    margin: 0 0 0 10px;
+    color: white;
+    font-size: 16px;
+    font-style: bolder;
+    padding: 0 0 0 10px;
+    position: fixed;
+        left: 0;
+        display: flex; 
+        flex-direction: column; 
+        justify-content: center;
+        transition: left 0.5s;
+    z-index: 999; 
+  }
+  #logonav {
+    width: 230px; 
+    margin: 10px 0 0 0px; 
+    height: auto; 
+    border-radius: 20px; 
+    border: 2px solid rgb(0, 0, 92);
+  }
+</style>
+<script> /*SCRIPT FOR NAVBAR*/
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("navbar").style.left = "0px";
+    } else {
+      document.getElementById("navbar").style.left = "-260px";
+    }
+    prevScrollpos = currentScrollPos;
+  }
+</script>
+<!--end side navbar-->
+
+<div id="container" class="container">
+    <div id="tabs" class="tabs-container">
+      <div class="tabs">
+        <a id="tab1" data-tab="1" class="tab">COLLECTIONS</a>
+        <a id="tab2" data-tab="2" class="tab">FOUNDATIONS</a>
+        <a id="tab3" data-tab="3" class="tab">GROUND-FLOOR</a>
+        <a id="tab4" data-tab="4" class="tab">SUPERSTRUCTURE</a>
+        <a id="tab5" data-tab="5" class="tab">ROOFS</a>
+        <a id="tab6" data-tab="6" class="tab">FINISHES</a>
+        <a id="tab7" data-tab="7" class="tab">DEDUCTIONS</a>
+      </div>
+
+ <div class="content">
+<!--COLLECTIONS-->
+<div id="tabcontent1" data-tab="1" class="tabcontent">
+  <div id="collone"></div>
+<div id="colltwo"></div>
+<div id="collthree"></div>
+<div id="collfour"></div>
+</div>
+
+
+
+
+
+
+
+
+<!--FOUNDATIONS-->
+        <div id="tabcontent2" data-tab="2" class="tabcontent">
+          <div id="foundone">
+<!--FOLLOWING FOR POPUP DEFINITIONS FOUND ONE-->
+            <div class="popup" id="popfound1" onclick="myFunction1()">&#9889;
+              <span class="popuptext" id="myPopup1">Girth 1. The circumference of any circular object. 2. The distance around a column.</span>
+            </div>
+            <div class="popup" id="popfound2" onclick="myFunction2()">&#9889;
+              <span class="popuptext" id="myPopup2">Debris 1. pieces of wood, metal, building materials, etc. that are left after something has been destroyed.</span>
+            </div>
+            <div class="popup" id="popfound3" onclick="myFunction3()">&#9889;
+              <span class="popuptext" id="myPopup3">Excavate 1. to make a hole in the ground by digging, 2. removal of Earth for construction purposes.</span>
+            </div>
+            <div class="popup" id="popfound4" onclick="myFunction4()">&#9889;
+              <span class="popuptext" id="myPopup4">NGL 1. Natural Ground Level 2. level of the site in its unmodified state, or 3. in a state which has been graded.</span>
+            </div>
+            <div class="popup" id="popfound5" onclick="myFunction5()">&#9889;
+              <span class="popuptext" id="myPopup5">Extra over 1. can be used to refer to items that to a certain extent have already been measured, but have not been priced at the full value of all their labour and materials.</span>
+            </div>
+            <div class="popup" id="popfound6" onclick="myFunction6()">&#9889;
+              <span class="popuptext" id="myPopup6">Soft rock 1. sedimentary rock, 2. Typically medium to fine-grained, easily eroded and comparably easier to excavate in.</span>
+            </div>
+            <div class="popup" id="popfound7" onclick="myFunction7()">&#9889;
+              <span class="popuptext" id="myPopup7">Hard rock 1. Igneous and metamorphic rock, 2. typically large grained, resistant to weathering and caparably harder to excavate in.</span>
+            </div>
+            <div class="popup" id="popfound8" onclick="myFunction8()">&#9889;
+              <span class="popuptext" id="myPopup8">Mod AASHTO 1. Modified American Association of State Highway and Transportation Officials, 2. A measure of the required dry density and moisture content at which compaction should take place.</span>
+            </div>
+            <div class="popup" id="popfound9" onclick="myFunction9()">&#9889;
+              <span class="popuptext" id="myPopup9">Backfilling 1. the process of putting soil back into an excavation once related works has been completed.</span>
+            </div>
+<!--END OF POPUP DEFINITIONS FOR FOUND ONE --> 
+<!--Download drawings, memo and collection-->
+
+<!--FOLLOWING FOR SUPER ASSIST DROPDOWNS--> 
+<div class="dropdownfound1">
+            <button id="myBtnfound1" class="dropbtnfound1"></button>
+          <div id="myDropdownfound1" class="dropdown-contentfound1">
+            <div id="siteclearancepic"></div>
+            <video controls id="siteclearancecalcvideo" src="siteclearancecalcvideo.mp4"></video>
+          </div>
+</div>
+
+<div class="dropdownfound2">
+            <button id="myBtnfound2" class="dropbtnfound2"></button>
+          <div id="myDropdownfound2" class="dropdown-contentfound2">
+            <div id="collectionspic"></div>
+          </div>
+</div>
+
+<div class="dropdownfound3">
+            <button id="myBtnfound3" class="dropbtnfound3"></button>
+          <div id="myDropdownfound3" class="dropdown-contentfound3">
+            <div id="siteclearancestandardsystem"></div>
+          </div>
+</div>  
+
+<div class="dropdownfound4">
+        <button id="myBtnfound4" class="dropbtnfound4"></button>
+      <div id="myDropdownfound4" class="dropdown-contentfound4">
+        <div id="excavationsstandardsystem"></div>
+      </div>
+</div>
+<!--donwnload button html-->
+<a id="downloadanchor" href="Q1.77.6drawing.pdf" download="Q1.77.6drawing.pdf" >
+<button type="button" class="icon">
+	<div class="cloud">
+		<div class="puff puff-1"></div>
+		<div class="puff puff-2"></div>
+		<div class="puff puff-3"></div>
+		<div class="puff puff-4"></div>
+		<div class="puff puff-5"></div>
+		<div class="puff puff-6"></div>
+		<div class="puff puff-7"></div>
+		<div class="puff puff-8"></div>
+		<div class="puff puff-9"></div>
+		<div class="puff puff-10"></div>
+		<div class="cloud-core"></div>
+		<div class="check"></div>
+		<div class="arrow">
+			<div class="arrow-stem">
+				<div class="arrow-l-tip"></div>
+				<div class="arrow-r-tip"></div>
+			</div>
+		</div>
+	</div>
+	<div class="preload">
+		<div class="drop drop-1"></div>
+		<div class="drop drop-2"></div>
+		<div class="drop drop-3"></div>
+	</div>
+	<div class="progress"></div>
+</button>
+</a>
+
+<!--DOWNLOAD BUTTON CSS-->
+<style>
+#downloadanchor {
+  position: absolute;
+}
+*, *:before, *:after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #ace;
+}
+.icon {
+	background-color: transparent;
+	border: 0;
+  transform: scale(0.5);
+	color: #7a97e9;
+	cursor: pointer;
+	display: block;
+	font-size: 20px;
+	margin: 3em auto 0 auto;
+	position: relative;
+	width: 9em;
+	height: 9em;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+.icon:focus {
+	/* This may be anti-A11Y, but just for this demo suppresses the annoyance */
+	outline: 0;
+}
+.icon div {
+	position: absolute;
+}
+.cloud {
+	transition: opacity 0.1s linear;
+}
+/* Cloud */
+.cloud {
+	top: 0;
+	width: 9em;
+	height: 5.8em;
+}
+.puff, .cloud-core {
+	background-color: rgb(99, 175, 201);
+}
+.puff {
+	border-radius: 50%;
+}
+.puff-1 {
+	top: 2.5em;
+	left: 0;
+	width: 3.3em;
+	height: 3.3em;
+}
+.puff-2 {
+	top: 1em;
+	left: 1.2em;
+	width: 3em;
+	height: 3em;
+}
+.puff-3 {
+	top: 0;
+	left: 3em;
+	width: 4.6em;
+	height: 4.6em;
+}
+.puff-4 {
+	top: 1.8em;
+	left: 5em;
+	width: 4em;
+	height: 4em;
+}
+.puff-5 {
+	top: 2.3em;
+	left: 2.4em;
+	width: 3.5em;
+	height: 3.5em;
+}
+.puff-6 {
+	top: 2.3em;
+	left: 3em;
+	width: 3.5em;
+	height: 3.5em;
+}
+.puff-7 {
+	top: 2.4em;
+	left: 1em;
+	width: 1.8em;
+	height: 1.8em;
+}
+.puff-8 {
+	top: 1.2em;
+	left: 2.5em;
+	width: 2em;
+	height: 2em;
+}
+.puff-9 {
+	top: 1.8em;
+	left: 5.5em;
+	width: 2em;
+	height: 2em;
+}
+.puff-10 {
+	top: 3.6em;
+	left: 3.5em;
+	width: 2.2em;
+	height: 2.2em;
+}
+.cloud-core {
+	top: 1.8em;
+	left: 1.8em;
+	width: 5em;
+	height: 4em;
+}
+.check {
+	top: 0;
+	left: 1.6em;
+	width: 5.8em;
+	height: 5.8em;
+	position: relative;
+	transform: scale(0);
+	z-index: -1;
+}
+.check:before, .check:after {
+	background-color: currentColor;
+	content: "";
+	bottom: 0;
+	display: block;
+	left: 2.5em;
+	position: absolute;
+	width: 0.8em;
+}
+.check:before {
+	height: 3em;
+	transform: rotate(-55deg);
+	transform-origin: 50% 2.6em;
+}
+.check:after {
+	height: 5.5em;
+	transform: rotate(35deg);
+	transform-origin: 50% 5.1em;
+}
+/* Arrow */
+.arrow {
+	top: 3em;
+	left: 0;
+	width: 9em;
+	height: 5.3em;
+  
+}
+.arrow div, .progress {
+	border-radius: 0.4em;
+}
+.arrow div {
+	background-color: currentColor;
+}
+.arrow-stem {
+	bottom: 0;
+	left: 4.1em;
+	width: 0.8em;
+	height: 5.3em;
+	transform-origin: 50% 100%;
+}
+.arrow-l-tip, .arrow-r-tip {
+	left: calc(50% - 0.4em);
+	bottom: 0;
+	width: 2.6em;
+	height: 0.8em;
+	transform-origin: 0.4em 50%;
+}
+.arrow-l-tip {
+	transform: rotate(-135deg);
+}
+.arrow-r-tip {
+	transform: rotate(-45deg);
+}
+.progress {
+	background-color: #fff;
+	bottom: 0;
+	left: 0;
+	width: 0;
+	height: 0.8em;
+}
+
+/* Droplets */
+.preload, .drop {
+	transition: all 0.2s linear;
+}
+.preload {
+	animation: spin 1s linear infinite;
+	opacity: 0;
+	top: 2.9em;
+	left: calc(50% - 1.25em);
+	width: 2.5em;
+	height: 2.5em;
+	z-index: 1;
+}
+.drop {
+	background-color: currentColor;
+	background-image: radial-gradient(0.5em 0.5em at 30% 75%,rgb(255,255,255) 45%, rgba(255,255,255,0) 50%);
+	border-radius: 50%;
+	width: 100%;
+	height: 100%;
+}
+.drop-1 {
+	transform: scaleY(0.75) rotate(135deg);
+}
+.drop-2 {
+	transform: rotate(120deg) scaleY(0.75) rotate(135deg);
+}
+.drop-3 {
+	transform: rotate(240deg) scaleY(0.75) rotate(135deg);
+}
+
+/** Animation **/
+.waiting, .running {
+	cursor: default;
+}
+/* Waiting */
+.waiting .cloud {
+	opacity: 0.15;
+}
+.waiting .preload {
+	opacity: 1;
+}
+.waiting .drop {
+	border-radius: 0 50% 50% 50%;
+}
+.waiting .drop-1 {
+	transform: translateY(2.5em) scaleY(0.75) rotate(135deg);
+}
+.waiting .drop-2 {
+	transform: rotate(120deg) translateY(2.5em) scaleY(0.75) rotate(135deg);
+}
+.waiting .drop-3 {
+	transform: rotate(240deg) translateY(2.5em) scaleY(0.75) rotate(135deg);
+}
+
+/* Running */
+.running .puff {
+	animation-duration: 0.75s;
+	animation-delay: 2.75s;
+	animation-timing-function: cubic-bezier(.1,.8,.2,.95);
+}
+.running .puff-1 {
+	animation-name: puff1;
+}
+.running .puff-2 {
+	animation-name: puff2;
+}
+.running .puff-3 {
+	animation-name: puff3;
+}
+.running .puff-4 {
+	animation-name: puff4;
+}
+.running .puff-5 {
+	animation-name: puff5;
+}
+.running .puff-6 {
+	animation-name: puff6;
+}
+.running .puff-7 {
+	animation-name: puff7;
+}
+.running .puff-8 {
+	animation-name: puff8;
+}
+.running .puff-9 {
+	animation-name: puff9;
+}
+.running .puff-10 {
+	animation-name: puff10;
+}
+.running .cloud-core {
+	animation: core 2.75s;
+}
+.running .check {
+	animation: check 0.4s 2.75s;
+}
+.running .arrow {
+	animation: arrow 0.125s;
+}
+.running .arrow-stem {
+	animation: arrowStem 0.125s;
+}
+.running .arrow-l-tip {
+	animation: arrowLTip 0.375s 0.125s;
+}
+.running .arrow-r-tip {
+	animation: arrowRTip 0.375s 0.125s;
+}
+.running .progress {
+	animation: filling 2s 0.75s;
+}
+.icon.running div {
+	animation-fill-mode: forwards;
+}
+.icon.running .cloud-core, .icon.running .check, .icon.running .arrow, .icon.running .arrow div, .icon.running .progress {
+	animation-timing-function: linear;
+}
+
+/* Keyframes */
+@keyframes puff1 {
+	from {opacity: 1;transform: translate(0) scale(1)}
+	to {opacity: 0;transform: translate(-4em,0) scale(0.1)}
+}
+@keyframes puff2 {
+	from {opacity: 1;transform: translate(0) scale(1)}
+	to {opacity: 0;transform: translate(-2em,-2em) scale(0.1)}
+}
+@keyframes puff3 {
+	from {opacity: 1;transform: translate(0) scale(1)}
+	to {opacity: 0;transform: translate(2em,-4em) scale(0.1)}
+}
+@keyframes puff4 {
+	from {opacity: 1;transform: translate(0) scale(1)}
+	to {opacity: 0;transform: translate(4em,0) scale(0.1)}
+}
+@keyframes puff5 {
+	from {opacity: 1;transform: translate(0) scale(1)}
+	to {opacity: 0;transform: translate(-3.5em,3.5em) scale(0.1)}
+}
+@keyframes puff6 {
+	from {opacity: 1;transform: translate(0) scale(1)}
+	to {opacity: 0;transform: translate(3.5em,3.5em) scale(0.1)}
+}
+@keyframes puff7 {
+	from {opacity: 1;transform: translate(0) scale(1)}
+	to {opacity: 0;transform: translate(-3em,-1.5em) scale(0.1)}
+}
+@keyframes puff8 {
+	from {opacity: 1;transform: translate(0) scale(1)}
+	to {opacity: 0;transform: translate(-0.5em,-2em) scale(0.1)}
+}
+@keyframes puff9 {
+	from {opacity: 1;transform: translate(0) scale(1)}
+	to {opacity: 0;transform: translate(2em,-2em) scale(0.1)}
+}
+@keyframes puff10 {
+	from {opacity: 1;transform: translate(0) scale(1)}
+	to {opacity: 0;transform: translate(0em,2.5em) scale(0.1)}
+}
+@keyframes core {
+	from {visibility: visible}
+	to {visibility: hidden}
+}
+@keyframes check {
+	from {transform: scale(0)}
+	30% {transform: scale(1.2)}
+	60% {transform: scale(0.9)}
+	to {transform: scale(1)}
+}
+@keyframes arrow {
+	from {transform: translateY(0)}
+	to {transform: translateY(0.7em)}
+}
+@keyframes arrowStem {
+	from {height: 5.3em}
+	to {height: 0.8em}
+}
+@keyframes arrowLTip {
+	from {transform: rotate(-135deg)}
+	50% {width: 2.6em;transform: rotate(-180deg)}
+	to {width: 4.9em;transform: rotate(-180deg)}
+}
+@keyframes arrowRTip {
+	from {transform: rotate(-45deg);}
+	50% {width: 2.6em;transform: rotate(0deg)}
+	to {width: 4.9em;transform: rotate(0deg)}
+}
+@keyframes filling {
+	from {width: 0;}
+	to {width: 100%;}
+}
+@keyframes spin {
+	from {transform: rotate(0deg)}
+	to {transform: rotate(1turn)}
+}
+</style>
+<!--Script for download button-->
+<script>
+  document.addEventListener("DOMContentLoaded",function(){
+	this.querySelector(".icon").addEventListener("click",function(){
+		let waitClass = "waiting",
+			runClass = "running",
+			cl = this.classList;
+
+		if (!cl.contains(waitClass) && !cl.contains(runClass)) {
+			cl.add(waitClass);
+			setTimeout(function(){
+				cl.remove(waitClass);
+				setTimeout(function(){
+					cl.add(runClass);
+					setTimeout(function(){
+						cl.remove(runClass);
+					}, 4000);
+				}, 200);
+			}, 1800);
+		}
+	});
+});
+</script>>
+<!--HOVER ITEMS FOUND ONE-->
+            <div class="descrip">
+            
+                <div id="hover9found"></div>
+                <div id="stuff9found"></div>
+
+                <div id="hover11found"></div>
+                <div id="stuff11found"></div>
+                <div id="hover11afound"></div>
+                <div id="stuff11afound"></div>
+
+                
+     </div>
+        <div class="descrip1">
+          <div id="hover12found"></div>
+          <div id="stuff12found"></div>
+          <div id="hover13found"></div>
+          <div id="stuff13found">+1500mm&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+1500mm</div>
+          
+          <div id="hover14found"></div>
+          <div id="stuff14found">+1500mm<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>+1500mm</div>     
+
+          <div id="hover15found"></div>
+          <div id="stuff15found">+1500mm&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+1500mm</div>   
+
+          <div id="hover16found"></div>
+          <div id="stuff16found">+1500mm&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+1500mm</div>   
+
+          <div id="hover17found"></div>
+          <div id="stuff17found"></div>   
+
+          <div id="hover18found"></div>
+          <div id="stuff18"></div>   
+
+          <div id="hover19found"></div>
+          <div id="stuff19found"></div>  
+
+          <div id="hover20found"></div>
+          <div id="stuff20found"></div>  
+
+          <div id="hover21found"></div>
+          <div id="stuff21found"></div>  
+          
+          <div id="hover22found"></div>
+          <div id="stuff22"></div>   
+
+          <div id="hover23found"></div>
+          <div id="stuff23"></div>  
+
+          <div id="hover24found"></div>
+          <div id="stuff24found"></div>  
+
+          <div id="hover25found"></div>
+          <div id="stuff25found"></div>  
+
+          <div id="hover26found"></div>
+          <div id="stuff26found"></div>  
+        </div>
+ </div><!--CLOSING FOUNDONE sheet 1 DIV TAG-->
+<br>
+<!--CSS for foundone div-->
+<style>
+  
+ #myDropdownfound1:hover, #myDropdownfound2:hover, #myDropdownfound3:hover, #myDropdownfound4:hover{
+  transform: scale(2);
+  cursor: pointer;
+  z-index: 999;
+ }
+    /*Drop down functions*/
+  #excavationsstandardsystem{
+    background-image: url("excavationsfinalstandardsystem.png");
+    background-size: 100% 100%; 
+    background-repeat: no-repeat;
+    width: 600px; 
+    height: 400px; 
+    background-color:white;
+    z-index: 999;
+  }
+  .dropbtnfound4 {
+        border: 3px solid rgba(0, 196, 0, 0.3);
+    background-color: transparent;
+    margin: 117px 0 0 1540px;
+    width: 220px; 
+    height: 610px;
+    position:absolute;
+    padding: 16px;
+    z-index: 1; 
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  .dropbtnfound4:hover, .dropbtnfound4:focus {
+    background-color:none;
+        border: 3px solid rgba(0, 196, 0, 0.3);
+    z-index: 1;
+    }
+  .dropdownfound4 {
+    position: relative;
+    display: inline-block;
+    z-index: 1; 
+  }
+  .dropdown-contentfound4 {
+    display: none;
+    margin: 200px 0 0 300px;
+position:absolute;
+background-color:white;
+    border: 3px solid rgba(0, 196, 0, 0.3);
+overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 998;
+    border-radius: 10px;
+    height: fit-content;
+  }  
+  /*end excavation standard system dropdown*/
+  .show {display:block;}
+    #siteclearancestandardsystem{
+      background-image: url("siteclearancefinalstandardsystem.png");
+      background-size: 100% 100%; 
+      background-repeat: no-repeat;
+      width: 600px; 
+      height: 400px; 
+      background-color:white;
+      z-index: 999;
+    }
+      .dropbtnfound3 {
+            border: 3px solid rgba(0, 196, 0, 0.3);
+        background-color: transparent;
+        margin: 115px 0 0 1190px;
+        width: 200px; 
+        height: 90px;
+        position:absolute;
+        padding: 16px;
+        z-index: 1; 
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 10px;
+      }
+      .dropbtnfound3:hover, .dropbtnfound3:focus {
+        background-color:none;
+        border: 3px solid rgba(0, 196, 0, 0.3);
+        z-index: 1;
+        }
+      .dropdownfound3 {
+        position: relative;
+        display: inline-block;
+        z-index: 1; 
+      }
+      .dropdown-contentfound3 {
+        display: none;
+        margin: 200px 0 0 300px;
+        position:absolute;
+    background-color:white;
+    border: 3px solid rgba(0, 196, 0, 0.3);
+    overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 998;
+        border-radius: 10px;
+        height: fit-content;
+      }  
+      .show {display:block;}
+      /*end of standard system site clearance dropdown*/
+    #collectionspic{
+      background-image: url("siteclearancecollection1.png");
+      background-size: 100% 100%; 
+      background-repeat: no-repeat;
+      width: 400px; 
+      height: 600px; 
+      background-color:none;
+      
+    }
+      .dropbtnfound2 {
+        border: 3px solid rgba(0, 125, 129, 0.3);
+        background-color: transparent;
+        margin: 725px 0 0 1550px;
+        width: 75px; 
+        height: 90px;
+        position:absolute;
+        padding: 16px;
+        z-index: 1; 
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 10px;
+      }
+      .dropbtnfound2:hover, .dropbtnfound2:focus {
+        background-color:none;
+        border: 3px solid rgba(0, 125, 129, 0.3);
+        z-index: 1;
+      }
+      .dropdownfound2 {
+        position: relative;
+        display: inline-block;
+        z-index: 999;
+      }
+      .dropdown-contentfound2 {
+        display: none;
+        margin: 200px 0 0 300px;
+        position:absolute;
+    background-color:white;
+    border: 3px solid rgba(0, 125, 129, 0.3);
+    overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 999;
+        border-radius: 10px;
+        height: fit-content;
+      }  
+      .show {display:block;}
+    /*end of dropdown for site clearance collection*/
+    #siteclearancepic{
+      background-image: url("siteclearancepic.jpeg");
+      background-size: 100% 100%; 
+      background-repeat: no-repeat;
+      width: 400px; 
+      height: 300px; 
+      background-color:none;
+      z-index: 998;
+    }
+#siteclearancecalcvideo{
+      width: 400px; 
+      height: 300px; 
+      margin: -32px 0 0 0;
+}
+      .dropbtnfound1 {
+        border: 3px solid rgba(0, 125, 129, 0.3);
+        background-color: transparent;
+        margin: 115px 0 0 1105px;
+        width: 70px; 
+        height: 130px;
+        position:absolute;
+        padding: 16px;
+        z-index: 1; 
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 10px;
+      }
+      .dropbtnfound1:hover, .dropbtnfound1:focus {
+        background-color:none;
+        border: 3px solid rgba(0, 125, 129, 0.3);
+        z-index: 1;
+      }
+      .dropdownfound1 {
+        position: relative;
+        display: inline-block;
+        z-index: 1;
+      }
+      .dropdown-contentfound1 {
+        display: none;
+        margin: 200px 0 0 300px;
+        position:absolute;
+    background-color:white;
+    border: 3px solid rgba(0, 125, 129, 0.3);
+    min-width: 160px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 999;
+        border-radius: 10px;
+        height: fit-content;
+      }
+      .dropdown-contentfound1 a:hover {background-color: rgb(8, 55, 56)}
+      
+      .show {display:block;}
+/*end of site clearance super explainer with real world picture and video*/
+/*popup-styles*/
+#popfound1 {
+    margin: 192px 0 0 1337px;
+    position:absolute;
+    color: purple;
+    border: 2px solid rgba(128, 0, 128, 0.5);
+    border-radius: 13.75px;
+    width: 27.5px;
+    height: 27.5px;
+    background-color: rgba(128, 0, 128, 0.2); 
+    text-align: center;
+    z-index: 999;
+  }
+  #popfound2 {
+    margin: 155px 0 0 1179px;
+    position:absolute;
+    color: purple;
+    border-radius: 13.75px;
+    width: 27.5px;
+    height: 27.5px;
+    border: 2px solid rgba(128, 0, 128, 0.5);
+    background-color: rgba(128, 0, 128, 0.2); 
+    text-align: center;
+    z-index: 999;
+  }
+  #popfound3 {
+    margin: 113px 0 0 1580px;
+    position:absolute;
+    color: purple;
+    border-radius: 13.75px;
+    width: 27.5px;
+    height: 27.5px;
+    border: 2px solid rgba(128, 0, 128, 0.5);
+    background-color: rgba(128, 0, 128, 0.2); 
+    text-align: center;
+    z-index: 999;
+  }
+  #popfound4 {
+    margin: 177px 0 0 1630px;
+    position:absolute;
+    color: purple;
+    border-radius: 13.75px;
+    width: 27.5px;
+    height: 27.5px;
+    border: 2px solid rgba(128, 0, 128, 0.5);
+    background-color: rgba(128, 0, 128, 0.2); 
+    text-align: center;
+    z-index: 999;
+  }
+  #popfound5 {
+    margin: 261px 0 0 1600px;
+    position:absolute;
+    color: purple;
+    border-radius: 13.75px;
+    width: 27.5px;
+    height: 27.5px;
+    border: 2px solid rgba(128, 0, 128, 0.5);
+    background-color: rgba(128, 0, 128, 0.2); 
+    text-align: center;
+    text-decoration: bold;
+    font-weight: bolder;
+    z-index: 999;
+  }
+  #popfound6 {
+    margin: 322px 0 0 1655px;
+    position:absolute;
+    border-radius: 13.75px;
+    width: 27.5px;
+    height: 27.5px;
+    border: 2px solid rgba(128, 0, 128, 0.5);
+    background-color: rgba(128, 0, 128, 0.2); 
+    text-align: center;
+    text-decoration: bold;
+    font-weight: bolder;
+    z-index: 999;
+  }
+  #popfound7 {
+    margin: 490px 0 0 1655px;
+    position:absolute;
+    color: purple;
+    border: 2px solid rgba(128, 0, 128, 0.5);
+    background-color: rgba(128, 0, 128, 0.2); 
+    text-align: center;
+    border-radius: 13.75px;
+    width: 27.5px;
+    height: 27.5px;
+    text-decoration: bold;
+    font-weight: bolder;
+    z-index: 999;
+  }
+  #popfound8 {
+    margin: 657px 0 0 1670px;
+    position:absolute;
+    color: purple;
+    border-radius: 13.75px;
+    border: 2px solid rgba(128, 0, 128, 0.5);
+    background-color: rgba(128, 0, 128, 0.2); 
+    text-align: center;
+    border-radius: 13.75px;
+    width: 27.5px;
+    height: 27.5px;
+    text-decoration: bold;
+    font-weight: bolder;
+    z-index: 999;
+  }
+  #popfound9 {
+    margin: 700px 0 0 1620px;
+    position:absolute;
+    color: purple;
+    border: 2px solid rgba(128, 0, 128, 0.5);
+    background-color: rgba(128, 0, 128, 0.2); 
+    text-align: center;
+    border-radius: 13.75px;
+    width: 27.5px;
+    height: 27.5px;
+    text-decoration: bold;
+    font-weight: bolder;
+    z-index: 999;
+  }
+#hover9found {
+  background-color:transparent;
+    border: 3px solid rgba(255, 0, 0, 0.3); 
+    z-index: 100; 
+    position: absolute;
+    overflow: visible;
+    width:65px;
+    height:45px;
+    margin: 320px 0 0 1462px;
+    z-index: 99;
+    cursor: pointer;
+    border-radius: 10px;
+}
+#stuff9found {
+  opacity: 0.0;
+      -webkit-transition: all 500ms ease-in-out;
+      -moz-transition: all 500ms ease-in-out;
+      -ms-transition: all 500ms ease-in-out;
+      -o-transition: all 500ms ease-in-out;
+      transition: all 500ms ease-in-out;
+      z-index: 99; 
+      width:60px;
+      height: 170px;
+      background-color:transparent;
+      border: 5px solid rgba(0, 0, 255, 0.50); 
+      z-index: 999; 
+      position: absolute;
+      overflow: visible;
+      margin: 140px 0 0 855px;
+      color: black;
+      text-decoration: bold;
+  }
+  #hover11found {
+    background-color:transparent;
+      border: 3px solid rgba(255, 0, 0, 0.3); 
+      z-index: 100; 
+      position: absolute;
+      overflow: visible;
+      width:65px;
+      height:45px;
+      margin: 258px 0 0 1462px;
+      z-index: 99;
+      cursor: pointer;
+      border-radius: 10px;
+  }
+  #stuff11found {
+    opacity: 0.0;
+      -webkit-transition: all 500ms ease-in-out;
+      -moz-transition: all 500ms ease-in-out;
+      -ms-transition: all 500ms ease-in-out;
+      -o-transition: all 500ms ease-in-out;
+      transition: all 500ms ease-in-out;
+      z-index: 99; 
+      width:60px;
+      height: 180px;
+      background-color:transparent;
+      border: 5px solid rgba(0, 0, 255, 0.50); 
+      z-index: 99; 
+      position: absolute;
+      overflow: visible;
+      margin: 565px 0 0 852px;
+      color: black;
+      text-decoration: bold;
+    }
+    #hover11afound {
+      background-color:transparent;
+      border: 3px solid rgba(255, 0, 0, 0.3); 
+      z-index: 100; 
+      position: absolute;
+      overflow: visible;
+      width:65px;
+      height:45px;
+      margin: 195px 0 0 1462px;
+      z-index: 99;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+    #stuff11afound {
+      opacity: 0.0;
+      -webkit-transition: all 500ms ease-in-out;
+      -moz-transition: all 500ms ease-in-out;
+      -ms-transition: all 500ms ease-in-out;
+      -o-transition: all 500ms ease-in-out;
+      transition: all 500ms ease-in-out;
+      z-index: 99; 
+      width:80px;
+      height: 180px;
+      background-color:transparent;
+      border: 5px solid rgba(0, 0, 255, 0.50); 
+      z-index: 99; 
+      position: absolute;
+      overflow: visible;
+      margin: 727px 0 0 580px;
+      color: black;
+      text-decoration: bold;
+      }
+    #hover12found {
+      background-color:transparent;
+      border: 3px solid rgba(255, 0, 0, 0.3); 
+      z-index: 100; 
+      position: absolute;
+      overflow: visible;
+      width:65px;
+      height:45px;
+      margin: 132px 0 0 1462px;
+      z-index: 99;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+    #stuff12found {
+      opacity: 0.0;
+      -webkit-transition: all 500ms ease-in-out;
+      -moz-transition: all 500ms ease-in-out;
+      -ms-transition: all 500ms ease-in-out;
+      -o-transition: all 500ms ease-in-out;
+      transition: all 500ms ease-in-out;
+      z-index: 99; 
+      width:95px;
+      height: 180px;
+      background-color:transparent;
+      border: 5px solid rgba(0, 0, 255, 0.50); 
+      z-index: 99; 
+      position: absolute;
+      overflow: visible;
+      margin: 727px 0 0 350px;
+      color: black;
+      text-decoration: bold;
+    }
+    #hover13found {
+      width:50px;
+      height:20px;
+      margin: 322px 0 0 1375px;
+      background-color:transparent;
+      border: 3px solid rgba(255, 0, 0, 0.3); 
+      z-index: 100; 
+      position: absolute;
+      overflow: visible;
+      z-index: 99;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+    #stuff13found {
+      opacity: 0.0;
+-webkit-transition: all 500ms ease-in-out;
+-moz-transition: all 500ms ease-in-out;
+-ms-transition: all 500ms ease-in-out;
+-o-transition: all 500ms ease-in-out;
+transition: all 500ms ease-in-out;
+z-index: 99; 
+width:800px;
+height: 35px;
+background-color:transparent;
+border: 5px solid rgba(0, 0, 255, 0.5); 
+z-index: 99; 
+position: absolute;
+overflow: visible;
+margin: 15px 0 0 -10px;
+color: black;
+text-decoration: bold;
+    }
+    #hover14found {
+      width:50px;
+      height:20px;
+      margin: 490px 0 0 1375px;
+      background-color:transparent;
+      border: 3px solid rgba(255, 0, 0, 0.3); 
+      z-index: 100; 
+      position: absolute;
+      overflow: visible;
+      z-index: 99;
+      cursor: pointer;
+      border-radius: 10px;
+
+    }
+    #stuff14found {
+      opacity: 0.0;
+      -webkit-transition: all 500ms ease-in-out;
+      -moz-transition: all 500ms ease-in-out;
+      -ms-transition: all 500ms ease-in-out;
+      -o-transition: all 500ms ease-in-out;
+      transition: all 500ms ease-in-out;
+      z-index: 99; 
+      width:35px;
+      height: 570px;
+      background-color:transparent;
+      border: 5px solid rgba(0, 0, 255, 0.50); 
+      z-index: 99; 
+      position: absolute;
+      overflow: visible;
+      margin: 85px 0 0 720px;
+      color: black;
+      text-decoration: bold;
+    }
+    #hover15found {
+      width:50px;
+      height:20px;
+      margin: 595px 0 0 1375px;
+      background-color:transparent;
+      border: 3px solid rgba(255, 0, 0, 0.3); 
+      z-index: 100; 
+      position: absolute;
+      overflow: visible;
+      z-index: 99;
+      cursor: pointer;
+      border-radius: 10px;
+
+    }
+    #stuff15found {
+      opacity: 0.0;
+      -webkit-transition: all 500ms ease-in-out;
+      -moz-transition: all 500ms ease-in-out;
+      -ms-transition: all 500ms ease-in-out;
+      -o-transition: all 500ms ease-in-out;
+      transition: all 500ms ease-in-out;
+      z-index: 99; 
+      width:350px;
+      height: 35px;
+      background-color:transparent;
+      border: 5px solid rgba(0, 0, 255, 0.50); 
+      z-index: 99; 
+      position: absolute;
+      overflow: visible;
+      margin: -15px 0 0 227px;
+      color: black;
+      text-decoration: bold;
+    }
+    #hover16found {
+      width:50px;
+      height:20px;
+      margin: 700px 0 0 1375px;
+      background-color:transparent;
+      border: 3px solid rgba(255, 0, 0, 0.3); 
+      z-index: 100; 
+      position: absolute;
+      overflow: visible;
+      z-index: 99;
+      cursor: pointer;
+      border-radius: 10px;
+
+    }
+    #stuff16found {
+      opacity: 0.0;
+      -webkit-transition: all 500ms ease-in-out;
+      -moz-transition: all 500ms ease-in-out;
+      -ms-transition: all 500ms ease-in-out;
+      -o-transition: all 500ms ease-in-out;
+      transition: all 500ms ease-in-out;
+      z-index: 99; 
+      width:335px;
+      height: 35px;
+      background-color:transparent;
+      border: 5px solid rgba(0, 0, 255, 0.50); 
+      z-index: 99; 
+      position: absolute;
+      overflow: visible;
+      margin: 750px 0 0 -15px;
+      color: black;
+      text-decoration: bold;
+    }
+    #hover17found {
+      background-color:transparent;
+      border: 3px solid rgba(255, 0, 0, 0.3); 
+      z-index: 100; 
+      position: absolute;
+      overflow: visible;
+      width:120px;
+      height:110px;
+      margin: 195px 0 0 1310px;
+      z-index: 99;
+      cursor: pointer;
+      border-radius: 10px;
+
+    }
+    #stuff17found {
+      opacity: 0.0;
+-webkit-transition: all 500ms ease-in-out;
+-moz-transition: all 500ms ease-in-out;
+-ms-transition: all 500ms ease-in-out;
+-o-transition: all 500ms ease-in-out;
+transition: all 500ms ease-in-out;
+z-index: 99; 
+width:645px;
+height: 35px;
+background-color:transparent;
+border: 5px solid rgba(0, 0, 255, 0.5); 
+z-index: 99; 
+position: absolute;
+overflow: visible;
+margin: 15px 0 0 64px;
+color: black;
+text-decoration: bold;
+    }
+    #hover19found {
+      width:120px;
+      height:110px;
+      margin: 360px 0 0 1310px;
+      background-color:transparent;
+      border: 3px solid rgba(255, 0, 0, 0.3); 
+      z-index: 100; 
+      position: absolute;
+      overflow: visible;
+      z-index: 99;
+      cursor: pointer;
+      border-radius: 10px;
+
+    }
+    #stuff19found {
+      opacity: 0.0;
+      -webkit-transition: all 500ms ease-in-out;
+      -moz-transition: all 500ms ease-in-out;
+      -ms-transition: all 500ms ease-in-out;
+      -o-transition: all 500ms ease-in-out;
+      transition: all 500ms ease-in-out;
+      z-index: 99; 
+      width:35px;
+      height: 425px;
+      background-color:transparent;
+      border: 5px solid rgba(0, 0, 255, 0.50); 
+      z-index: 99; 
+      position: absolute;
+      overflow: visible;
+      margin: 155px 0 0 720px;
+      color: black;
+      text-decoration: bold;
+    }
+    #hover20found {
+      width:120px;
+      height:50px;
+      margin: 525px 0 0 1310px;
+      background-color:transparent;
+      border: 3px solid rgba(255, 0, 0, 0.3); 
+      z-index: 100; 
+      position: absolute;
+      overflow: visible;
+      z-index: 99;
+      cursor: pointer;
+      border-radius: 10px;
+
+    }
+    #stuff20found {
+      opacity: 0.0;
+      -webkit-transition: all 500ms ease-in-out;
+      -moz-transition: all 500ms ease-in-out;
+      -ms-transition: all 500ms ease-in-out;
+      -o-transition: all 500ms ease-in-out;
+      transition: all 500ms ease-in-out;
+      z-index: 99; 
+      width:190px;
+      height: 35px;
+      background-color:transparent;
+      border: 5px solid rgba(0, 0, 255, 0.50); 
+      z-index: 99; 
+      position: absolute;
+      overflow: visible;
+      margin: -15px 0 0 310px;
+      color: black;
+      text-decoration: bold;
+    }
+    #hover21found {
+      width:120px;
+      height:45px;
+      margin: 635px 0 0 1310px;
+      background-color:transparent;
+      border: 3px solid rgba(255, 0, 0, 0.3); 
+      z-index: 100; 
+      position: absolute;
+      overflow: visible;
+      z-index: 99;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+    #stuff21found {
+      opacity: 0.0;
+      -webkit-transition: all 500ms ease-in-out;
+      -moz-transition: all 500ms ease-in-out;
+      -ms-transition: all 500ms ease-in-out;
+      -o-transition: all 500ms ease-in-out;
+      transition: all 500ms ease-in-out;
+      z-index: 99; 
+      width:172px;
+      height: 35px;
+      background-color:transparent;
+      border: 5px solid rgba(0, 0, 255, 0.50); 
+      z-index: 99; 
+      position: absolute;
+      overflow: visible;
+      margin: 750px 0 0 65px;
+      color: black;
+      text-decoration: bold;
+    }
+  #hover22found:hover + #stuff22found , #hover21found:hover + #stuff21found , #hover20found:hover + #stuff20found , #hover19found:hover + #stuff19found, #hover18found:hover + #stuff18found,  #hover17found:hover + #stuff17found, #hover16found:hover + #stuff16found ,#hover15found:hover + #stuff15found, #hover14found:hover + #stuff14found, #hover13found:hover + #stuff13found, #hover12found:hover + #stuff12found , #hover11afound:hover + #stuff11afound , #hover11found:hover + #stuff11found , #hover9found:hover + #stuff9found {
+  opacity: 1;
+animation-name: reveal;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  cursor: pointer;
+}</style>
+<!--script for foundone div-->
+<script> 
+/*DROP DOWN SCRIPT FOR FOUND ONE*/
+// Get the button, and when the user clicks on it, execute myFunction
+  document.getElementById("myBtnfound1").onclick = function() {myFunctionfound1()};
+  
+  /* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
+  function myFunctionfound1() {
+    document.getElementById("myDropdownfound1").classList.toggle("show");
+  }
+
+// Get the button, and when the user clicks on it, execute myFunction
+  document.getElementById("myBtnfound2").onclick = function() {myFunctionfound2()};
+  
+  /* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
+  function myFunctionfound2() {
+    document.getElementById("myDropdownfound2").classList.toggle("show");
+  }
+// Get the button, and when the user clicks on it, execute myFunction
+   document.getElementById("myBtnfound3").onclick = function() {myFunctionfound3()};
+  
+   /* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
+   function myFunctionfound3() {
+     document.getElementById("myDropdownfound3").classList.toggle("show");
+   }
+// Get the button, and when the user clicks on it, execute myFunction
+document.getElementById("myBtnfound4").onclick = function() {myFunctionfound4()};
+  
+/* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
+function myFunctionfound4() {
+  document.getElementById("myDropdownfound4").classList.toggle("show");
+}
+/*When the user clicks on div, open the  DEFINITION popup*/
+              function myFunction1() {
+                var popup = document.getElementById("myPopup1");
+                popup.classList.toggle("show");
+              }
+              function myFunction2() {
+                var popup = document.getElementById("myPopup2");
+                popup.classList.toggle("show");
+              }
+              function myFunction3() {
+                var popup = document.getElementById("myPopup3");
+                popup.classList.toggle("show");
+              }
+              function myFunction4() {
+                var popup = document.getElementById("myPopup4");
+                popup.classList.toggle("show");
+              }
+              function myFunction5() {
+                var popup = document.getElementById("myPopup5");
+                popup.classList.toggle("show");
+              }
+              function myFunction6() {
+                var popup = document.getElementById("myPopup6");
+                popup.classList.toggle("show");
+              }
+              function myFunction7() {
+                var popup = document.getElementById("myPopup7");
+                popup.classList.toggle("show");
+              }
+              function myFunction8() {
+                var popup = document.getElementById("myPopup8");
+                popup.classList.toggle("show");
+              }
+              function myFunction9() {
+                var popup = document.getElementById("myPopup9");
+                popup.classList.toggle("show");
+              }
+              </script>
+        
+        <div id="foundtwo"></div>
+        <br>
+        <div id="foundthree"></div>
+        <br>
+        <div id="foundfour"></div>
+        <br>
+</div> <!--Closing foundation div-->
+<!--END OF FOUNDATIONS-->
+
+
+
+
+
+
+
+<!--GF Structure-->
+        <div id="tabcontent3" data-tab="3" class="tabcontent">
+         <div id="groundone">
+          <div class="dropdown">
+             <button id="myBtn" class="dropbtn">Dropdown</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#home">Real image of component</a>
+              <a href="#about">Drawn explanation of measurement</a>
+              <a href="#contact">Voicenote of measurement</a>
+            </div>
+          </div>
+        </div>
+        <div id="groundtwo"></div>
+      </div>
+      
+<!--Superstructure-->
+      <div id="tabcontent4" data-tab="4" class="tabcontent">
+        <div id="superone">
+      </div>
+      </div>       
+<!--ROOFS-->
+       <div id="tabcontent5" data-tab="5" class="tabcontent">
+        <div id="roofone">
+        <div class="descrip">
+                      <div id="hover"></div>
+                      <div id="stuff"></div>
+
+                      <div id="hover1b"></div>
+                      <div id="stuff1b"></div>
+
+                      <div id="hovera"></div>
+                      <div id="stuffa">38mm+38mm+114mm<br>+114mm = 304mm ~ 300mm perimeter</div>
+                      
+                      <div id="hover1"></div>
+                      <div id="stuff1"></div>
+
+                      <div id="hover1a"></div>
+                      <div id="stuff1a"></div>
+
+                      <div id="hover2"></div>
+                        <div id="stuff2"></div>
+
+                        <div id="hover3"></div>
+                        <div id="stuff3"></div>
+
+                        <div id="hover4"></div>
+                        <div id="stuff4"></div>
+
+                        <div id="hover5"></div>
+                        <div id="stuff5"></div>
+
+                        <div id="hover6"></div>
+                        <div id="stuff6"></div>
+
+                        <div id="hover7"></div>
+                        <div id="stuff7"></div>
+
+                        <div id="hover8"></div>
+                        <div id="stuff8"></div>
+                    
+                        <div id="hover9"></div>
+                        <div id="stuff9"></div>
+
+                        <div id="hover10"></div>
+                        <div id="stuff10"></div>
+
+                        <div id="hover10a"></div>
+                        <div id="stuff10a"></div>
+
+                        <div id="hover11"></div>
+                        <div id="stuff11">
+                          <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>O</b></h3>
+                          <br>
+                          <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>O</b>&nbsp;<b>O</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>O</b>&nbsp;<b>O</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>O</b>&nbsp;<b>O</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>O</b>&nbsp;<b>O</b></h3>
+                          <br>
+                      
+                        </div>
+                        <div id="hover11a"></div>
+                        <div id="stuff11a"></div>
+
+                        
+             </div>
+             
+                <div class="descrip1">
+                  
+                  <div id="hover12"></div>
+                  <div id="stuff12">
+                    <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>O</b>&nbsp;<b>O</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>O</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>O</b>&nbsp;&nbsp;&nbsp;</h3>
+                 </div>
+                  <div id="hover13"></div>
+                  <div id="stuff13"></div>
+                  
+                  <div id="hover14"></div>
+                  <div id="stuff14">
+                    <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>O</b></h3>
+                    <br>
+                    <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b></b>&nbsp;<b></b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b></b>&nbsp;<b></b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b></b>&nbsp;<b></b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b></b>&nbsp;<b></b></h3>
+                    <br>                       
+                   </div>     
+
+                  <div id="hover15"></div>
+                  <div id="stuff15"></div>   
+
+                  <div id="hover16"></div>
+                  <div id="stuff16">Bolt length = (3 x thicknesses of 38mm) + (2 x Bolt dia)<br>(3 x 38mm) + (2 x 16mm) = 146mm ~ 150mm</div>   
+
+                  <div id="hover17"></div>
+                  <div id="stuff17">Bolt length = (2 x thicknesses of 38mm) + (2 x Bolt dia)<br>(2 x 38mm) + (2 x 10mm) = 96mm ~ 100mm</div>   
+
+                  <div id="hover18"></div>
+                  <div id="stuff18"></div>   
+
+                  <div id="hover19"></div>
+                  <div id="stuff19"><h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>O</b>&nbsp;<b>O</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>O</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>O</b>&nbsp;&nbsp;&nbsp;</h3>
+                  </div>  
+
+                  <div id="hover20"></div>
+                  <div id="stuff20"></div>  
+
+                  <div id="hover21"></div>
+                  <div id="stuff21"><h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>O</b></h3>
+                    <br>
+                    <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b></b>&nbsp;<b></b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b></b>&nbsp;<b></b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b></b>&nbsp;<b></b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b></b>&nbsp;<b></b></h3>
+                    <br> </div>  
+                  
+                  <div id="hover22"></div>
+                  <div id="stuff22"></div>   
+
+                  <div id="hover23"></div>
+                  <div id="stuff23"></div>  
+
+                  <div id="hover24"></div>
+                  <div id="stuff24"></div>  
+
+                  <div id="hover25"></div>
+                  <div id="stuff25"></div>  
+
+                  <div id="hover26"></div>
+                  <div id="stuff26"></div>  
+
+                </div>
+                    <style>#stuff {
+                      opacity: 0.0;
+                      -webkit-transition: all 500ms ease-in-out;
+                      -moz-transition: all 500ms ease-in-out;
+                      -ms-transition: all 500ms ease-in-out;
+                      -o-transition: all 500ms ease-in-out;
+                      transition: all 500ms ease-in-out;
+                      z-index: 99; 
+                      width:637px;
+                      height:117.5px;
+                      background-color:transparent;
+                      border-left: none; 
+                      border-top: 5px solid blue; 
+                      border-bottom: 5px solid blue; 
+                      border-right: none; 
+                      z-index: 99; 
+                      position: absolute;
+                      overflow: visible;
+                      margin: 55px 0 0 552px;
+                  }
+                  #stuff1{
+                    opacity: 0.0;
+                      -webkit-transition: all 500ms ease-in-out;
+                      -moz-transition: all 500ms ease-in-out;
+                      -ms-transition: all 500ms ease-in-out;
+                      -o-transition: all 500ms ease-in-out;
+                      transition: all 500ms ease-in-out;
+                      z-index: 99; 
+                      width:580px;
+                      height:124px;
+                      background-image: repeating-linear-gradient(90deg,  blue 2%, transparent 4%, transparent 6.7%);
+                      z-index: 99; 
+                      position: absolute;
+                      overflow: visible;
+                      margin: 56.5px 0 0 634px;
+                  }
+                  #stuff1a{
+                    opacity: 0.0;
+                      -webkit-transition: all 500ms ease-in-out;
+                      -moz-transition: all 500ms ease-in-out;
+                      -ms-transition: all 500ms ease-in-out;
+                      -o-transition: all 500ms ease-in-out;
+                      transition: all 500ms ease-in-out;
+                      z-index: 99; 
+                      width:10px;
+                      height:124px;
+                      background-color: blue;
+                      z-index: 99; 
+                      position: absolute;
+                      overflow: visible;
+                      margin: 56.5px 0 0 646px;
+                  }
+                  #hover1b{
+                    width:80px;
+                      height:12px;
+                      background-color:transparent;
+                      border: 3px solid rgba(255, 0, 0, 0.3); 
+                      z-index: 99; 
+                      position: absolute;
+                      overflow: visible;
+                      margin: 102px 0 0 43px;
+                      cursor: pointer;
+                  }
+                  #stuff1b {
+                    opacity: 0.0;
+                    -webkit-transition: all 500ms ease-in-out;
+                    -moz-transition: all 500ms ease-in-out;
+                    -ms-transition: all 500ms ease-in-out;
+                    -o-transition: all 500ms ease-in-out;
+                    transition: all 500ms ease-in-out;
+                    z-index: 99; 
+                    width:637px;
+                    height:117.5px;
+                    background-color:transparent;
+                    border-left: 5px solid blue; 
+                    border-top: none; 
+                    border-bottom: none; 
+                    border-right: none; 
+                    z-index: 99; 
+                    position: absolute;
+                    overflow: visible;
+                    margin: 60px 0 0 552px;
+                  }
+                  #stuff2 {
+                    opacity: 0.0;
+                    -webkit-transition: all 500ms ease-in-out;
+                    -moz-transition: all 500ms ease-in-out;
+                    -ms-transition: all 500ms ease-in-out;
+                    -o-transition: all 500ms ease-in-out;
+                    transition: all 500ms ease-in-out;
+                    z-index: 99; 
+                    width:385px;
+                    height:10px;
+                    background-color:blue;
+                    z-index: 99; 
+                    position: absolute;
+                    overflow: visible;
+                    margin: 452px 0 0 557px;
+                  }
+                  #stuff3 {
+                    opacity: 0.0;
+                    -webkit-transition: all 500ms ease-in-out;
+                    -moz-transition: all 500ms ease-in-out;
+                    -ms-transition: all 500ms ease-in-out;
+                    -o-transition: all 500ms ease-in-out;
+                    transition: all 500ms ease-in-out;
+                    z-index: 99; 
+                    width:268px;
+                    height:10px;
+                    background-color:blue;
+                    transform: rotate(24.5deg);
+                    z-index: 99; 
+                    position: absolute;
+                    overflow: visible;
+                    margin: 366px 0 0 1074px;
+                  }
+                  #stuff4 {
+                    opacity: 0.0;
+                      -webkit-transition: all 500ms ease-in-out;
+                      -moz-transition: all 500ms ease-in-out;
+                      -ms-transition: all 500ms ease-in-out;
+                      -o-transition: all 500ms ease-in-out;
+                      transition: all 500ms ease-in-out;
+                      z-index: 99; 
+                      width:580px;
+                      height:156px;
+                      background-image: repeating-linear-gradient(90deg,  blue 2%, transparent 4%, transparent 6.7%);
+                      z-index: 99; 
+                      position: absolute;
+                      overflow: visible;
+                      margin: 42px 0 0 634px;
+                  }
+                  #stuff5 {
+                    opacity: 0.0;
+                      -webkit-transition: all 500ms ease-in-out;
+                      -moz-transition: all 500ms ease-in-out;
+                      -ms-transition: all 500ms ease-in-out;
+                      -o-transition: all 500ms ease-in-out;
+                      transition: all 500ms ease-in-out;
+                      z-index: 99; 
+                      width:10px;
+                      height:156px;
+                      background-color: blue ;
+                      z-index: 99; 
+                      position: absolute;
+                      overflow: visible;
+                      margin: 42px 0 0 646px;
+                  }
+                  #stuff6 {
+                    opacity: 0.0;
+                      -webkit-transition: all 500ms ease-in-out;
+                      -moz-transition: all 500ms ease-in-out;
+                      -ms-transition: all 500ms ease-in-out;
+                      -o-transition: all 500ms ease-in-out;
+                      transition: all 500ms ease-in-out;
+                      z-index: 99; 
+                      width:10px;
+                      height:78.5px;
+                      background-color: blue ;
+                      z-index: 99; 
+                      position: absolute;
+                      overflow: visible;
+                      margin: 42px 0 0 646px;
+                  }
+                  #hover{
+                      width:80px;
+                      height:12px;
+                      background-color:transparent;
+                      border: 3px solid rgba(255, 0, 0, 0.3); 
+                      z-index: 99; 
+                      position: absolute;
+                      overflow: visible;
+                      margin: 86px 0 0 43px;
+                      cursor: pointer;
+                  }
+                  #hovera{
+                    width:80px;
+                    height:15px;
+                    background-color:transparent;
+                    border: 3px solid rgba(255, 0, 0, 0.3); 
+                    z-index: 98; 
+                    position: absolute;
+                    overflow: visible;
+                    margin: 185px 0 0 160px;
+                    cursor: pointer;
+                  }
+                  #stuffa {
+                    opacity: 0.0;
+                    -webkit-transition: all 500ms ease-in-out;
+                    -moz-transition: all 500ms ease-in-out;
+                    -ms-transition: all 500ms ease-in-out;
+                    -o-transition: all 500ms ease-in-out;
+                    transition: all 500ms ease-in-out;
+                    z-index: 99; 
+                    width:190px;
+                    height:fit-content;
+                    background-color:white;
+                    border: 5px solid blue; 
+                    z-index: 99; 
+                    position: absolute;
+                    overflow: visible;
+                    margin: 110px 0 0 322px;
+                    color: black;
+                    text-decoration: bold;
+                  }
+                  #hover1 {
+                    width:80px;
+                      height: 20px;
+                      border: 3px solid rgba(255, 0, 0, 0.3); 
+                      z-index: 99; 
+                      position: absolute;
+                      overflow: visible;
+                      margin: 329px 0 0 23px;
+                      cursor: pointer;
+                  }
+                  #hover1a {
+                    width:40px;
+                      height: 20px;
+                      border: 3px solid rgba(255, 0, 0, 0.3); 
+                      z-index: 99; 
+                      position: absolute;
+                      overflow: visible;
+                      margin: 329px 0 0 63px;
+                      cursor: pointer;
+                  }
+                  #hover2 {
+                    width:80px;
+                    height:10px;
+                    background-color:transparent;
+                    border: 3px solid rgba(255, 0, 0, 0.3); 
+                    z-index: 99; 
+                    position: absolute;
+                    margin: 395px 0 0 150px;
+                    cursor: pointer;
+                  }
+                  #hover3{
+                    width:100px;
+                    height:10px;
+                    background-color:transparent;
+                    border: 3px solid rgba(255, 0, 0, 0.3); 
+                    z-index: 99; 
+                    position: absolute;
+                    margin: 410px 0 0 150px;
+                    cursor: pointer;
+                  }
+                  #hover4 {
+                    width:100px;
+                    height: 20px;
+                    background-color:transparent;
+                    border: 3px solid rgba(255, 0, 0, 0.3); 
+                    z-index: 99; 
+                    position: absolute;
+                    margin: 352px 0 0 18px;
+                    cursor: pointer;
+                  }
+                  #hover5 {
+                    width:75px;
+                    height: 20px;
+                    background-color:transparent;
+                    border: 3px solid rgba(255, 0, 0, 0.3); 
+                    z-index: 99; 
+                    position: absolute;
+                    margin: 352px 0 0 42px;
+                    cursor: pointer;
+                  }
+                  #hover6 {
+                    width:55px;
+                    height: 20px;
+                    background-color:transparent;
+                    border: 3px solid rgba(255, 0, 0, 0.3); 
+                    z-index: 99; 
+                    position: absolute;
+                    margin: 352px 0 0 62px;
+                    cursor: pointer;
+                  }
+                  #hover7 {
+                    width:80px;
+                    height:65px;
+                    background-color:transparent;
+                    border: 3px solid rgba(255, 0, 0, 0.3); 
+                    z-index: 99; 
+                    position: absolute;
+                    overflow: visible;
+                    margin: 500px 0 0 40px;
+                    cursor: pointer;
+                    z-index: 99;
+                  }
+                  #stuff7 {
+                    opacity: 0.0;
+                    -webkit-transition: all 500ms ease-in-out;
+                    -moz-transition: all 500ms ease-in-out;
+                    -ms-transition: all 500ms ease-in-out;
+                    -o-transition: all 500ms ease-in-out;
+                    transition: all 500ms ease-in-out;
+                    z-index: 99; 
+                    width:0px;
+                    height:150px;
+                    background-color:transparent;
+                    border-top: none;
+                    border-left:210px solid transparent;
+                    border-right:210px solid transparent;
+                    border-bottom:96px solid rgba(0, 0, 255, 0.5);
+                    z-index: 99; 
+                    position: absolute;
+                    overflow: visible;
+                    margin: 215px 0 0 540px;
+                  }
+                  #hover8 {
+                    width:100px;
+                    height:65px;
+                    background-color:transparent;
+                    border: 3px solid rgba(255, 0, 0, 0.3); 
+                    z-index: 98; 
+                    position: absolute;
+                    overflow: visible;
+                    margin: 500px 0 0 20px;
+                    cursor: pointer;
+                  }
+                  #stuff8 {
+                    opacity: 0.0;
+                      -webkit-transition: all 500ms ease-in-out;
+                      -moz-transition: all 500ms ease-in-out;
+                      -ms-transition: all 500ms ease-in-out;
+                      -o-transition: all 500ms ease-in-out;
+                      transition: all 500ms ease-in-out;
+                      z-index: 99; 
+                      width:580px;
+                      height:156px;
+                      background-image: repeating-linear-gradient(90deg,  blue 2%, transparent 4%, transparent 6.7%);
+                      z-index: 99; 
+                      position: absolute;
+                      overflow: visible;
+                      margin: 42px 0 0 634px;
+                  }
+                  #hover9 {
+                    width:55px;
+                    height:65px;
+                    background-color:transparent;
+                    border: 3px solid rgba(255, 0, 0, 0.3); 
+                    z-index: 100; 
+                    position: absolute;
+                    overflow: visible;
+                    margin: 500px 0 0 65px;
+                    cursor: pointer;
+                  }
+                  #stuff9 {
+                    opacity: 0.0;
+                      -webkit-transition: all 500ms ease-in-out;
+                      -moz-transition: all 500ms ease-in-out;
+                      -ms-transition: all 500ms ease-in-out;
+                      -o-transition: all 500ms ease-in-out;
+                      transition: all 500ms ease-in-out;
+                      z-index: 99; 
+                      width:330px;
+                      height:120px;
+                      background-color:transparent;
+                      border: 5px solid blue; 
+                      z-index: 99; 
+                      position: absolute;
+                      overflow: visible;
+                      margin: 430px 0 0 1050px;
+                    }
+                    #hover10 {
+                      width:40px;
+                      height:12px;
+                      background-color:transparent;
+                      border: 3px solid rgba(255, 0, 0, 0.3); 
+                      z-index: 100; 
+                      position: absolute;
+                      overflow: visible;
+                      margin: 620px 0 0 63px;
+                      z-index: 100;
+                      cursor: pointer;
+                    }
+                    #stuff10 {
+                      opacity: 0.0;
+                      -webkit-transition: all 500ms ease-in-out;
+                      -moz-transition: all 500ms ease-in-out;
+                      -ms-transition: all 500ms ease-in-out;
+                      -o-transition: all 500ms ease-in-out;
+                      transition: all 500ms ease-in-out;
+                      z-index: 99; 
+                      width:20px;
+                      height:110px;
+                      background-color:transparent;
+                      border-left: none;
+                      border-top: 8px dashed blue;
+                      border-bottom: 8px dashed blue;
+                      border-right: none;
+                      z-index: 99; 
+                      position: absolute;
+                      overflow: visible;
+                      margin: 58px 0 0 1182px;
+                      }
+                      #hover10a {
+                        width:80px;
+                        height:12px;
+                        background-color:transparent;
+                        border: 3px solid rgba(255, 0, 0, 0.3); 
+                        z-index: 100; 
+                        position: absolute;
+                        overflow: visible;
+                        margin: 620px 0 0 23px;
+                        z-index: 99;
+                        cursor: pointer;
+                      }
+                      #stuff10a {
+                        opacity: 0.0;
+                      -webkit-transition: all 500ms ease-in-out;
+                      -moz-transition: all 500ms ease-in-out;
+                      -ms-transition: all 500ms ease-in-out;
+                      -o-transition: all 500ms ease-in-out;
+                      transition: all 500ms ease-in-out;
+                      z-index: 99; 
+                      width:580px;
+                      height:156px;
+                      background-image: repeating-linear-gradient(90deg,  blue 2%, transparent 4%, transparent 6.7%);
+                      z-index: 99; 
+                      position: absolute;
+                      overflow: visible;
+                      margin: 42px 0 0 634px;
+                        }
+                      #hover11 {
+                        width:40px;
+                        height:12px;
+                        background-color:transparent;
+                        border: 3px solid rgba(255, 0, 0, 0.3); 
+                        z-index: 100; 
+                        position: absolute;
+                        overflow: visible;
+                        margin: 722px 0 0 63px;
+                        z-index: 100;
+                        cursor: pointer;
+                      }
+                      #stuff11 {
+                        opacity: 0.0;
+                        -webkit-transition: all 500ms ease-in-out;
+                        -moz-transition: all 500ms ease-in-out;
+                        -ms-transition: all 500ms ease-in-out;
+                        -o-transition: all 500ms ease-in-out;
+                        transition: all 500ms ease-in-out;
+                        z-index: 99; 
+                        width:400px;
+                        height:85px;
+                        background-color:transparent;
+                        border: none;
+                        z-index: 99; 
+                        position: absolute;
+                        overflow: visible;
+                        margin: 335px 0 0 538px;
+                        }
+                        #hover11a {
+                          width:80px;
+                          height:12px;
+                          background-color:transparent;
+                          border: 3px solid rgba(255, 0, 0, 0.3); 
+                          z-index: 100; 
+                          position: absolute;
+                          overflow: visible;
+                          margin: 722px 0 0 23px;
+                          z-index: 99;
+                          cursor: pointer;
+                        }
+                        #stuff11a {
+                          opacity: 0.0;
+                      -webkit-transition: all 500ms ease-in-out;
+                      -moz-transition: all 500ms ease-in-out;
+                      -ms-transition: all 500ms ease-in-out;
+                      -o-transition: all 500ms ease-in-out;
+                      transition: all 500ms ease-in-out;
+                      z-index: 99; 
+                      width:580px;
+                      height:156px;
+                      background-image: repeating-linear-gradient(90deg,  blue 2%, transparent 4%, transparent 6.7%);
+                      z-index: 99; 
+                      position: absolute;
+                      overflow: visible;
+                      margin: 42px 0 0 634px;
+                          }
+                        #hover12 {
+                          width:20px;
+                          height:12px;
+                          background-color:transparent;
+                          border: 3px solid rgba(255, 0, 0, 0.3); 
+                          z-index: 100; 
+                          position: absolute;
+                          overflow: visible;
+                          margin: 2px 0 0 65px;
+                          z-index: 100;
+                          cursor: pointer;
+                        }
+                        #stuff12 {
+                          opacity: 0.0;
+                        -webkit-transition: all 500ms ease-in-out;
+                        -moz-transition: all 500ms ease-in-out;
+                        -ms-transition: all 500ms ease-in-out;
+                        -o-transition: all 500ms ease-in-out;
+                        transition: all 500ms ease-in-out;
+                        z-index: 99; 
+                        width:300px;
+                        height:85px;
+                        transform: rotate(25deg);
+                        background-color:transparent;
+                        border: none;
+                        z-index: 99; 
+                        position: absolute;
+                        overflow: visible;
+                        margin: 375px 0 0 -715px;
+                        }
+                        #hover13 {
+                          width:65px;
+                          height:12px;
+                          background-color:transparent;
+                          border: 3px solid rgba(255, 0, 0, 0.3); 
+                          z-index: 100; 
+                          position: absolute;
+                          overflow: visible;
+                          margin: 2px 0 0 20px;
+                          z-index: 99;
+                          cursor: pointer;
+                        }
+                        #stuff13 {
+                          opacity: 0.0;
+                      -webkit-transition: all 500ms ease-in-out;
+                      -moz-transition: all 500ms ease-in-out;
+                      -ms-transition: all 500ms ease-in-out;
+                      -o-transition: all 500ms ease-in-out;
+                      transition: all 500ms ease-in-out;
+                      z-index: 99; 
+                      width:580px;
+                      height:156px;
+                      background-image: repeating-linear-gradient(90deg,  blue 2%, transparent 4%, transparent 6.7%);
+                      z-index: 99; 
+                      position: absolute;
+                      overflow: visible;
+                      margin: 42px 0 0 -770px;
+                        }
+                        #hover14 {
+                          width:20px;
+                          height:12px;
+                          background-color:transparent;
+                          border: 3px solid rgba(255, 0, 0, 0.3); 
+                          z-index: 100; 
+                          position: absolute;
+                          overflow: visible;
+                          margin: 182px 0 0 65px;
+                          z-index: 100;
+                          cursor: pointer;
+                        }
+                        #stuff14 {
+                          opacity: 0.0;
+                        -webkit-transition: all 500ms ease-in-out;
+                        -moz-transition: all 500ms ease-in-out;
+                        -ms-transition: all 500ms ease-in-out;
+                        -o-transition: all 500ms ease-in-out;
+                        transition: all 500ms ease-in-out;
+                        z-index: 99; 
+                        width:400px;
+                        height:85px;
+                        background-color:transparent;
+                        border: none;
+                        z-index: 99; 
+                        position: absolute;
+                        overflow: visible;
+                        margin: 335px 0 0 -863px;
+                        }
+                        #hover15 {
+                          width:65px;
+                          height:12px;
+                          background-color:transparent;
+                          border: 3px solid rgba(255, 0, 0, 0.3); 
+                          z-index: 100; 
+                          position: absolute;
+                          overflow: visible;
+                          margin: 182px 0 0 20px;
+                          z-index: 99;
+                          cursor: pointer;
+                        }
+                        #stuff15 {
+                          opacity: 0.0;
+                      -webkit-transition: all 500ms ease-in-out;
+                      -moz-transition: all 500ms ease-in-out;
+                      -ms-transition: all 500ms ease-in-out;
+                      -o-transition: all 500ms ease-in-out;
+                      transition: all 500ms ease-in-out;
+                      z-index: 99; 
+                      width:580px;
+                      height:156px;
+                      background-image: repeating-linear-gradient(90deg,  blue 2%, transparent 4%, transparent 6.7%);
+                      z-index: 99; 
+                      position: absolute;
+                      overflow: visible;
+                      margin: 42px 0 0 -770px;
+                        }
+                        #hover16 {
+                          width:110px;
+                          height:60px;
+                          background-color:transparent;
+                          border: 3px solid rgba(255, 0, 0, 0.3); 
+                          z-index: 100; 
+                          position: absolute;
+                          overflow: visible;
+                          margin: 222px 0 0 280px;
+                          z-index: 99;
+                          cursor: pointer;
+                        }
+                        #stuff16 {
+                          opacity: 0.0;
+                    -webkit-transition: all 500ms ease-in-out;
+                    -moz-transition: all 500ms ease-in-out;
+                    -ms-transition: all 500ms ease-in-out;
+                    -o-transition: all 500ms ease-in-out;
+                    transition: all 500ms ease-in-out;
+                    z-index: 99; 
+                    width:430px;
+                    height:fit-content;
+                    background-color:white;
+                    border: 5px solid blue; 
+                    z-index: 99; 
+                    position: absolute;
+                    overflow: visible;
+                    margin: 300px 0 0 -622px;
+                    color: black;
+                    text-decoration: bold;
+                        }
+                        #hover17 {
+                          width:110px;
+                          height:60px;
+                          background-color:transparent;
+                          border: 3px solid rgba(255, 0, 0, 0.3); 
+                          z-index: 100; 
+                          position: absolute;
+                          overflow: visible;
+                          margin: 35px 0 0 280px;
+                          z-index: 99;
+                          cursor: pointer;
+                        }
+                        #stuff17 {
+                          opacity: 0.0;
+                    -webkit-transition: all 500ms ease-in-out;
+                    -moz-transition: all 500ms ease-in-out;
+                    -ms-transition: all 500ms ease-in-out;
+                    -o-transition: all 500ms ease-in-out;
+                    transition: all 500ms ease-in-out;
+                    z-index: 99; 
+                    width:430px;
+                    height:fit-content;
+                    background-color:white;
+                    border: 5px solid blue; 
+                    z-index: 99; 
+                    position: absolute;
+                    overflow: visible;
+                    margin: 300px 0 0 -622px;
+                    color: black;
+                    text-decoration: bold;
+                        }
+                        #hover18 {
+                          width:65px;
+                          height:12px;
+                          background-color:transparent;
+                          border: 3px solid rgba(255, 0, 0, 0.3); 
+                          z-index: 100; 
+                          position: absolute;
+                          overflow: visible;
+                          margin: 367px 0 0 20px;
+                          z-index: 99;
+                          cursor: pointer;
+                        }
+                        #stuff18 {
+                          opacity: 0.0;
+                      -webkit-transition: all 500ms ease-in-out;
+                      -moz-transition: all 500ms ease-in-out;
+                      -ms-transition: all 500ms ease-in-out;
+                      -o-transition: all 500ms ease-in-out;
+                      transition: all 500ms ease-in-out;
+                      z-index: 99; 
+                      width:580px;
+                      height:156px;
+                      background-image: repeating-linear-gradient(90deg,  blue 2%, transparent 4%, transparent 6.7%);
+                      z-index: 99; 
+                      position: absolute;
+                      overflow: visible;
+                      margin: 42px 0 0 -770px;
+                        }
+                        #hover19 {
+                          width:20px;
+                          height:12px;
+                          background-color:transparent;
+                          border: 3px solid rgba(255, 0, 0, 0.3); 
+                          z-index: 100; 
+                          position: absolute;
+                          overflow: visible;
+                          margin: 367px 0 0 65px;
+                          z-index: 100;
+                          cursor: pointer;
+                        }
+                        #stuff19 {
+                          opacity: 0.0;
+                        -webkit-transition: all 500ms ease-in-out;
+                        -moz-transition: all 500ms ease-in-out;
+                        -ms-transition: all 500ms ease-in-out;
+                        -o-transition: all 500ms ease-in-out;
+                        transition: all 500ms ease-in-out;
+                        z-index: 99; 
+                        width:300px;
+                        height:85px;
+                        transform: rotate(25deg);
+                        background-color:transparent;
+                        border: none;
+                        z-index: 99; 
+                        position: absolute;
+                        overflow: visible;
+                        margin: 375px 0 0 -715px;
+                        }
+                        #hover20 {
+                          width:65px;
+                          height:12px;
+                          background-color:transparent;
+                          border: 3px solid rgba(255, 0, 0, 0.3); 
+                          z-index: 100; 
+                          position: absolute;
+                          overflow: visible;
+                          margin: 382px 0 0 20px;
+                          z-index: 99;
+                          cursor: pointer;
+                        }
+                        #stuff20 {
+                          opacity: 0.0;
+                      -webkit-transition: all 500ms ease-in-out;
+                      -moz-transition: all 500ms ease-in-out;
+                      -ms-transition: all 500ms ease-in-out;
+                      -o-transition: all 500ms ease-in-out;
+                      transition: all 500ms ease-in-out;
+                      z-index: 99; 
+                      width:580px;
+                      height:156px;
+                      background-image: repeating-linear-gradient(90deg,  blue 2%, transparent 4%, transparent 6.7%);
+                      z-index: 99; 
+                      position: absolute;
+                      overflow: visible;
+                      margin: 42px 0 0 -770px;
+                        }
+                        #hover21 {
+                          width:20px;
+                          height:12px;
+                          background-color:transparent;
+                          border: 3px solid rgba(255, 0, 0, 0.3); 
+                          z-index: 100; 
+                          position: absolute;
+                          overflow: visible;
+                          margin: 382px 0 0 65px;
+                          z-index: 100;
+                          cursor: pointer;
+                        }
+                        #stuff21 {
+                          opacity: 0.0;
+                        -webkit-transition: all 500ms ease-in-out;
+                        -moz-transition: all 500ms ease-in-out;
+                        -ms-transition: all 500ms ease-in-out;
+                        -o-transition: all 500ms ease-in-out;
+                        transition: all 500ms ease-in-out;
+                        z-index: 99; 
+                        width:400px;
+                        height:85px;
+                        background-color:transparent;
+                        border: none;
+                        z-index: 99; 
+                        position: absolute;
+                        overflow: visible;
+                        margin: 335px 0 0 -863px;
+                        }
+                      #hover22:hover + #stuff22 , #hover21:hover + #stuff21 , #hover20:hover + #stuff20 , #hover19:hover + #stuff19, #hover18:hover + #stuff18,  #hover17:hover + #stuff17, #hover16:hover + #stuff16 ,#hover15:hover + #stuff15, #hover14:hover + #stuff14, #hover13:hover + #stuff13, #hover12:hover + #stuff12 , #hover11a:hover + #stuff11a , #hover11:hover + #stuff11 ,#hover10:hover + #stuff10, #hover10a:hover + #stuff10a, #hover9:hover + #stuff9, #hover:hover + #stuff, #hovera:hover +#stuffa, #hover1:hover + #stuff1, #hover1a:hover + #stuff1a, #hover1b:hover +#stuff1b, #hover2:hover + #stuff2, #hover3:hover + #stuff3, #hover4:hover +#stuff4, #hover5:hover + #stuff5, #hover6:hover + #stuff6, #hover7:hover + #stuff7, #hover8:hover + #stuff8 {
+                      opacity: 1;
+                    animation-name: reveal;
+                      animation-duration: 1s;
+                      animation-iteration-count: infinite;
+                      cursor: pointer;
+                  }</style>
+                </div>
+                <div id="rooftwo"></div>
+                </div>
+<!--FINISHES-->
+       <div id="tabcontent6" data-tab="6" class="tabcontent">
+           <div class="dropdown">
+             <button id="myBtn" class="dropbtn">Dropdown</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#home">Real image of component</a>
+                    <a href="#about">Drawn explanation of measurement</a>
+                    <a href="#contact">Voicenote of measurement</a>
+                  </div>
+                </div>
+              </div>
+<!--OPENINGS-->
+          <div id="tabcontent7" data-tab="7" class="tabcontent">
+            <div class="dropdown">
+              <button id="myBtn" class="dropbtn">Dropdown</button>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="#home">Real image of component</a>
+                <a href="#about">Drawn explanation of measurement</a>
+                <a href="#contact">Voicenote of measurement</a>
+              </div>
+            </div>
+          </div>
+
+         </div>
+     </div>
+</div>
+          
+            <div class="dark-mode-switch">
+                <label class="switch-label" for="dark-mode-switch" ></label>
+                <label class="switch">
+                    <input type="checkbox" id="dark-mode-switch">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+          
+        </div>
+                
+        </div>
+    </body>
+    <footer>&copy;Anthony Boetcher for UCT CEM 2022</footer>
+</html>
+<style>
+  #collone{ 
+    background-image: url('coll1.png');
+    background-repeat: no-repeat; 
+  border: none;
+    background-size: 1800px 900px;
+    overflow: visible;
+    width: 1800px; 
+    height: 900px;
+    justify-content: center;
+    border-radius: 30px;
+    box-shadow:  3px 3px 6px #bebebe, 
+                 -3px -3px 6px #ffffff;
+  }
+  #colltwo{ 
+    background-image: url('coll2.png');
+    background-repeat: no-repeat; 
+    border: none;
+      background-size: 1800px 1000px;
+      overflow: visible;
+      width: 1800px; 
+      height: 1000px;
+      justify-content: center;
+      border-radius: 30px;
+      box-shadow:  3px 3px 6px #bebebe, 
+                 -3px -3px 6px #ffffff;
+  }
+  #collthree{ 
+    background-image: url('coll3.png');
+    background-repeat: no-repeat; 
+  border: none;
+    background-size: 1800px 900px;
+    overflow: visible;
+    width: 1800px; 
+    height: 900px;
+    justify-content: center;
+    border-radius: 30px;
+    box-shadow:  3px 3px 6px #bebebe, 
+                 -3px -3px 6px #ffffff;
+  }
+  #foundone{ 
+    background-image: url('siteclearandfound1.png');
+    background-repeat: no-repeat; 
+    border: none;
+      background-size: 1800px 1000px;
+      overflow: visible;
+      width: 1800px; 
+      height: 1000px;
+      justify-content: center;
+      border-radius: 30px;
+      box-shadow:  3px 3px 6px #bebebe, 
+                 -3px -3px 6px #ffffff;
+
+  }
+#foundtwo{
+  background-image: url('siteclearandfound2.png');
+  background-repeat: no-repeat; 
+  border: none;
+    background-size: 1800px 900px;
+    overflow: visible;
+    width: 1800px; 
+    height: 900px;
+    justify-content: center;
+    border-radius: 30px;
+    box-shadow:  3px 3px 6px #bebebe, 
+                 -3px -3px 6px #ffffff;
+
+}
+#foundthree{
+  background-image: url('siteclearandfound3.png');
+  background-repeat: no-repeat; 
+  background-repeat: no-repeat; 
+  border: none;
+    background-size: 1800px 900px;
+    overflow: visible;
+    width: 1800px; 
+    height: 900px;
+    justify-content: center;
+    border-radius: 30px;
+    box-shadow:  3px 3px 6px #bebebe, 
+                 -3px -3px 6px #ffffff;
+
+}
+#foundfour{
+  background-image: url('siteclearandfound4.png');
+  background-repeat: no-repeat; 
+  border: none;
+    background-size: 1800px 900px;
+    overflow: visible;
+    width: 1800px; 
+    height: 900px;
+    justify-content: center;
+    border-radius: 30px;
+    box-shadow:  3px 3px 6px #bebebe, 
+                 -3px -3px 6px #ffffff;
+
+}
+#groundone{
+  background-image: url('groundfloor1.png');
+  background-repeat: no-repeat; 
+  border: none;
+    background-size: 1800px 1100px;
+    overflow: visible;
+    width: 1800px; 
+    height: 1100px;
+    justify-content: center;
+    border-radius: 30px;
+    box-shadow:  3px 3px 6px #bebebe, 
+                 -3px -3px 6px #ffffff;
+
+}
+#groundtwo {
+  background-image: url('groundfloor2.png');
+  background-repeat: no-repeat; 
+  border: none;
+    background-size: 1800px 1100px;
+    overflow: visible;
+    width: 1800px; 
+    height: 1100px;
+    justify-content: center;
+    border-radius: 30px;
+    box-shadow:  3px 3px 6px #bebebe, 
+                 -3px -3px 6px #ffffff;
+
+}
+#superone{
+  background-image: url('super1.png');
+  background-repeat: no-repeat; 
+  border: none;
+    background-size: 1800px 800px;
+    overflow: visible;
+    width: 1800px; 
+    height: 800px;
+    justify-content: center;
+    border-radius: 30px;
+    box-shadow:  3px 3px 6px #bebebe, 
+                 -3px -3px 6px #ffffff;
+
+}
+#roofone {
+  background-image: url('roof1.png');
+  background-repeat: no-repeat; 
+  border: none;
+    background-size: 1800px 1000px;
+    overflow: visible;
+    width: 1800px; 
+    height: 1000px;
+    justify-content: center;
+    border-radius: 30px;
+    box-shadow:  3px 3px 6px #bebebe, 
+                 -3px -3px 6px #ffffff;
+
+}
+#rooftwo {
+  background-image: url('roof2.png');
+  background-repeat: no-repeat; 
+  border: none;
+    background-size: 1800px 1000px;
+    overflow: visible;
+    width: 1800px; 
+    height: 1000px;
+    justify-content: center;
+    border-radius: 30px;
+    box-shadow:  3px 3px 6px #bebebe, 
+                 -3px -3px 6px #ffffff;
+
+}
+/*pop-up functions*/
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext, .popup .popuptext2 {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after, .popup .popuptext2::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+/*hover functions*/
+.hiddenimg {
+  display: none;
+}
+
+.hiddentxt {
+  font-weight: bold;
+  color: #F00;
+  z-index:99;
+}
+
+.hiddentxt a {
+  color: #F00;
+  text-decoration: none;
+  z-index: 99;
+}
+
+.hiddenclick {
+  font-weight: bold;
+  color: #F00;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.hiddenclick a {
+  color: #F00;
+  text-decoration: none;
+}
+
+.hiddenclick a:visited {
+  color: #F00;
+  text-decoration: none;
+}
+
+.hiddentxt:hover ~ .hiddenimg {
+  display: block;
+  position: absolute;
+    z-index: 2
+}
+
+.hiddenclickimg {
+  display: none;
+
+}
+
+/*Drop down functions*/
+  .dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  .show {display:block;}
+
+  /* Import Google Font */
+@import url(https://fonts.googleapis.com/css?family=Nunito+Sans);
+
+/* RESET */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* STYLING */
+.container {
+    display: flex;
+    height: 100vh;
+    background-color: #1A1B1F;
+    color: #a2a2a2;
+    font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+}
+.darkmode .container {
+    background-color: #1A1B1F;
+    color: #8a8a8a;
+}
+.tabs-container { 
+    width: 1500px;
+    max-width: 1500px; 
+    min-width: 420px;
+    margin: auto;
+    position: absolute;
+    left: 60px ;
+    top: 230px;
+
+}
+/* Style the tabs */
+.tabs {
+    margin-bottom: 28px; 
+    display: flex;
+      justify-content: space-between;
+      margin: 0 0 0 -10px;
+      text-align: center;
+      align-items: center;
+      width: 350px;
+}
+
+/*individual tabs size and spacing*/
+.tabs a {
+    cursor: pointer;
+    padding: 12px 24px;
+    width: 250px;
+    margin: 20px 5vw 0 0;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 18px;
+    transition: background 0.1s, color 0.1s;
+    background: linear-gradient(145deg, #ffffff, #dcdcdc);
+    box-shadow:  3px 3px 5px #bebebe, 
+                 -3px -3px 5px #ffffff;
+}
+.darkmode .tabs a {
+    background: linear-gradient(145deg, #1c1d21, #17181c);
+    box-shadow:  3px 3px 6px #101114, 
+                 -3px -3px 6px #24252a;
+}
+
+/* Change background color of tabs on hover */
+.tabs a:hover {
+    background: linear-gradient(145deg, #f4f4f4, #cecece);
+    color: #888;
+}
+.darkmode .tabs a:hover {
+    background: #141414;
+    color: #bbb;
+}
+
+/* Styling for active tab */
+.tabs a.active {
+    background-color: #f4f4f4;
+    color: #bdbdbd;
+    cursor: default;
+    padding: 14px 22px 10px 26px;
+    background: #f4f4f4;
+    box-shadow: inset 3px 3px 5px #cbcbcb, 
+                inset -3px -3px 5px #ffffff;
+}
+.darkmode .tabs a.active {
+    background: #1A1B1F;
+    box-shadow: inset  3px 3px 6px #101114, 
+                inset -3px -3px 6px #24252a; 
+    color: #6a6a6a;
+}
+
+
+/* Style the tab content */
+.tabcontent {
+    padding: 0px;
+    min-height: 5000px;
+    background-color: transparent;
+    width: 90vw;
+    margin: 30px 0 0 -40px;
+    display: none;    
+    border-radius: 18px;
+    
+}
+.darkmode .tabcontent {
+    background: linear-gradient(145deg, #1c1d21, #17181c);
+    box-shadow:  3px 3px 6px #101114, 
+                 -3px -3px 6px #24252a;
+}
+.content .active {
+    display: block;
+}
+.tabcontent p {
+    margin-bottom: 12px;
+}
+.tabcontent p:last-child {
+    margin-bottom: 0;
+}
+.tabcontent .read-more-link a {
+    color: #626262;
+    text-decoration: none;
+    font-size: 0.85em;
+    font-weight: bold;
+}
+.darkmode .tabcontent .read-more-link a {
+    color: #d4d4d4;
+}
+.icon {
+    padding-left: 8px;
+    font-size: 16px;
+}
+
+/* THE DARKMODE SWITCH */ 
+.dark-mode-switch {
+    position: absolute;
+    top: 240px;
+    right: 100px;
+}
+.dark-mode-switch .switch {
+/*     margin-left: 4px; */
+}
+.switch-label {
+    cursor: pointer;
+    font-size: 0.85em;
+}
+.dark-mode .switch-label{
+  color: white;
+}
+/* the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 44px;
+    height: 22px;
+    margin-left: 4px;
+}
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1A1B1F;
+    transition: .2s;
+    box-shadow:  2px 2px 3px #ffffff, 
+                 -2px -2px 3px #bebebe;
+}
+.darkmode .slider {
+    box-shadow:  2px 2px 3px #34353a, 
+                 -2px -2px 3px #000104;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 2px;
+    background: #9294b8;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+input:checked + .slider {
+    background-color: #f4f4f4;
+}
+input:checked + .slider:before {
+    transform: translateX(21px);
+}
+/* Rounded sliders */
+.slider.round {
+    border-radius: 11px;
+}
+.slider.round:before {
+    border-radius: 50%;
+}
+
+
+
+/*==============================*/
+.small-screen {
+    display: none;
+    background-color: #f4f4f4;
+    height: 100vh;
+    color: #a2a2a2;
+    font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+}
+.darkmode .small-screen {
+    background-color: #1A1B1F; 
+    color: #8a8a8a;
+}
+.small-screen-content {
+    width: 70%;
+    margin: auto;
+}
+@media only screen and (max-width: 600px) {
+    .container {
+        display: none;
+    }
+    .small-screen {
+        display: flex;
+    }
+    .tabcontent {
+        display: block;
+    }
+}
+  a:hover{
+    cursor: pointer;
+  }
+  a:visited {
+    color: white;
+    text-decoration: none;
+ }
+  #overlay {
+    opacity: 1;
+    display: absolute; 
+    z-index: 3;
+    width: auto;
+    height: auto;
+    top: 0;
+    margin: 42px 0 0 250px;
+    transform: scale(1.6);
+    overflow: hidden;
+}
+  #logo {
+    transform: scale(1.3);
+    position: absolute;
+    margin: 45px 0 0 150px;
+}
+  #top{
+    color: rgb(51, 51, 51);
+    background-color: rgb(0, 78, 80);
+    right: 0;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    height: 230px;
+    line-height: 18px;
+    outline-color: rgb(51, 51, 51);
+    outline-style: none;
+    outline-width: 0px;
+    text-size-adjust: 100%;
+    width: 101vw;
+    justify-content: center;
+    margin: -6px 0 0 -10px;
+        }
+
+  .topwriting {
+    color: rgb(254, 254, 254);
+cursor: pointer;
+display: inline-block;
+position: absolute;
+text-align: right;
+right: 0;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 16px;
+font-weight: 100;
+height: auto;
+outline-color: rgb(254, 254, 254);
+outline-style: none;
+outline-width: 0px;
+text-decoration-thickness: auto;
+text-shadow: rgb(51, 102, 51) 1px 1px 0px;
+text-size-adjust: 100%;
+width: 800px;
+z-index: 5;
+margin: 30px 30px 0 0px;
+padding: 0 50px 0 0;
+line-height: 40px;
+}
+  footer {
+          width: 250px;
+           height: 40px;
+           border: none;
+           color: white;
+           opacity: 1;
+           bottom: -600px;
+           left: 40px;
+           position: absolute; 
+           font-family: 'MuseoModerno', cursive;
+           font-weight: 200;
+           font-size: 12px;
+  }
+a{
+  text-decoration: none;
+width: 100%;
+color: white
+}
+a:visited{
+  text-decoration: none;
+  color: white
+}
+  
+ body {
+    background-color: #1A1B1F;
+    font-family: 'MuseoModerno', cursive;
+    width: 100vw;
+ }
+ main {
+    margin: 100px 0 0 250px;
+    width: 1800px;
+ }
+ html {
+  width: 100vw;
+ }
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(99, 175, 201);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(110, 154, 170);
+}
+@media (min-width:320px){nav, footer{
+  margin: 0 0 0 0vw;} /* smartphones, iPhone, portrait 480x320 phones */ }
+@media (min-width:481px){nav, footer{
+  margin: 0 0 0 0vw;} /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+@media (min-width:641px){nav, footer{
+  margin: 0 0 0 0vw; /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+@media (min-width:961px){nav, footer{
+  margin: 0 0 0 0vw; /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px){nav, footer{
+  margin: 0 0 0 0vw; /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px){nav, footer{
+  margin: 0 0 0 0vw; /* hi-res laptops and desktops */ }
+  @media (min-width:1700px){nav, footer{
+    margin: 0 0 0 0vw; /* hi-res laptops and desktops */ }
+</style>
+<script>
+
+ 
+/*HOVER TO REVEAL IMAGE SCRIPT - CLICK TO OPEN IN NEW PAGE*/
+function toggleImage() {
+  $(".hiddenclickimg").toggle();
+};
+/*DROP DOWN SCRIPT*/
+  // Get the button, and when the user clicks on it, execute myFunction
+  document.getElementById("myBtn").onclick = function() {myFunction()};
+  
+  /* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+  // DOM Elements
+const tabs = document.querySelectorAll('.tab')
+const tabContents = document.querySelectorAll('.tabcontent')
+const darkModeSwitch = document.querySelector('#dark-mode-switch')
+  
+// Functions
+const activateTab = tabnum => {
+    
+    tabs.forEach( tab => {
+      tab.classList.remove('active')
+    })
+    
+    tabContents.forEach( tabContent => {
+        tabContent.classList.remove('active')
+    })
+  
+    document.querySelector('#tab' + tabnum).classList.add('active')
+    document.querySelector('#tabcontent' + tabnum).classList.add('active')
+    localStorage.setItem('jstabs-opentab', JSON.stringify(tabnum))
+  
+}
+
+// Event Listeners
+tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+        activateTab(tab.dataset.tab)
+    })
+})
+
+darkModeSwitch.addEventListener('change', () => {
+    document.querySelector('body').classList.toggle('darkmode')
+    localStorage.setItem('jstabs-darkmode', JSON.stringify(!darkmode))
+})
+
+// Retrieve stored data
+let darkmode = JSON.parse(localStorage.getItem('jstabs-darkmode'))
+const opentab =  JSON.parse(localStorage.getItem('jstabs-opentab')) || '3'
+
+// and..... Action!
+if (darkmode === null) {
+    darkmode = window.matchMedia("(prefers-color-scheme: dark)").matches // match to OS theme
+}
+if (darkmode) {
+    document.querySelector('body').classList.add('darkmode')
+    document.querySelector('#dark-mode-switch').checked = 'checked'
+}
+activateTab(opentab)
+
+window.onload = function(){alert("Welcome! Please make use of the zoom in and out function built into your browser to effectively use this virtual assistant for your screensize.")}
+
+</script>
