@@ -595,7 +595,91 @@
                          }
                         </style>
                        <!--FOLLOWING FOR POPUP DEFINITIONS FOUND ONE-->
-                         <!--FOLLOWING FOR POPUPS HTML-->
+                       <!--FOLOOWING FOR PUP UP FREQUENT QUESTIONS-->
+                       <div id="popupsQ">
+                        <div class="popup" id="popfound1q" onclick="myFunction1q()"><i class="material-icons">psychology_alt</i>
+                          <span class="popuptext" id="myPopup1q">Q: Why do some areas in site clearance get 1500mm added to both their width and lenght, whereas other areas only have 1500mm added to their width?
+                            <br>A: In site clearance one must visualize a 1500mm extended area around the entire floor plan footprint. This means in 
+                          </span>
+                        </div>
+                        <div class="popup" id="popfound2q" onclick="myFunction2q()"><i class="material-icons">psychology_alt</i>
+                          <span class="popuptext" id="myPopup2q">Debris 1. pieces of wood, metal, building materials, etc. that are left after something has been destroyed.</span>
+                        </div>
+                        <div class="popup" id="popfound3q" onclick="myFunction3q()"><i class="material-icons">psychology_alt</i>
+                          <span class="popuptext" id="myPopup3q">Excavate 1. to make a hole in the ground by digging, 2. removal of Earth for construction purposes.</span>
+                        </div>
+                        </div>
+
+
+
+                        <!--FOLLOWING FOR POPUP STYLES-->
+                        <style>
+                          #popfound1q {
+                            margin: 10px 0 0 150px;
+                            position:absolute;
+                            color: purple;
+                            border: 2px solid rgba(128, 0, 128, 0.5);
+                            border-radius: 13.75px;
+                            width: 27.5px;
+                            height: 27.5px;
+                            background-color: rgba(128, 0, 128, 0.2); 
+                            padding: 2.5px 0 0 0 ;
+                            text-align: center;
+                            z-index: 999;
+                          }
+                          #popfound2q {
+                            margin: 10px 0 0 200px;
+                            position:absolute;
+                            color: purple;
+                            border: 2px solid rgba(128, 0, 128, 0.5);
+                            border-radius: 13.75px;
+                            width: 27.5px;
+                            height: 27.5px;
+                            background-color: rgba(128, 0, 128, 0.2); 
+                            padding: 2.5px 0 0 0 ;
+                            text-align: center;
+                            z-index: 999;
+                          }
+                          #popfound3q {
+                            margin: 10px 0 0 250px;
+                            position:absolute;
+                            color: purple;
+                            border: 2px solid rgba(128, 0, 128, 0.5);
+                            border-radius: 13.75px;
+                            width: 27.5px;
+                            height: 27.5px;
+                            background-color: rgba(128, 0, 128, 0.2); 
+                            padding: 2.5px 0 0 0 ;
+                            text-align: center;
+                            z-index: 999;
+                          }
+                        </style>
+
+
+
+
+
+                        <!--SCRIPT FOR FAQS-->
+                        <script>
+                          function myFunction1q() {
+                            var popup = document.getElementById("myPopup1q");
+                            popup.classList.toggle("show");
+                          }
+                          function myFunction2q() {
+                            var popup = document.getElementById("myPopup2q");
+                            popup.classList.toggle("show");
+                          }
+                          function myFunction3q() {
+                            var popup = document.getElementById("myPopup3q");
+                            popup.classList.toggle("show");
+                          }
+                        </script>
+
+
+
+
+
+                         <!--FOLLOWING FOR DEFINITION POPUPS HTML-->
                          <div id="popups">
                                      <div class="popup" id="popfound1" onclick="myFunction1()">&#9889;
                                        <span class="popuptext" id="myPopup1">Girth 1. The circumference of any circular object. 2. The distance around a column.</span>
@@ -1087,9 +1171,9 @@
                                      <div class="descrip">
                                         <div id="hover8found">Reveal entire<br>clearance</div>
                                         <div id="stuff8found">
-                                                <div id="middleclear" style="position: absolute; margin: 50px 0 0 -50px; width: 880px; height: 490px; background-color: rgba(0, 0, 255, 0.2);border: 3px dashed red "></div>
-                                                <div id="topclear" style="position: absolute; top:0; left: 0; margin: -23px 0 0 215px; width: 380px; height: 76px; background-color: rgba(0, 0, 255, 0.2); border-top: 3px dashed red; border-left:3px dashed red; border-right: 3px dashed red "></div>
-                                                <div id="bottomclear" style="position: absolute; bottom:0; left: 0; margin: -15px 0 0 -50px; width: 320px; height: 155px; background-color: rgba(0, 0, 255, 0.2); border-bottom: 3px dashed red; border-left:3px dashed red; border-right: 3px dashed red"></div>  
+                                                <div id="middleclear" style="background:url('dimensionarrows.png'), rgba(0, 0, 255, 0.2);background-position: top left; background-size: 50px 50px; background-repeat: no-repeat; position: absolute; margin: 50px 0 0 -50px; width: 880px; height: 490px; border: 3px dashed red"><h2 style="color: white; margin: 9px 0 0 55px; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000">15.82m X 9.02m</h2></div>
+                                                <div id="topclear" style="background:url('dimensionarrows.png'), rgba(0, 0, 255, 0.2); background-position: top left; background-size: 50px 50px; background-repeat: no-repeat; position: absolute; top:0; left: 0; margin: -23px 0 0 220px; width: 370px; height: 76px; border-top: 3px dashed red; border-left:3px dashed red; border-right: 3px dashed red"><h2 style="position: absolute; color: white; margin: 9px 0 0 55px; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000">6.82m X 0.9m</h2></div>
+                                                <div id="bottomclear" style="background:url('dimensionarrows.png'), rgba(0, 0, 255, 0.2);background-position: top left; background-size: 50px 50px; background-repeat: no-repeat; position: absolute; bottom:0; left: 0; margin: -15px 0 0 -50px; width: 310px; height: 155px; border-bottom: 3px dashed red; border-left:3px dashed red; border-right: 3px dashed red"><h2 style="color: white; margin: 9px 0 0 55px; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000">6.32 X 2.1m</h2></div>  
                                       </div>
 
                                          <div id="hover9found"></div>
