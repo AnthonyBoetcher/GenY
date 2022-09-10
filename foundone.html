@@ -594,70 +594,72 @@
                       
                          }
                         </style>
-                       <!--FOLLOWING FOR POPUP DEFINITIONS FOUND ONE-->
+                    
+
                        <!--FOLOOWING FOR PUP UP FREQUENT QUESTIONS-->
                        <div id="popupsQ">
                         <div class="popup" id="popfound1q" onclick="myFunction1q()"><i class="material-icons">psychology_alt</i>
-                          <span class="popuptext" id="myPopup1q">Q: Why do some areas in site clearance get 1500mm added to both their width and lenght, whereas other areas only have 1500mm added to their width?
-                            <br>A: In site clearance one must visualize a 1500mm extended area around the entire floor plan footprint. This means in 
+                          <span class="popuptext" id="myPopup1q">Q: Why do some areas in site clearance get 1500mm added to both their width and length, whereas other areas only have 1500mm added to their width?
+                            <br>A: When we break down the site plan footprint into manageable areas we apply an additional 1500mm to the larger central areas' length and width. But you will notice this additional 1500mm applied to the larger central area has now covered the smaller areas previously part of the floor plan. Consequently, since these areas have now been accounted for to some degree, we only apply 1500mm to the sides of the smaller areas and transform the smaller areas outwards by the same length as area accounted for in the larger site clearance footprint : the end result is a perfectly projected 1500mm site clearance footprint. 
                           </span>
                         </div>
                         <div class="popup" id="popfound2q" onclick="myFunction2q()"><i class="material-icons">psychology_alt</i>
-                          <span class="popuptext" id="myPopup2q">Debris 1. pieces of wood, metal, building materials, etc. that are left after something has been destroyed.</span>
+                          <span class="popuptext" id="myPopup2q">Q: What is the reason for having extra over for soft and hard rock in excavations?<br>A: The extra over for soft and hard rock is to account for expected additional time and labour required to excavate in the presence of these natural materials. Both soft and hard rock types can possess a range of compressive strengths, all significantly higher than that of the surrounding soil.</span>
                         </div>
                         <div class="popup" id="popfound3q" onclick="myFunction3q()"><i class="material-icons">psychology_alt</i>
-                          <span class="popuptext" id="myPopup3q">Excavate 1. to make a hole in the ground by digging, 2. removal of Earth for construction purposes.</span>
+                          <span class="popuptext" id="myPopup3q">Q: Why are we using the same volume used in excavations for backfilling?<br>A: Whilst this volume used for excavations is not the exact final volume for backfilling, it is our starting point for calculating backfilling. From this base volume we will make deductions as and when we make calculations for objects that will occupy some of that volume.</span>
                         </div>
                         </div>
 
-
-
-                        <!--FOLLOWING FOR POPUP STYLES-->
+                        <!--FOLLOWING FOR FAQ POPUP STYLES-->
                         <style>
+                          #myPopup1q, #myPopup2q, #myPopup3q{
+                            width: 600px;
+                            height: fit-content;
+                            margin: 0 0 0 -300px;
+                            font-size: 16px;
+                            z-index: 3;
+                          }
                           #popfound1q {
-                            margin: 10px 0 0 150px;
+                            margin: 250px 0 0 150px;
                             position:absolute;
-                            color: purple;
-                            border: 2px solid rgba(128, 0, 128, 0.5);
+                            color: rgba(128, 0, 128, 0.5);
+                            border: 2px solid rgba(128, 0, 128, 0.8);
+                            background-color: rgba(128, 0, 128, 0.2); 
                             border-radius: 13.75px;
                             width: 27.5px;
                             height: 27.5px;
-                            background-color: rgba(128, 0, 128, 0.2); 
                             padding: 2.5px 0 0 0 ;
                             text-align: center;
-                            z-index: 999;
+                            z-index: 3;
                           }
                           #popfound2q {
-                            margin: 10px 0 0 200px;
+                            margin: 400px 0 0 440px;
                             position:absolute;
-                            color: purple;
-                            border: 2px solid rgba(128, 0, 128, 0.5);
+                            color: rgba(128, 0, 128, 0.5);
+                            border: 2px solid rgba(128, 0, 128, 0.8);
+                            background-color: rgba(128, 0, 128, 0.2); 
                             border-radius: 13.75px;
                             width: 27.5px;
                             height: 27.5px;
-                            background-color: rgba(128, 0, 128, 0.2); 
                             padding: 2.5px 0 0 0 ;
                             text-align: center;
-                            z-index: 999;
+                            z-index: 3;
                           }
                           #popfound3q {
-                            margin: 10px 0 0 250px;
+                            margin: 700px 0 0 440px;
                             position:absolute;
-                            color: purple;
-                            border: 2px solid rgba(128, 0, 128, 0.5);
+                            color: rgba(128, 0, 128, 0.5);
+                            border: 2px solid rgba(128, 0, 128, 0.8);
+                            background-color: rgba(128, 0, 128, 0.2); 
                             border-radius: 13.75px;
                             width: 27.5px;
                             height: 27.5px;
-                            background-color: rgba(128, 0, 128, 0.2); 
                             padding: 2.5px 0 0 0 ;
                             text-align: center;
-                            z-index: 999;
+                            z-index: 3;
                           }
                         </style>
-
-
-
-
 
                         <!--SCRIPT FOR FAQS-->
                         <script>
@@ -678,7 +680,7 @@
 
 
 
-
+ <!--FOLLOWING FOR POPUP DEFINITIONS FOUND ONE-->
                          <!--FOLLOWING FOR DEFINITION POPUPS HTML-->
                          <div id="popups">
                                      <div class="popup" id="popfound1" onclick="myFunction1()">&#9889;
@@ -697,10 +699,10 @@
                                        <span class="popuptext" id="myPopup5">Extra over 1. can be used to refer to items that to a certain extent have already been measured, but have not been priced at the full value of all their labour and materials.</span>
                                      </div>
                                      <div class="popup" id="popfound6" onclick="myFunction6()">&#9889;
-                                       <span class="popuptext" id="myPopup6">Soft rock 1. sedimentary rock, 2. Typically medium to fine-grained, easily eroded and comparably easier to excavate in.</span>
+                                       <span class="popuptext" id="myPopup6">Soft rock 1. sedimentary rock, 2. Typically medium to fine-grained, easily eroded and comparably easier to excavate in. 3. clay, sandstones, limestones, shale etc.</span>
                                      </div>
                                      <div class="popup" id="popfound7" onclick="myFunction7()">&#9889;
-                                       <span class="popuptext" id="myPopup7">Hard rock 1. Igneous and metamorphic rock, 2. typically large grained, resistant to weathering and caparably harder to excavate in.</span>
+                                       <span class="popuptext" id="myPopup7">Hard rock 1. Igneous and metamorphic rock, 2. typically large grained, resistant to weathering and caparably harder to excavate in 3. granite, basalt, dolerite etc.</span>
                                      </div>
                                      <div class="popup" id="popfound8" onclick="myFunction8()">&#9889;
                                        <span class="popuptext" id="myPopup8">Mod AASHTO 1. Modified American Association of State Highway and Transportation Officials, 2. A measure of the required dry density and moisture content at which compaction should take place.</span>
@@ -724,7 +726,7 @@
                                  background-color: rgba(128, 0, 128, 0.2); 
                                  padding: 2.5px 0 0 0 ;
                                  text-align: center;
-                                 z-index: 999;
+                                 z-index: 2;
                                }
                                #popfound2 {
                                  margin: 140px 0 0 86px;
@@ -737,7 +739,7 @@
                                  border: 2px solid rgba(128, 0, 128, 0.5);
                                  background-color: rgba(128, 0, 128, 0.2); 
                                  text-align: center;
-                                 z-index: 999;
+                                 z-index: 2;
                                }
                                #popfound3 {
                                  margin: 130px 0 0 490px;
@@ -750,7 +752,7 @@
                                  border: 2px solid rgba(128, 0, 128, 0.5);
                                  background-color: rgba(128, 0, 128, 0.2); 
                                  text-align: center;
-                                 z-index: 999;
+                                 z-index: 2;
                                }
                                #popfound4 {
                                  margin: 167px 0 0 587px;
@@ -763,7 +765,7 @@
                                  border: 2px solid rgba(128, 0, 128, 0.5);
                                  background-color: rgba(128, 0, 128, 0.2); 
                                  text-align: center;
-                                 z-index: 999;
+                                 z-index: 2;
                                }
                                #popfound5 {
                                  margin: 280px 0 0 490px;
@@ -778,7 +780,7 @@
                                  text-align: center;
                                  text-decoration: bold;
                                  font-weight: bolder;
-                                 z-index: 999;
+                                 z-index: 2;
                                }
                                #popfound6 {
                                  margin: 355px 0 0 672px;
@@ -792,7 +794,7 @@
                                  text-align: center;
                                  text-decoration: bold;
                                  font-weight: bolder;
-                                 z-index: 999;
+                                 z-index: 2;
                                }
                                #popfound7 {
                                  margin:495px 0 0 672px;
@@ -807,7 +809,7 @@
                                  height: 27.5px;
                                  text-decoration: bold;
                                  font-weight: bolder;
-                                 z-index: 999;
+                                 z-index: 2;
                                }
                                #popfound8 {
                                  margin: 660px 0 0 700px;
@@ -823,7 +825,7 @@
                                  height: 27.5px;
                                  text-decoration: bold;
                                  font-weight: bolder;
-                                 z-index: 999;
+                                 z-index: 2;
                                }
                                #popfound9 {
                                  margin: 597px 0 0 538px;
@@ -838,7 +840,7 @@
                                  height: 27.5px;
                                  text-decoration: bold;
                                  font-weight: bolder;
-                                 z-index: 999;
+                                 z-index: 2;
                                }
                          </style>
                          <!--END OF POPUPS CSS-->
@@ -962,11 +964,11 @@
                            .dropdownfound4 {
                              position: relative;
                              display: inline-block;
-                             z-index: 900; 
+                             z-index: 1; 
                            }
                            .dropdown-contentfound4 {
                              display: none;
-                             margin: 160px 0 0 -850px;
+                             margin: 200px 0 0 -900px;
                          position:absolute;
                          background-color:white;
                              border: 3px solid rgba(0, 196, 0, 0.3);
@@ -1008,11 +1010,11 @@
                                .dropdownfound3 {
                                  position: relative;
                                  display: inline-block;
-                                 z-index: 900;
+                                 z-index: 1;
                                 }
                                .dropdown-contentfound3 {
                                  display: none;
-                                 margin: 160px 0 0 -850px;
+                                 margin: 200px 0 0 -900px;
                                  position:absolute;
                              background-color:white;
                              border: 3px solid rgba(0, 196, 0, 0.3);
@@ -1245,7 +1247,7 @@
                           margin: 735px 0 0 255px;
                           padding: 5px;
                           align-content: center;
-                          z-index: 99;
+                          z-index: 2;
                           cursor: pointer;
                           border-radius: 10px;
                         }
@@ -1257,7 +1259,7 @@
                          -ms-transition: all 500ms ease-in-out;
                          -o-transition: all 500ms ease-in-out;
                          transition: all 500ms ease-in-out;
-                         z-index: 9; 
+                         z-index: 0; 
                          width:900px;
                          height: 695px;
                          background-color:transparent;
@@ -1280,13 +1282,13 @@
                          #hover9found {
                            background-color:transparent;
                              border: 3px solid rgba(255, 0, 0, 0.3); 
-                             z-index: 100; 
+                             z-index: 3; 
                              position: absolute;
                              overflow: visible;
                              width:65px;
                              height:45px;
                              margin: 320px 0 0 408px;
-                             z-index: 99;
+                             z-index: 2;
                              cursor: pointer;
                              border-radius: 10px;
                          }
@@ -1297,12 +1299,11 @@
                                -ms-transition: all 500ms ease-in-out;
                                -o-transition: all 500ms ease-in-out;
                                transition: all 500ms ease-in-out;
-                               z-index: 99; 
+                               z-index: 0; 
                                width:75px;
                                height: 160px;
                                background-color:rgba(0, 0, 255, 0.10);
                                border: 5px dashed rgba(0, 0, 255, 0.50); 
-                               z-index: 999; 
                                position: absolute;
                                overflow: visible;
                                margin: 165px 0 0 -173px;
@@ -1318,7 +1319,7 @@
                                width:65px;
                                height:45px;
                                margin: 256px 0 0 408px;
-                               z-index: 99;
+                               z-index: 2;
                                cursor: pointer;
                                border-radius: 10px;
                            }
@@ -1329,12 +1330,11 @@
                                -ms-transition: all 500ms ease-in-out;
                                -o-transition: all 500ms ease-in-out;
                                transition: all 500ms ease-in-out;
-                               z-index: 99; 
+                               z-index: 0; 
                                width:70px;
                                height: 165px;
                                background-color:rgba(0, 0, 255, 0.10);
                                border: 5px dashed rgba(0, 0, 255, 0.50); 
-                               z-index: 99; 
                                position: absolute;
                                overflow: visible;
                                margin: 556px 0 0 -170px;
@@ -1350,7 +1350,7 @@
                                width:65px;
                                height:45px;
                                margin: 190px 0 0 408px;
-                               z-index: 99;
+                               z-index: 2;
                                cursor: pointer;
                                border-radius: 10px;
                              }
@@ -1361,12 +1361,11 @@
                                -ms-transition: all 500ms ease-in-out;
                                -o-transition: all 500ms ease-in-out;
                                transition: all 500ms ease-in-out;
-                               z-index: 99; 
+                               z-index: 0; 
                                width:95px;
                                height: 165px;
                                background-color:rgba(0, 0, 255, 0.10);
                                border: 5px dashed rgba(0, 0, 255, 0.50); 
-                               z-index: 99; 
                                position: absolute;
                                overflow: visible;
                                margin: 707px 0 0 -500px;
@@ -1382,7 +1381,7 @@
                                width:65px;
                                height:45px;
                                margin: 127px 0 0 408px;
-                               z-index: 99;
+                               z-index: 2;
                                cursor: pointer;
                                border-radius: 10px;
                              }
@@ -1398,7 +1397,7 @@
                                height: 166px;
                                background-color:rgba(0, 0, 255, 0.20);
                                border: 5px dashed rgba(0, 0, 255, 0.50); 
-                               z-index: 99; 
+                               z-index: 0; 
                                position: absolute;
                                overflow: visible;
                                margin: 706px 0 0 -773px;
@@ -1414,7 +1413,7 @@
                                z-index: 100; 
                                position: absolute;
                                overflow: visible;
-                               z-index: 99;
+                               z-index: 2;
                                cursor: pointer;
                                border-radius: 10px;
                              }
@@ -1425,14 +1424,13 @@
                          -ms-transition: all 500ms ease-in-out;
                          -o-transition: all 500ms ease-in-out;
                          transition: all 500ms ease-in-out;
-                         z-index: 99; 
+                         z-index: 0; 
                          width:900px;
                          height: 110px;
                          background-color:transparent;
                          border-top: 5px solid rgba(0, 0, 255, 0.5); 
                          border-left: 5px dashed rgba(0, 0, 255, 0.5); 
                          border-right: 5px dashed rgba(0, 0, 255, 0.5); 
-                         z-index: 99; 
                          position: absolute;
                          overflow: visible;
                          margin: 75px 0 0 -1180px;
@@ -1448,7 +1446,7 @@
                                z-index: 100; 
                                position: absolute;
                                overflow: visible;
-                               z-index: 99;
+                               z-index: 2;
                                cursor: pointer;
                                border-radius: 10px;
                          
@@ -1467,7 +1465,7 @@
                                border-right: 5px solid rgba(0, 0, 255, 0.50); 
                                border-top: 5px dashed rgba(0, 0, 255, 0.50); 
                                border-bottom: 5px dashed rgba(0, 0, 255, 0.50); 
-                               z-index: 99; 
+                               z-index: 0; 
                                position: absolute;
                                overflow: visible;
                                margin: 100px 0 0 -348px;
@@ -1484,7 +1482,7 @@
                                z-index: 100; 
                                position: absolute;
                                overflow: visible;
-                               z-index: 99;
+                               z-index: 2;
                                cursor: pointer;
                                border-radius: 10px;
                          
@@ -1503,7 +1501,7 @@
                               border-top: 5px solid rgba(0, 0, 255, 0.50); 
                               border-right: 5px dashed rgba(0, 0, 255, 0.50); 
                               border-left: 5px dashed rgba(0, 0, 255, 0.50); 
-                              z-index: 99; 
+                              z-index: 0; 
                               position: absolute;
                               overflow: visible;
                               margin: 42px 0 0 -905px;
@@ -1519,7 +1517,7 @@
                                z-index: 100; 
                                position: absolute;
                                overflow: visible;
-                               z-index: 99;
+                               z-index: 2;
                                cursor: pointer;
                                border-radius: 10px;
                          
@@ -1538,7 +1536,7 @@
                               border-bottom: 5px solid rgba(0, 0, 255, 0.50); 
                               border-right: 5px dashed rgba(0, 0, 255, 0.50); 
                               border-left: 5px dashed rgba(0, 0, 255, 0.50); 
-                              z-index: 99; 
+                              z-index: 0; 
                               position: absolute;
                               overflow: visible;
                               margin: 703px 0 0 -1177px;
@@ -1548,13 +1546,13 @@
                              #hover17found {
                                background-color:transparent;
                                border: 3px solid rgba(255, 0, 0, 0.3); 
-                               z-index: 100; 
+                               z-index: 4; 
                                position: absolute;
                                overflow: visible;
                                width:130px;
                                height:104px;
                                margin: 195px 0 0 230px;
-                               z-index: 99;
+                               z-index: 2;
                                cursor: pointer;
                                border-radius: 10px;
                          
@@ -1566,7 +1564,7 @@
                          -ms-transition: all 500ms ease-in-out;
                          -o-transition: all 500ms ease-in-out;
                          transition: all 500ms ease-in-out;
-                         z-index: 9; 
+                         z-index: 0; 
                          width:770px;
                          height: 110px;
                          background-color:transparent;
@@ -1585,10 +1583,10 @@
                                margin: 360px 0 0 230px;
                                background-color:transparent;
                                border: 3px solid rgba(255, 0, 0, 0.3); 
-                               z-index: 100; 
+                               z-index: 4; 
                                position: absolute;
                                overflow: visible;
-                               z-index: 99;
+                               z-index: 2;
                                cursor: pointer;
                                border-radius: 10px;
                          
@@ -1600,14 +1598,13 @@
                                -ms-transition: all 500ms ease-in-out;
                                -o-transition: all 500ms ease-in-out;
                                transition: all 500ms ease-in-out;
-                               z-index: 99; 
+                               z-index: 0; 
                                width:45px;
                                height: 390px;
                                background-color:transparent;
                                border-right: 5px solid rgba(0, 0, 255, 0.50); 
                                border-top: 5px dashed rgba(0, 0, 255, 0.50); 
                                border-bottom: 5px dashed rgba(0, 0, 255, 0.50); 
-                               z-index: 99; 
                                position: absolute;
                                overflow: visible;
                                margin: 180px 0 0 -348px;
@@ -1620,10 +1617,9 @@
                                margin: 530px 0 0 235px;
                                background-color:transparent;
                                border: 3px solid rgba(255, 0, 0, 0.3); 
-                               z-index: 100; 
+                               z-index: 2; 
                                position: absolute;
                                overflow: visible;
-                               z-index: 99;
                                cursor: pointer;
                                border-radius: 10px;
                          
@@ -1635,14 +1631,13 @@
                                -ms-transition: all 500ms ease-in-out;
                                -o-transition: all 500ms ease-in-out;
                                transition: all 500ms ease-in-out;
-                               z-index: 99; 
                                width:232px;
                                height: 80px;
                                background-color:transparent;
                                border-top: 5px solid rgba(0, 0, 255, 0.50); 
                                border-right: 5px dashed rgba(0, 0, 255, 0.50); 
                                border-left: 5px dashed rgba(0, 0, 255, 0.50); 
-                               z-index: 99; 
+                               z-index: 0; 
                                position: absolute;
                                overflow: visible;
                                margin: 42px 0 0 -827px;
@@ -1655,10 +1650,10 @@
                                margin: 638px 0 0 240px;
                                background-color:transparent;
                                border: 3px solid rgba(255, 0, 0, 0.3); 
-                               z-index: 100; 
+                               z-index: 2; 
                                position: absolute;
                                overflow: visible;
-                               z-index: 99;
+                               z-index: 2;
                                cursor: pointer;
                                border-radius: 10px;
                              }
@@ -1669,14 +1664,13 @@
                                -ms-transition: all 500ms ease-in-out;
                                -o-transition: all 500ms ease-in-out;
                                transition: all 500ms ease-in-out;
-                               z-index: 99; 
+                               z-index: 0; 
                                width:200px;
                                height: 48px;
                                background-color:transparent;
                                border-bottom: 5px solid rgba(0, 0, 255, 0.50); 
                                border-right: 5px dashed rgba(0, 0, 255, 0.50); 
                                border-left: 5px dashed rgba(0, 0, 255, 0.50); 
-                               z-index: 99; 
                                position: absolute;
                                overflow: visible;
                                margin: 703px 0 0 -1117px;
@@ -1715,7 +1709,7 @@
                           border-radius: 6px;
                           padding: 8px 0;
                           position: absolute;
-                          z-index: 1;
+                          z-index: 9999;
                           bottom: 125%;
                           left: 50%;
                           margin-left: -80px;
@@ -1729,6 +1723,8 @@
                           margin-left: -5px;
                           border-width: 5px;
                           border-style: solid;
+                          z-index: 9999;
+
                           border-color: #555 transparent transparent transparent;
                         }
                         /* Toggle this class - hide and show the popup */
@@ -1785,42 +1781,120 @@
                            -3px -3px 6px #ffffff;
                        }
                       </style>
+                      <!--FOLOOWING FOR PUP UP FREQUENT QUESTIONS-->
+                      <div id="popupsQ">
+                        <div class="popup" id="popfound4q" onclick="myFunction4q()"><i class="material-icons">psychology_alt</i>
+                          <span class="popuptext" id="myPopup4q">Q: What is risk of collapse and why do we measure it?
+                            <br>A: The risk of collapse item is accounting for the additional time and labour as a result of maintaining all excavated surfaces, including associated labour and health & safety work.
+                          </span>
+                        </div>
+                        <div class="popup" id="popfound5q" onclick="myFunction5q()"><i class="material-icons">psychology_alt</i>
+                          <span class="popuptext" id="myPopup5q">Q: What does 'keeping excavations free of all water' include?
+                            <br>A: 'Keeping excavations free of all water' is the process of both taking steps to prevent water from entering excavations, and the steps required to remove water from excavations should water present a barrier to completion of work.
+                          </span>
+                        </div>
+                        <div class="popup" id="popfound6q" onclick="myFunction6q()"><i class="material-icons">psychology_alt</i>
+                          <span class="popuptext" id="myPopup6q">Q: What is rough formwork?
+                            <br>A: </span>
+                        </div>
+                        </div>
+
+                        <!--FOLLOWING FOR FAQ POPUP STYLES-->
+                        <style>
+                          #myPopup4q, #myPopup5q, #myPopup6q{
+                            width: 600px;
+                            height: fit-content;
+                            margin: 0 0 0 -300px;
+                            font-size: 16px;
+                            z-index: 3;
+                          }
+                          #popfound4q {
+                            margin: 110px 0 0 130px;
+                            position:absolute;
+                            color: rgba(128, 0, 128, 0.5);
+                            border: 2px solid rgba(128, 0, 128, 0.8);
+                            background-color: rgba(128, 0, 128, 0.2); 
+                            border-radius: 13.75px;
+                            width: 27.5px;
+                            height: 27.5px;
+                            padding: 2.5px 0 0 0 ;
+                            text-align: center;
+                            z-index: 3;
+                          }
+                          #popfound5q {
+                            margin: 590px 0 0 130px;
+                            position:absolute;
+                            color: rgba(128, 0, 128, 0.5);
+                            border: 2px solid rgba(128, 0, 128, 0.8);
+                            background-color: rgba(128, 0, 128, 0.2); 
+                            border-radius: 13.75px;
+                            width: 27.5px;
+                            height: 27.5px;
+                            padding: 2.5px 0 0 0 ;
+                            text-align: center;
+                            z-index: 3;
+                          }
+                          #popfound6q {
+                            margin: 700px 0 0 440px;
+                            position:absolute;
+                            color: rgba(128, 0, 128, 0.5);
+                            border: 2px solid rgba(128, 0, 128, 0.8);
+                            background-color: rgba(128, 0, 128, 0.2); 
+                            border-radius: 13.75px;
+                            width: 27.5px;
+                            height: 27.5px;
+                            padding: 2.5px 0 0 0 ;
+                            text-align: center;
+                            z-index: 3;
+                          }
+                        </style>
+
+                        <!--SCRIPT FOR FAQS-->
+                        <script>
+                          function myFunction4q() {
+                            var popup = document.getElementById("myPopup4q");
+                            popup.classList.toggle("show");
+                          }
+                          function myFunction5q() {
+                            var popup = document.getElementById("myPopup5q");
+                            popup.classList.toggle("show");
+                          }
+                          function myFunction6q() {
+                            var popup = document.getElementById("myPopup6q");
+                            popup.classList.toggle("show");
+                          }
+                        </script>
                      <!--FOLLOWING FOR POPUP DEFINITIONS FOUND ONE-->
                        <!--FOLLOWING FOR POPUPS HTML-->
                        <div id="popups">
                                    <div class="popup" id="popfound10" onclick="myFunction10()">&#9889;
-                                     <span class="popuptext" id="myPopup10">Girth 1. The circumference of any circular object. 2. The distance around a column.</span>
+                                     <span class="popuptext" id="myPopup10">Subterranean 1. being, lying, or operating under the surface of the earth.</span>
                                    </div>
                                    <div class="popup" id="popfound11" onclick="myFunction11()">&#9889;
-                                     <span class="popuptext" id="myPopup11">Debris 1. pieces of wood, metal, building materials, etc. that are left after something has been destroyed.</span>
+                                     <span class="popuptext" id="myPopup11">Insecticide 1. an agent that destroys insects as well as other small pests.</span>
                                    </div>
                                    <div class="popup" id="popfound12" onclick="myFunction12()">&#9889;
-                                     <span class="popuptext" id="myPopup12">Excavate 1. to make a hole in the ground by digging, 2. removal of Earth for construction purposes.</span>
+                                     <span class="popuptext" id="myPopup12">Unreinforced concrete 1. concrete containing no steel reinforcing bars or wire or 2. containing not more than two tenths of one percent of reinforcing</span>
                                    </div>
                                    <div class="popup" id="popfound13" onclick="myFunction13()">&#9889;
-                                     <span class="popuptext" id="myPopup13">NGL 1. Natural Ground Level 2. level of the site in its unmodified state, or 3. in a state which has been graded.</span>
+                                     <span class="popuptext" id="myPopup13">Excavated surfaces 1. the exposed faces resulting from removal or Earth during excavations, including bases and sides.</span>
                                    </div>
                                    <div class="popup" id="popfound14" onclick="myFunction14()">&#9889;
-                                     <span class="popuptext" id="myPopup14">Extra over 1. can be used to refer to items that to a certain extent have already been measured, but have not been priced at the full value of all their labour and materials.</span>
+                                     <span class="popuptext" id="myPopup14">Carting away 1. to take something or someone somewhere, especially using a lot of effort.</span>
                                    </div>
                                    <div class="popup" id="popfound15" onclick="myFunction15()">&#9889;
-                                     <span class="popuptext" id="myPopup15">Soft rock 1. sedimentary rock, 2. Typically medium to fine-grained, easily eroded and comparably easier to excavate in.</span>
+                                     <span class="popuptext" id="myPopup15">Formwork 1. an arrangement of wooden boards, bolts, etc, used to shape reinforced concrete while it is setting.</span>
                                    </div>
                                    <div class="popup" id="popfound16" onclick="myFunction16()">&#9889;
-                                     <span class="popuptext" id="myPopup16">Hard rock 1. Igneous and metamorphic rock, 2. typically large grained, resistant to weathering and caparably harder to excavate in.</span>
+                                     <span class="popuptext" id="myPopup16">Reveals 1. the inner surface of an opening or recess in a wall.</span>
                                    </div>
-                                   <div class="popup" id="popfound17" onclick="myFunction17()">&#9889;
-                                     <span class="popuptext" id="myPopup17">Mod AASHTO 1. Modified American Association of State Highway and Transportation Officials, 2. A measure of the required dry density and moisture content at which compaction should take place.</span>
+                            
                                    </div>
-                                   <div class="popup" id="popfound18" onclick="myFunction18()">&#9889;
-                                     <span class="popuptext" id="myPopup18">Backfilling 1. the process of putting soil back into an excavation once related works has been completed.</span>
-                                   </div>
-                       </div>
                        <!--END OF POPUPS HTML-->
                        <!--FOLLOWING FOR POPUPS CSS-->
                        <style>
                              #popfound10 {
-                               margin: 128px 0 0 270px;
+                               margin: 640px 0 0 270px;
                                position:absolute;
                                color: purple;
                                border: 2px solid rgba(128, 0, 128, 0.5);
@@ -1829,10 +1903,10 @@
                                height: 27.5px;
                                background-color: rgba(128, 0, 128, 0.2); 
                                text-align: center;
-                               z-index: 999;
+                               z-index: 2;
                              }
                              #popfound11 {
-                               margin: 90px 0 0 130px;
+                               margin: 720px 0 0 130px;
                                position:absolute;
                                color: purple;
                                border-radius: 13.75px;
@@ -1841,10 +1915,10 @@
                                border: 2px solid rgba(128, 0, 128, 0.5);
                                background-color: rgba(128, 0, 128, 0.2); 
                                text-align: center;
-                               z-index: 999;
+                               z-index: 2;
                              }
                              #popfound12 {
-                               margin: 76px 0 0 455px;
+                               margin: 80px 0 0 500px;
                                position:absolute;
                                color: purple;
                                border-radius: 13.75px;
@@ -1853,10 +1927,18 @@
                                border: 2px solid rgba(128, 0, 128, 0.5);
                                background-color: rgba(128, 0, 128, 0.2); 
                                text-align: center;
-                               z-index: 999;
+                               z-index: 2;
                              }
+                                   
+                             #myPopup12{
+                              width: 400px;
+                              height: fit-content;
+                              margin: 0 0 0 -200px;
+                              font-size: 14px;
+                              z-index: 2;
+                            }
                              #popfound13 {
-                               margin: 110px 0 0 540px;
+                               margin: 135px 0 0 655px;
                                position:absolute;
                                color: purple;
                                border-radius: 13.75px;
@@ -1865,10 +1947,10 @@
                                border: 2px solid rgba(128, 0, 128, 0.5);
                                background-color: rgba(128, 0, 128, 0.2); 
                                text-align: center;
-                               z-index: 999;
+                               z-index: 2;
                              }
                              #popfound14 {
-                               margin: 160px 0 0 510px;
+                               margin: 300px 0 0 500px;
                                position:absolute;
                                color: purple;
                                border-radius: 13.75px;
@@ -1879,10 +1961,10 @@
                                text-align: center;
                                text-decoration: bold;
                                font-weight: bolder;
-                               z-index: 999;
+                               z-index: 2;
                              }
                              #popfound15 {
-                               margin: 240px 0 0 572px;
+                               margin: 530px 0 0 572px;
                                position:absolute;
                                border-radius: 13.75px;
                                width: 27.5px;
@@ -1892,10 +1974,10 @@
                                text-align: center;
                                text-decoration: bold;
                                font-weight: bolder;
-                               z-index: 999;
+                               z-index: 2;
                              }
                              #popfound16 {
-                               margin: 355px 0 0 572px;
+                               margin: 555px 0 0 670px;
                                position:absolute;
                                color: purple;
                                border: 2px solid rgba(128, 0, 128, 0.5);
@@ -1906,36 +1988,7 @@
                                height: 27.5px;
                                text-decoration: bold;
                                font-weight: bolder;
-                               z-index: 999;
-                             }
-                             #popfound17 {
-                               margin: 463px 0 0 572px;
-                               position:absolute;
-                               color: purple;
-                               border-radius: 13.75px;
-                               border: 2px solid rgba(128, 0, 128, 0.5);
-                               background-color: rgba(128, 0, 128, 0.2); 
-                               text-align: center;
-                               border-radius: 13.75px;
-                               width: 27.5px;
-                               height: 27.5px;
-                               text-decoration: bold;
-                               font-weight: bolder;
-                               z-index: 999;
-                             }
-                             #popfound18 {
-                               margin: 497px 0 0 538px;
-                               position:absolute;
-                               color: purple;
-                               border: 2px solid rgba(128, 0, 128, 0.5);
-                               background-color: rgba(128, 0, 128, 0.2); 
-                               text-align: center;
-                               border-radius: 13.75px;
-                               width: 27.5px;
-                               height: 27.5px;
-                               text-decoration: bold;
-                               font-weight: bolder;
-                               z-index: 999;
+                               z-index: 2;
                              }
                        </style>
                        <!--END OF POPUPS CSS-->
@@ -3726,7 +3779,7 @@
                         position: relative;
                         display: inline-block;
                         cursor: pointer;
-                        opacity: 0.8;
+                        opacity: 1;
                         -webkit-user-select: none;
                         -moz-user-select: none;
                         -ms-user-select: none;
@@ -3753,6 +3806,8 @@
                         position: absolute;
                         top: 100%;
                         left: 50%;
+                        z-index: 9999;
+
                         margin-left: -5px;
                         border-width: 5px;
                         border-style: solid;
@@ -3828,7 +3883,7 @@
     align-items: center;
     margin: 0px 0 0 1135px;
     border: none;
-    z-index: 9999;
+    z-index: 1;
     opacity: 0.3;
 }
 .process-model li::after {
