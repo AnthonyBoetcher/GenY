@@ -1795,16 +1795,23 @@
                         </div>
                         <div class="popup" id="popfound6q" onclick="myFunction6q()"><i class="material-icons">psychology_alt</i>
                           <span class="popuptext" id="myPopup6q">Q: What is rough formwork?
-                            <br>A: </span>
+                            <br>A: Rough formwork is boardly categorized as formwork to concrete faces where no post-casting striking is performed and falling under Degree of Accuracy 3, typically suitable for foundations.</span>
                         </div>
                         </div>
 
                         <!--FOLLOWING FOR FAQ POPUP STYLES-->
                         <style>
-                          #myPopup4q, #myPopup5q, #myPopup6q{
+                          #myPopup4q, #myPopup5q {
                             width: 600px;
                             height: fit-content;
                             margin: 0 0 0 -300px;
+                            font-size: 16px;
+                            z-index: 3;
+                          }
+                          #myPopup6q{
+                            width: 300px;
+                            height: fit-content;
+                            margin: 0 0 0 -150px;
                             font-size: 16px;
                             z-index: 3;
                           }
@@ -1835,7 +1842,7 @@
                             z-index: 3;
                           }
                           #popfound6q {
-                            margin: 700px 0 0 440px;
+                            margin: 570px 0 0 500px;
                             position:absolute;
                             color: rgba(128, 0, 128, 0.5);
                             border: 2px solid rgba(128, 0, 128, 0.8);
@@ -2042,8 +2049,8 @@
                                <div class="dropdownfound5">
                                            <button id="myBtnfound5" class="dropbtnfound5"></button>
                                          <div id="myDropdownfound5" class="dropdown-contentfound5">
-                                           <div id="siteclearancepic1"></div>
-                                           <video controls id="siteclearancecalcvideo1" src="siteclearancecalcvideo.mp4"></video>
+                                           <div id="riskofcollapsepic"></div>
+                                           <video controls id="riskofcollapsevideo" src="siteclearancecalcvideo.mp4"></video>
                                          </div>
                                </div>
                                <div class="dropdownfound6">
@@ -2055,38 +2062,94 @@
                                <div class="dropdownfound7">
                                            <button id="myBtnfound7" class="dropbtnfound7"></button>
                                          <div id="myDropdownfound7" class="dropdown-contentfound7">
-                                           <div id="siteclearancestandardsystem1"></div>
+                                           <div id="riskofcollapsestandardsyst"></div>
                                          </div>
                                </div>  
                                <div class="dropdownfound8">
                                        <button id="myBtnfound8" class="dropbtnfound8"></button>
                                      <div id="myDropdownfound8" class="dropdown-contentfound8">
-                                       <div id="excavationsstandardsystem1"></div>
+                                       <div id="freefromwater"></div>
                                      </div>
                                </div>
+                               <div class="dropdownfound8a">
+                                <button id="myBtnfound8a" class="dropbtnfound8a"></button>
+                              <div id="myDropdownfound8a" class="dropdown-contentfound8a">
+                                <div id="unreinforcedconcretestandardsyst"></div>
+                              </div>
+                        </div>
                          </div>
                          <!--FOLLOWING FOR SUPER ASSIST CSS-->
                          <style>
-                           #myDropdownfound5:hover, #myDropdownfound6:hover, #myDropdownfound7:hover, #myDropdownfound8:hover{
+                            #myDropdownfound7:hover, #myDropdownfound8:hover, #myDropdownfound8a:hover{
                              transform: scale(2);
                              cursor: pointer;
                              z-index: 999;
                              }
-                         #excavationsstandardsystem1{
-                           background-image: url("excavationsfinalstandardsystem.png");
+                             #myDropdownfound5:hover, #myDropdownfound6:hover{
+                              transform: scale(1.65);
+                             cursor: pointer;
+                             z-index: 999;
+                             }
+                             
+                         #freefromwater{
+                           background-image: url("keepingexcavationsfreeofwaterASAQS.png");
                            background-size: 100% 100%; 
                            background-repeat: no-repeat;
                            width: 600px; 
-                           height: 400px; 
+                           height: 150px; 
                            background-color:white;
                            z-index: 999;
                          }
+                         .dropbtnfound8a {
+                          border: 3px solid rgba(0, 196, 0, 0.3);
+                      background-color: transparent;
+                      margin: 25px 0 0 505px;
+                      width: 200px; 
+                      height: 100px;
+                      position:absolute;
+                      padding: 16px;
+                      z-index: 1; 
+                      font-size: 16px;
+                      cursor: pointer;
+                      border-radius: 10px;
+                    }
+                    .dropbtnfound8a:hover, .dropbtnfound8a:focus {
+                      background-color:none;
+                          border: 3px solid rgba(0, 196, 0, 0.3);
+                      z-index: 1;
+                      }
+                    .dropdownfound8a {
+                      position: relative;
+                      display: inline-block;
+                      z-index: 1; 
+                    }
+                    .dropdown-contentfound8a {
+                      display: none;
+                      margin: 195px 0 0 -850px;
+                      position:absolute;
+                  background-color:white;
+                      border: 3px solid rgba(0, 196, 0, 0.3);
+                  overflow: auto;
+                      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                      z-index: 998;
+                      border-radius: 10px;
+                      height: fit-content;
+                    }  
+                    #unreinforcedconcretestandardsyst{
+                      background-image: url("concreteASAQS.png");
+                      background-size: 100% 100%; 
+                    background-repeat: no-repeat;
+                    width: 600px; 
+                    height: 400px; 
+                    background-color:white;
+                    z-index: 999;
+                    }
                          .dropbtnfound8 {
                                border: 3px solid rgba(0, 196, 0, 0.3);
                            background-color: transparent;
-                           margin: 67px 0 0 461px;
+                           margin: 580px 0 0 142px;
                            width: 220px; 
-                           height: 610px;
+                           height: 60px;
                            position:absolute;
                            padding: 16px;
                            z-index: 1; 
@@ -2106,8 +2169,8 @@
                          }
                          .dropdown-contentfound8 {
                            display: none;
-                           margin: 150px 0 0 -779px;
-                       position:absolute;
+                           margin: 195px 0 0 -850px;
+                           position:absolute;
                        background-color:white;
                            border: 3px solid rgba(0, 196, 0, 0.3);
                        overflow: auto;
@@ -2118,8 +2181,8 @@
                          }  
                          /*end excavation standard system dropdown*/
                          .show {display:block;}
-                           #siteclearancestandardsystem1{
-                             background-image: url("siteclearancefinalstandardsystem.png");
+                           #riskofcollapsestandardsyst{
+                             background-image: url("riskofcollapseASAQS.png");
                              background-size: 100% 100%; 
                            background-repeat: no-repeat;
                            width: 600px; 
@@ -2130,11 +2193,11 @@
                              .dropbtnfound7 {
                                    border: 3px solid rgba(0, 196, 0, 0.3);
                                background-color: transparent;
-                               margin: 65px 0 0 130px;
-                               width: 200px; 
-                               height: 65px;
+                               margin: 51px 0 0 142px;
+                               width: 100px; 
+                               height: 25px;
                                position:absolute;
-                               padding: 16px;
+                               padding: 5px;
                                z-index: 1; 
                                font-size: 16px;
                                cursor: pointer;
@@ -2152,7 +2215,7 @@
                              }
                              .dropdown-contentfound7 {
                                display: none;
-                               margin: 100px 0 0 -850px;
+                               margin: 195px 0 0 -850px;
                                position:absolute;
                            background-color:white;
                            border: 3px solid rgba(0, 196, 0, 0.3);
@@ -2176,7 +2239,7 @@
                              .dropbtnfound6 {
                                border: 3px solid rgba(0, 125, 129, 0.3);
                                background-color: transparent;
-                               margin: 675px 0 0 470px;
+                               margin: 138px 0 0 145px;
                                width: 75px; 
                                height: 90px;
                                position:absolute;
@@ -2198,7 +2261,7 @@
                              }
                              .dropdown-contentfound6 {
                                display: none;
-                               margin: 200px 0 0 300px;
+                               margin: 195px 0 0 -850px;
                                position:absolute;
                            background-color:white;
                            border: 3px solid rgba(0, 125, 129, 0.3);
@@ -2210,8 +2273,8 @@
                              }  
                              .show {display:block;}
                            /*end of dropdown for site clearance collection*/
-                           #siteclearancepic1{
-                             background-image: url("siteclearancepic.jpeg");
+                           #riskofcollapsepic{
+                             background-image: url("riskofcollapsepic.jpg");
                              background-size: 100% 100%; 
                              background-repeat: no-repeat;
                              width: 400px; 
@@ -2219,17 +2282,18 @@
                              background-color:none;
                              z-index: 998;
                            }
-                       #siteclearancecalcvideo1{
-                             width: 400px; 
-                             height: 300px; 
-                             margin: -32px 0 0 0;
-                       }
+                       #riskofcollapsevideo{
+                          width: 400px; 
+                          height: 300px; 
+                          margin: -32px 0 0 0;
+                    }
+                       
                              .dropbtnfound5 {
                                border: 3px solid rgba(0, 125, 129, 0.3);
                                background-color: transparent;
-                               margin: 115px 0 0 1105px;
-                               width: 70px; 
-                               height: 130px;
+                               margin: 50px 0 0 150px;
+                               width: 200px; 
+                               height: 90px;
                                position:absolute;
                                padding: 16px;
                                z-index: 1; 
@@ -2248,17 +2312,18 @@
                                z-index: 1;
                              }
                              .dropdown-contentfound5 {
-                               display: none;
-                               margin: 200px 0 0 300px;
-                               position:absolute;
-                           background-color:white;
-                           border: 3px solid rgba(0, 125, 129, 0.3);
-                           min-width: 160px;
-                               overflow: auto;
-                               box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-                               z-index: 999;
-                               border-radius: 10px;
-                               height: fit-content;
+                              display: none;
+                              margin: 195px 0 0 -850px;
+                              position:absolute;
+                          background-color:white;
+                          border: 3px solid rgba(0, 125, 129, 0.3);
+                          min-width: 160px;
+                              overflow: auto;
+                              box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                              z-index: 999;
+                              border-radius: 10px;
+                              height: fit-content;
+                              width: 400px;
                              }
                              .dropdown-contentfound5 a:hover {background-color: rgb(8, 55, 56)}
                              
@@ -2297,6 +2362,12 @@
                          function myFunctionfound8() {
                          document.getElementById("myDropdownfound8").classList.toggle("show");
                          }
+                         document.getElementById("myBtnfound8a").onclick = function() {myFunctionfound8a()};
+         
+                         /* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
+                         function myFunctionfound8a() {
+                         document.getElementById("myDropdownfound8a").classList.toggle("show");
+                         }
                          </script>
                          <!--END OF SUPER ASSIST JS-->
                      <!--END OF SUPER ASSIST DROPDOWNS-->
@@ -2322,16 +2393,16 @@
                                  <div id="hover121found"></div>
                                  <div id="stuff121found"></div>
                                  <div id="hover131found"></div>
-                                 <div id="stuff131found">+1500mm&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+1500mm</div>
+                                 <div id="stuff131found"><div style="position: absolute; width:35px; border-top:5px dashed red; top:0; left: 0"></div><div style="position: absolute; width:35px; border-top:5px dashed red; top:0; right: 0"></div><div style="position: absolute; width:35px; border-bottom:5px dashed red; bottom:0; left: 0"></div></div>
                                  
                                  <div id="hover141found"></div>
-                                 <div id="stuff141found">+1500mm<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>+1500mm</div>     
+                                 <div id="stuff141found"></div>     
          
                                  <div id="hover151found"></div>
-                                 <div id="stuff151found">+1500mm&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+1500mm</div>   
+                                 <div id="stuff151found"></div>   
          
                                  <div id="hover161found"></div>
-                                 <div id="stuff161found">+1500mm&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+1500mm</div>   
+                                 <div id="stuff161found"></div>   
          
                                  <div id="hover171found"></div>
                                  <div id="stuff171found"></div>   
@@ -2366,138 +2437,142 @@
                        <!--END OF HOVER ITEMS HTML-->
                      <!--START HOVER ITEMS CSS-->
                      <style>
-                       #hover91found {
-                         background-color:transparent;
-                           border: 3px solid rgba(255, 0, 0, 0.3); 
-                           z-index: 100; 
-                           position: absolute;
-                           overflow: visible;
-                           width:65px;
-                           height:45px;
-                           margin: 320px 0 0 1462px;
-                           z-index: 99;
-                           cursor: pointer;
-                           border-radius: 10px;
-                       }
-                       #stuff91found {
-                         opacity: 0.0;
-                             -webkit-transition: all 500ms ease-in-out;
-                             -moz-transition: all 500ms ease-in-out;
-                             -ms-transition: all 500ms ease-in-out;
-                             -o-transition: all 500ms ease-in-out;
-                             transition: all 500ms ease-in-out;
-                             z-index: 99; 
-                             width:60px;
-                             height: 170px;
-                             background-color:transparent;
-                             border: 5px solid rgba(0, 0, 255, 0.50); 
-                             z-index: 999; 
-                             position: absolute;
-                             overflow: visible;
-                             margin: 140px 0 0 855px;
-                             color: black;
-                             text-decoration: bold;
-                         }
+                      #hover91found {
+                        background-color:transparent;
+                          border: 3px solid rgba(255, 0, 0, 0.3); 
+                          z-index: 3; 
+                          position: absolute;
+                          overflow: visible;
+                          width:75px;
+                          height:45px;
+                          margin: 176px 0 0 40px;
+                          z-index: 2;
+                          cursor: pointer;
+                          border-radius: 10px;
+                      }
+                      #stuff91found {
+                        opacity: 0.0;
+                            -webkit-transition: all 500ms ease-in-out;
+                            -moz-transition: all 500ms ease-in-out;
+                            -ms-transition: all 500ms ease-in-out;
+                            -o-transition: all 500ms ease-in-out;
+                            transition: all 500ms ease-in-out;
+                            z-index: 0; 
+                            width:75px;
+                            height: 160px;
+                            background-color:none;
+                            border-left: 5px dashed rgba(0, 0, 255, 0.50); 
+                            border-right: 5px dashed rgba(0, 0, 255, 0.50); 
+
+                            position: absolute;
+                            overflow: visible;
+                            margin: 165px 0 0 -173px;
+                            color: black;
+                            text-decoration: bold;
+                        }
                          #hover111found {
-                           background-color:transparent;
-                             border: 3px solid rgba(255, 0, 0, 0.3); 
-                             z-index: 100; 
-                             position: absolute;
-                             overflow: visible;
-                             width:65px;
-                             height:45px;
-                             margin: 258px 0 0 1462px;
-                             z-index: 99;
-                             cursor: pointer;
-                             border-radius: 10px;
-                         }
-                         #stuff111found {
-                           opacity: 0.0;
-                             -webkit-transition: all 500ms ease-in-out;
-                             -moz-transition: all 500ms ease-in-out;
-                             -ms-transition: all 500ms ease-in-out;
-                             -o-transition: all 500ms ease-in-out;
-                             transition: all 500ms ease-in-out;
-                             z-index: 99; 
-                             width:60px;
-                             height: 180px;
-                             background-color:transparent;
-                             border: 5px solid rgba(0, 0, 255, 0.50); 
-                             z-index: 99; 
-                             position: absolute;
-                             overflow: visible;
-                             margin: 565px 0 0 852px;
-                             color: black;
-                             text-decoration: bold;
-                           }
+                          background-color:transparent;
+                            border: 3px solid rgba(255, 0, 0, 0.3); 
+                            z-index: 100; 
+                            position: absolute;
+                            overflow: visible;
+                            width:75px;
+                            height:45px;
+                            margin: 133px 0 0 40px;
+                            z-index: 2;
+                            cursor: pointer;
+                            border-radius: 10px;
+                        }
+                        #stuff111found {
+                          opacity: 0.0;
+                            -webkit-transition: all 500ms ease-in-out;
+                            -moz-transition: all 500ms ease-in-out;
+                            -ms-transition: all 500ms ease-in-out;
+                            -o-transition: all 500ms ease-in-out;
+                            transition: all 500ms ease-in-out;
+                            z-index: 0; 
+                            width:70px;
+                            height: 165px;
+                            background-color: none;
+                            border-left: 5px dashed rgba(0, 0, 255, 0.50); 
+                            border-right: 5px dashed rgba(0, 0, 255, 0.50); 
+
+                            position: absolute;
+                            overflow: visible;
+                            margin: 556px 0 0 -170px;
+                            color: black;
+                            text-decoration: bold;
+                          }
                            #hover11a1found {
-                             background-color:transparent;
-                             border: 3px solid rgba(255, 0, 0, 0.3); 
-                             z-index: 100; 
-                             position: absolute;
-                             overflow: visible;
-                             width:65px;
-                             height:45px;
-                             margin: 195px 0 0 1462px;
-                             z-index: 99;
-                             cursor: pointer;
-                             border-radius: 10px;
-                           }
-                           #stuff11a1found {
-                             opacity: 0.0;
-                             -webkit-transition: all 500ms ease-in-out;
-                             -moz-transition: all 500ms ease-in-out;
-                             -ms-transition: all 500ms ease-in-out;
-                             -o-transition: all 500ms ease-in-out;
-                             transition: all 500ms ease-in-out;
-                             z-index: 99; 
-                             width:80px;
-                             height: 180px;
-                             background-color:transparent;
-                             border: 5px solid rgba(0, 0, 255, 0.50); 
-                             z-index: 99; 
-                             position: absolute;
-                             overflow: visible;
-                             margin: 727px 0 0 580px;
-                             color: black;
-                             text-decoration: bold;
-                             }
-                           #hover121found {
-                             background-color:transparent;
-                             border: 3px solid rgba(255, 0, 0, 0.3); 
-                             z-index: 100; 
-                             position: absolute;
-                             overflow: visible;
-                             width:65px;
-                             height:45px;
-                             margin: 132px 0 0 1462px;
-                             z-index: 99;
-                             cursor: pointer;
-                             border-radius: 10px;
-                           }
-                           #stuff121found {
-                             opacity: 0.0;
-                             -webkit-transition: all 500ms ease-in-out;
-                             -moz-transition: all 500ms ease-in-out;
-                             -ms-transition: all 500ms ease-in-out;
-                             -o-transition: all 500ms ease-in-out;
-                             transition: all 500ms ease-in-out;
-                             z-index: 99; 
-                             width:95px;
-                             height: 180px;
-                             background-color:transparent;
-                             border: 5px solid rgba(0, 0, 255, 0.50); 
-                             z-index: 99; 
-                             position: absolute;
-                             overflow: visible;
-                             margin: 727px 0 0 350px;
-                             color: black;
-                             text-decoration: bold;
-                           }
+                            background-color:transparent;
+                            border: 3px solid rgba(255, 0, 0, 0.3); 
+                            z-index: 100; 
+                            position: absolute;
+                            overflow: visible;
+                            width:75px;
+                            height:45px;
+                            margin: 88px 0 0 40px;
+                            z-index: 2;
+                            cursor: pointer;
+                            border-radius: 10px;
+                          }
+                          #stuff11a1found {
+                            opacity: 0.0;
+                            -webkit-transition: all 500ms ease-in-out;
+                            -moz-transition: all 500ms ease-in-out;
+                            -ms-transition: all 500ms ease-in-out;
+                            -o-transition: all 500ms ease-in-out;
+                            transition: all 500ms ease-in-out;
+                            z-index: 0; 
+                            width:95px;
+                            height: 165px;
+                            background-color:none;
+                            border-left: 5px dashed rgba(0, 0, 255, 0.50); 
+                            border-right: 5px dashed rgba(0, 0, 255, 0.50); 
+
+                            position: absolute;
+                            overflow: visible;
+                            margin: 707px 0 0 -500px;
+                            color: black;
+                            text-decoration: bold;
+                            }
+                             #hover121found {
+                              background-color:transparent;
+                              border: 3px solid rgba(255, 0, 0, 0.3); 
+                              z-index: 100; 
+                              position: absolute;
+                              overflow: visible;
+                              width:75px;
+                              height:45px;
+                              margin: 45px 0 0 40px;
+                              z-index: 2;
+                              cursor: pointer;
+                              border-radius: 10px;
+                            }
+                            #stuff121found {
+                              opacity: 0.0;
+                              -webkit-transition: all 500ms ease-in-out;
+                              -moz-transition: all 500ms ease-in-out;
+                              -ms-transition: all 500ms ease-in-out;
+                              -o-transition: all 500ms ease-in-out;
+                              transition: all 500ms ease-in-out;
+                              z-index: 99; 
+                              width:110px;
+                              height: 166px;
+                              background-color:none;
+                              border-left: 5px dashed rgba(0, 0, 255, 0.50); 
+                              border-right: 5px dashed rgba(0, 0, 255, 0.50); 
+                              z-index: 0; 
+                              position: absolute;
+                              overflow: visible;
+                              margin: 706px 0 0 -773px;
+                              color: black;
+                              text-decoration: bold;
+                            }
                            #hover131found {
-                             width:50px;
-                             height:20px;
-                             margin: 322px 0 0 1375px;
+                             width:70px;
+                             height: 65px;
+                             margin: 240px 0 0 0px;
                              background-color:transparent;
                              border: 3px solid rgba(255, 0, 0, 0.3); 
                              z-index: 100; 
@@ -2515,14 +2590,14 @@
                        -o-transition: all 500ms ease-in-out;
                        transition: all 500ms ease-in-out;
                        z-index: 99; 
-                       width:800px;
-                       height: 35px;
+                       width: 411px;
+                       height: 330px;
                        background-color:transparent;
-                       border: 5px solid rgba(0, 0, 255, 0.5); 
+                       border: none;
                        z-index: 99; 
                        position: absolute;
                        overflow: visible;
-                       margin: 15px 0 0 -10px;
+                       margin: 210px 0 0 -893px;
                        color: black;
                        text-decoration: bold;
                            }
@@ -3784,6 +3859,8 @@
                         -moz-user-select: none;
                         -ms-user-select: none;
                         user-select: none;
+                        padding: 2.5px 0 0 0 ;
+
                       }
                       /* The actual popup */
                       .popup .popuptext, .popup .popuptext2 {
