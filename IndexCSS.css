@@ -623,7 +623,7 @@ body {
 }
 H1 {
     color: white; 
-    font-size: 4px; 
+    font-size: 2rem; 
     padding: 2vh 2vw 1.7vh 1.8vw;
     text-decoration: none;
     justify-content: center;
