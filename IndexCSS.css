@@ -597,8 +597,8 @@ body {
     background:linear-gradient(45deg, black, goldenrod); 
     border: none; 
     display: inline-block;
-    width: 5vw; 
-    height: 6vw; 
+    width: 80px; 
+    height: 80px; 
     margin: 20px;
     opacity: 0.4;
     transition: 4s;
