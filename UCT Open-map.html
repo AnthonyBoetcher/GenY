@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Map Website</title>
+    <style>
+        body {
+            background-color: #7d49cc6f;
+            color: #000000;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        #map-container {
+            width: 100%;
+            height: 500px; /* Adjust the height as needed */
+        }
+    </style>
+</head>
+<body>
+    <div class="sample-header">
+</div>
+    <h2 style="text-align: center;">This UCT Open-map is made available under the Open Database License: http://opendatacommons.org/licenses/odbl/1.0/. 
+        Any rights in individual contents of the database are licensed under the Database Contents License: http://opendatacommons.org/licenses/dbcl/1.0/</h2>
+    <div id="map-container"></div>
+
+    <script>
+        // Replace 'your-api-key' with your actual map API key
+        const apiKey = 'your-api-key';
+
+        function initMap() {
+            // Replace the coordinates with your desired initial map center
+            const map = L.map('map-container').setView([51.505, -0.09], 13);
+
+            // Replace 'your-tile-layer-url' with the URL of your specific tile layer
+            L.tileLayer('your-tile-layer-url' + apiKey, {
+                attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors | <a href="https://opendatacommons.org/licenses/odbl/">ODbl</a> | imagery by <a href="https://www.mapbox.com/">Mapbox</a>'
+            }).addTo(map);
+
+            // You can add custom markers, popups, or other features here as needed
+            L.marker([51.505, -0.09]).addTo(map)
+                .bindPopup('A custom marker here!')
+                .openPopup();
+        }
+
+        
+    </script>
+
+    <!-- Include Leaflet library -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <!-- Initialize the map -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            initMap();
+        });
+    </script>
+</body>
+</html>
