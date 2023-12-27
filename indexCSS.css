@@ -8,6 +8,16 @@
     margin-bottom: 5vw; /*CHANGE FOR BIGGER SPACE BETWEEN HZ MAIN*/
 }
 
+#GenY {
+    width: 20vw;
+    animation-name: logo-animation; 
+    animation-duration: 10s; 
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-delay: 5s; 
+    opacity: 0; 
+}
+
 @media screen and (max-device-width:480px){
     #GenY-logo {
     display: flex; 
@@ -26,17 +36,7 @@
         animation-direction: alternate-reverse;
         animation-delay: 5s; 
         opacity: 0; 
-    }
-}
-
-#GenY {
-    width: 20vw;
-    animation-name: logo-animation; 
-    animation-duration: 10s; 
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
-    animation-delay: 5s; 
-    opacity: 0; 
+    } 
 }
 
 @keyframes logo-animation { 
