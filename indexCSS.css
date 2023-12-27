@@ -28,7 +28,7 @@
     opacity: 0.6; 
     margin-bottom: 20vw; /*CHANGE FOR BIGGER SPACE BETWEEN HZ MAIN*/
     }
-    #GenY .G .E .N .Y {
+    #GenY {
         animation-name: logo-animation; 
         animation-duration: 10s; 
         animation-iteration-count: infinite;
