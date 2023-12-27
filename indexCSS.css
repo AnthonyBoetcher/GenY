@@ -28,8 +28,7 @@
     opacity: 0.6; 
     margin-bottom: 20vw; /*CHANGE FOR BIGGER SPACE BETWEEN HZ MAIN*/
     }
-    #GenY {
-        width: 40vw;
+    #GenY .G .E .N .Y {
         animation-name: logo-animation; 
         animation-duration: 10s; 
         animation-iteration-count: infinite;
@@ -37,7 +36,31 @@
         animation-delay: 5s; 
         opacity: 0; 
     } 
+    .G .E .N .Y {
+    margin: 0 0 0 30px; 
+    background-color: #000000;
+    border: 4px double gold; 
+    color: #ffffff; 
+    width: 9vw; 
+    height: 9vw; 
+    border-radius: 4vw; 
+    font-weight: 1000; 
+    font-family: 'Times New Roman', Times, serif;
+    Display: inline-block;
+    font-family:'Times New Roman', Times, serif; 
+    font-size: 4vw; 
+    animation-name: change-colorG; 
+    animation-duration: 18s;
+    animation-iteration-count: infinite;
+    animation-direction: forwards; 
+    position: relative; 
+    opacity: 0.9; 
+    transition: opacity 7s
+    transition-duration: 7s;
+    animation-delay: 7s;
 }
+};
+
 
 @keyframes logo-animation { 
     0% {opacity: 0.95;
