@@ -625,7 +625,7 @@ body {
 
 H1 {
     color: white; 
-    font-size: 1vw; 
+    font-size: 0.9vw; 
     padding: 1vh 2vw 2.5vh 2vw;
     text-decoration: none;
     justify-content: center;
@@ -633,6 +633,20 @@ H1 {
     vertical-align: middle;
     text-align: center;
 }
-a {
+
+
+
+@media screen and (max-device-width:480px){
+    h1{color: white; 
+        font-size: 0.6vw; 
+        padding: 1vh 2vw 2.5vh 2vw;
+        text-decoration: none;
+        justify-content: center;
+        align-items: center;
+        vertical-align: middle;
+        text-align: center;}
+    }
+
+    a {
      text-decoration: none;
 }
