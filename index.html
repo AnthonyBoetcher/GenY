@@ -50,18 +50,7 @@
 }
 
 
-        /* Stats.js and count-particles styles */
-        #stats,
-        .count-particles {
-            -webkit-user-select: none;
-            margin-top: 5px;
-            margin-left: 5px;
-        }
-
-        #stats {
-            border-radius: 3px 3px 0 0;
-            overflow: hidden;
-        }
+  
     </style>
 </head>
 
@@ -141,16 +130,16 @@
           }
         },
         "color": {
-          "value": "#FFD700"
+          "value": "#FFD700" //particle colour
         },
         "shape": {
           "type": "circle",
-          "stroke": {
-            "width": 0,
+          "stroke": { // adds a border to particles 
+            "width": 1,
             "color": "#000000"
           },
-          "polygon": {
-            "nb_sides": 5
+          "polygon": { //optional customization of particle shape above 
+            "nb_sides": 3
           },
           "image": {
             "src": "img/github.svg",
