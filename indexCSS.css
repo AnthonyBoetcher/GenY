@@ -641,13 +641,13 @@ body {
 }
 
 .horizontal-main {
-    background: linear-gradient(45deg, black, goldenrod);
+    background: none;
     border: none;
     display: inline-flex; /* Change to inline-flex to allow dynamic width and height */
     width: 8vw; /* Set a relative width (percentage of viewport width) */
     height: 8vw; /* Set a relative height (percentage of viewport width) */
     margin: 2vw; /* Set a relative margin (percentage of viewport width) */
-    opacity: 0.4;
+    opacity: 0.3;
     transition: 4s; /* Reduce transition time for smoother scaling */
     box-shadow: 0px 0px 30px white;
     border-radius: 50%;
