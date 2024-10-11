@@ -10,18 +10,19 @@
 
     <!-- Google Analytics script -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-VY5PZJPTXZ"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-VY5PZJPTXZ');
-    </script>
+    
 
     <!-- Particles.js library -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
     <!-- Stats.js library -->
     <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+
+
+   <script> window.onload = function() {
+    alert("PLEASE USE PC TO VIEW :)");
+};
+</script>
 
     <style>
         /* Reset styles */
@@ -31,25 +32,105 @@
         }
 
         canvas {
-            display: block;
-            vertical-align: bottom;
+            display: none;
         }
+        
+#explainer {
+    text-align: center; 
+    opacity: 0.9; 
+    display: inline-block; 
+    font-size: 1.5vw; 
+    padding-right: 1vw;
+    padding-left: 1vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+body {
+    background-image:url("b-wBEST2.gif"); 
+    opacity: 0.8;
+    width: 100vw; 
+    height: 100vh; 
+    margin: none; 
+}
+.vertical-main { 
+    border: none; 
+    width: 100%; 
+    height: 100vh; 
+    display: inline-block; 
+    margin-top: 3vh; 
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    text-align: center;
+}
 
-        /* Particles.js container */
-   #particles-js {
-    position: fixed; /* Use fixed for the particles to cover the whole viewport */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    background-image: url(""); /* Update this to the path of your background image if needed */
-    background-repeat: repeat;
-    background-size: cover;
-    background-position: 50% 50%;
+.horizontal-main {
+    background: black;
+    border: none;
+    display: inline-flex; /* Change to inline-flex to allow dynamic width and height */
+    width: 10vw; /* Set a relative width (percentage of viewport width) */
+    height: 10vw; /* Set a relative height (percentage of viewport width) */
+    margin: 2vw; /* Set a relative margin (percentage of viewport width) */
+    opacity: 0.1;
+    transition: 4s; /* Reduce transition time for smoother scaling */
+    box-shadow: 0px 0px 30px white;
+    border-radius: 50%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    text-decoration: none;
+    color: black;
+}
+
+.horizontal-main:hover {
+    opacity: 0.6;
+    background: linear-gradient(45deg, black, goldenrod);
+    transform: scale(3); /* Adjust the scaling factor as needed */
+    box-shadow: 0px 0px 15px white, 0px 0px 30px black, 0px 0px 60px gold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+H1 {
+    color: black; 
+    font-size: 0.5rem; 
+    padding: 1vh 2vw 2.5vh 2vw;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    text-align: center;
+}
+
+h1:hover{
+    color:white;
+}
+a {
+     text-decoration: none;
 }
 
 
+/* Flashlight Overlay */
+:root {
+  cursor: none;
+  --cursorX: 50vw;
+  --cursorY: 50vh;
+}
+:root:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  pointer-events: none;
+  background: radial-gradient(
+    circle 10vmax at var(--cursorX) var(--cursorY),
+    rgba(0,0,0,0) 0%,
+    rgba(0,0,0,.5) 80%,
+    rgba(0,0,0,.95) 100%
+  )
+}
   
     </style>
 </head>
@@ -59,25 +140,10 @@
   <div class="vertical-main"> 
     <div id="GenY-logo">
   
-        <!--<img id="GenY" src="best 1.3.gif"/>-->
-        <!--
-      <div id="headings">
-          <a>
-          <button class="G" id="Bootstrap-download">G</button>
-          </a>
-          <a>
-          <button class="E" id="Bootstrap-download" type="button">E</button>
-          </a>
-         <a>
-          <button class="N" name="resume" id="Bootstrap-download">N</button>
-          </a>
-          <a>
-          <button class="Y" id="Bootstrap-download">Y</button>
-          </a>
-       </div>
-        -->
         <h2 id="explainer">"The reasonable man adapts himself to the world, The unreasonable one persists in trying to adapt the world to himself. Therefore all progress depends on the unreasonable man." - George Bernard Shaw<br><br>
-                </div> 
+            <h3>\\ Please allow your curiosity to lead you \\</h3>
+        </div> 
+        
       <div class="horizontal-main">
         <a href="https://youtu.be/blqUN4nG9vI" target="_self">
             <h1>Brickie Bullet<br>Mortar Applicator<br>Prototype</h1>
@@ -123,7 +189,31 @@
            
                                         <div class="horizontal-main"><a href="https://anthonyboetcher.github.io/galleria/" target="_self"><H1>Galleria</H1></a></div>
                                   <div class="horizontal-main"><a href="https://anthonyboetcher.github.io/GenY/eva8.html" target="_self"><H1>Eva8</H1></a></div>
-                          <!--  <div class="horizontal-main"><a href="https://anthonyboetcher.github.io/rnd-two/" target="_self"><H1>UoF</H1></a></div>
+                         
+                                  <br>
+                                  <br>
+                                  <br>
+                                  <h3 style="align-content: right;">// Inspect element or source? //</h3>
+                              <br>
+                              <br>
+                              <br>
+                         
+                                  <!-- Why hello there, welcome to the other side curious one :) You are on your own adventure now. There are no more instructions, you will have to figure it out for yourself. I trust you will find your way. Ant.
+                                                 
+      _,-'\   /|   .    .    /`.
+  _,-'     \_/_|_  |\   |`. /   `._,--===--.__
+ ^       _/"/  " \ : \__|_ /.   ,'    :.  :. .`-._
+        // ^   /7 t'""    "`-._/ ,'\   :   :  :  .`.
+        Y      L/ )\         ]],'   \  :   :  :   : `.
+        |        /  `.n_n_n,','\_    \ ;   ;  ;   ;  _>
+        |__    ,'     |  \`-'    `-.__\_______.==---'
+       //  `""\\      |   \            \
+       \|     |/      /    \            \
+                     /     |             `.
+                    /      |               ^
+                   ^       |
+                           ^
+                                     <div class="horizontal-main"><a href="https://anthonyboetcher.github.io/rnd-two/" target="_self"><H1>UoF</H1></a></div>
                 <div class="horizontal-main"><a href="https://1drv.ms/w/s!AkgAOyK-HOiwiFtLf6SUbmA7jUDS?e=bryVNn" target="_self"><H1>WTF?</H1></a></div>
                                                                 <div class="horizontal-main"><a href="https://1drv.ms/w/s!AkgAOyK-HOiwiSRkbsZzr-xOflfp?e=wp35Ml" target="_self"><H1>Baby steps</H1></a></div>   
                                                 <div class="horizontal-main"><a href="https://1drv.ms/w/s!AkgAOyK-HOiwiS2VBbRO0nIQCkMv?e=Z6iHdb" target="_self"><H1>Just deserts<br>desertion</H1></a></div>     
@@ -140,20 +230,17 @@
                       <div class="horizontal-main"><a href="https://anthonyboetcher.github.io/OpenSesame/" target="_self"><H1>OpenSesame</H1></a></div>
     <div class="horizontal-main"><a href="https://drive.google.com/drive/folders/1L5jCsvq4lNWZyqwF2qb9idN_Ecp_zNG1?usp=sharing" target="_self"><H1>Eyeconic<br>Cards<br>prototyping</H1></a></div>
        <div class="horizontal-main"><a href="https://1drv.ms/w/s!AkgAOyK-HOiwiRemhRE0abrTZeYk?e=kJKyQY" target="_self"><H1>Justifying<br>murder</H1></a></div>     
-                                  <!--<div class="horizontal-main"><a href="https://1drv.ms/w/s!AkgAOyK-HOiwiRXtMO_kgbpZcY5i?e=HLzcCN" target="_self"><H1>"Interactivity"</H1></a></div>     
+                                  <div class="horizontal-main"><a href="https://1drv.ms/w/s!AkgAOyK-HOiwiRXtMO_kgbpZcY5i?e=HLzcCN" target="_self"><H1>"Interactivity"</H1></a></div>     
     <div class="horizontal-main"> <a href="https://anthonyboetcher.github.io/my_way_highway/" target="_self">
             <h1>Learning<br>Your Way</h1>
         </a>
     </div>
        <div class="horizontal-main"><a href="https://1drv.ms/w/s!AvskFMLY4m68gRDX-2gzCpFqNmTE?e=mXbvhl" target="_self"><H1>Insights from<br>project 'Humana'</H1></a></div>
                               <div class="horizontal-main"><a href="https://1drv.ms/w/s!AvskFMLY4m68gQ6FR2eu0yFqy-Uv?e=0R6i1L" target="_self"><H1>Mans search for meaning</H1></a></div>
-
       <div class="horizontal-main"> <a href="https://anthonyboetcher.github.io/CEM_vision_2024/" target="_self">
             <h1>Miro for<br>impact</h1>
         </a>
     </div>
-      
-   
     <div class="horizontal-main">
         <a href="https://www.youtube.com/channel/UCPTtjQOstJM9lE4loAP9zTA" target="_self">
             <h1>YouTube<br>Stuff</h1>
@@ -180,124 +267,27 @@
     <div class="horizontal-main"><a href="https://anthonyboetcher.github.io/GenY/UCTCEM/page16.html" target="_self"><H1>CEM HOME :)<br>(19/07/22)</H1></div>
     <div class="horizontal-main"><a href="https://anthonyboetcher.github.io/GenY/page1.html" target="_self"><H1>Searching...<br>(07\06\2022)</H1></a></div>
                                    
-
-
-
   </div>
-    <!--
-  <script>
-    particlesJS("particles-js", {
-      "particles": {
-        "number": {
-          "value": 2000, //value affects ability of linking to make long connections between particles
-          "density": {
-            "enable": true,
-            "value_area": 800
-          }
-        },
-        "color": {
-          "value": "#FFD700" //particle colour
-        },
-        "shape": {
-          "type": "circle",
-          "stroke": { // adds a border to particles 
-            "width": 1,
-            "color": "#000000"
-          },
-          "polygon": { //optional customization of particle shape above 
-            "nb_sides": 3
-          },
-          "image": {
-            "src": "img/github.svg",
-            "width": 100,
-            "height": 100
-          }
-        }, 
-        "opacity": { //particle opacity
-          "value": 0.2,
-          "random": false,
-          "anim": {
-            "enable": true,
-            "speed": 0, //speed of opacity change
-            "opacity_min": 0.1, //fades to this opacity if anim true
-            "sync": false //all particles at same time?
-          }
-        },
-        "size": {
-          "value": 3, //size of particles//
-          "random": true,
-          "anim": {
-            "enable": true,
-            "speed": 2, //speed of size change
-            "size_min": 0, //shrinks to this size if anim true
-            "sync": false //all particles at same time?
-          }
-        },
-        "line_linked": {
-          "enable": true,  //add line linking circles//
-          "distance": 30,
-          "color": "#FFD700",
-          "opacity": 0.2,
-          "width": 1
-        },
-        "move": { //particle movement//
-          "enable": true,
-          "speed": 2, //particle speed
-          "direction": "none",
-          "random": true,
-          "straight": false,
-          "out_mode": "out",
-          "bounce": true, // behaviour on impact with other particles
-          "attract": { //gravity effect
-            "enable": true, 
-            "rotateX": 200, //speed of particles being attracted to each other
-            "rotateY": 400
-          }
-        }
-      },
-      "interactivity": { //behaviour around mouse movement
-        "detect_on": "canvas",
-        "events": {
-          "onhover": {
-            "enable": true,
-            "mode": "repulse" //grab //
-          },
-          "onclick": { //behaviour on click
-            "enable": true,
-            "mode": "remove"
-          },
-          "resize": true
-        },
-
-        //modes specific behaviour
-        "modes": {
-          "grab": {
-            "distance": 400,
-            "line_linked": {
-              "opacity": 1
-            }
-          },
-          "bubble": {
-            "distance": 400,
-            "size": 40,
-            "duration": 2,
-            "opacity": 8,
-            "speed": 3
-          },
-          "repulse": {
-            "distance": 70, //distance repulse
-            "duration": 0.4  //edit repulse here//
-          },
-          "push": {
-            "particles_nb": 4
-          },
-          "remove": {
-            "particles_nb": 2
-          }
-        }
-      },
-      "retina_detect": true
-    });
-  </script>-->
+  
 </body>
+
 </html>
+
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-VY5PZJPTXZ');
+
+function update(e){
+var x = e.clientX || e.touches[0].clientX
+var y = e.clientY || e.touches[0].clientY
+
+document.documentElement.style.setProperty('--cursorX', x + 'px')
+document.documentElement.style.setProperty('--cursorY', y + 'px')
+}
+
+document.addEventListener('mousemove',update)
+document.addEventListener('touchmove',update)
+</script>
+
