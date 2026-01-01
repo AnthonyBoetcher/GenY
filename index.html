@@ -21,7 +21,114 @@
 
    <script> window.onload = function() {
     alert("Either you will find what you're looking for, or it will find you");
+    
+    // Start animations after a brief delay to make it less abrupt
+    setTimeout(() => {
+        startAnimationCycle();
+    }, 500);
 };
+</script>
+
+<script>
+// Continuous smooth shuffling with random element swaps
+function startAnimationCycle() {
+    const container = document.querySelector('.vertical-main');
+    const elements = Array.from(container.querySelectorAll('.horizontal-main'));
+    
+    // Store current positions
+    let currentPositions = [...elements];
+    
+    // Function to smoothly swap two elements
+    function swapElements(element1, element2) {
+        // Get current positions
+        const rect1 = element1.getBoundingClientRect();
+        const rect2 = element2.getBoundingClientRect();
+        
+        // Calculate relative positions to container
+        const containerRect = container.getBoundingClientRect();
+        const x1 = rect1.left - containerRect.left;
+        const y1 = rect1.top - containerRect.top;
+        const x2 = rect2.left - containerRect.left;
+        const y2 = rect2.top - containerRect.top;
+        
+        // Set CSS custom properties for smooth swap
+        element1.style.setProperty('--swap-x', `${x2 - x1}px`);
+        element1.style.setProperty('--swap-y', `${y2 - y1}px`);
+        element2.style.setProperty('--swap-x', `${x1 - x2}px`);
+        element2.style.setProperty('--swap-y', `${y1 - y2}px`);
+        
+        // Apply swap animation
+        element1.style.animation = 'smoothSwap 2s ease-in-out forwards';
+        element2.style.animation = 'smoothSwap 2s ease-in-out forwards';
+        
+        // Actually swap in DOM after animation
+        setTimeout(() => {
+            const tempNextSibling = element1.nextSibling;
+            const tempParent = element1.parentNode;
+            
+            tempParent.insertBefore(element1, element2.nextSibling);
+            tempParent.insertBefore(element2, tempNextSibling);
+            
+            // Clear animations
+            element1.style.animation = '';
+            element2.style.animation = '';
+            element1.style.transform = '';
+            element2.style.transform = '';
+        }, 2000);
+    }
+    
+    // Function to randomly select and swap elements
+    function performRandomSwap() {
+        if (elements.length < 2) return;
+        
+        // Pick two random different elements
+        const index1 = Math.floor(Math.random() * elements.length);
+        let index2 = Math.floor(Math.random() * elements.length);
+        while (index2 === index1) {
+            index2 = Math.floor(Math.random() * elements.length);
+        }
+        
+        const element1 = elements[index1];
+        const element2 = elements[index2];
+        
+        swapElements(element1, element2);
+    }
+    
+    // Start continuous random swaps
+    function startContinuousSwapping() {
+        // Initial delay before first swap
+        setTimeout(() => {
+            performRandomSwap();
+            
+            // Continue with random intervals between swaps
+            const scheduleNextSwap = () => {
+                const delay = 667 + Math.random() * 1000; // 0.667-1.667 seconds between swaps (3x faster)
+                setTimeout(() => {
+                    performRandomSwap();
+                    scheduleNextSwap();
+                }, delay);
+            };
+            
+            scheduleNextSwap();
+        }, 1000); // Start after 1 second
+    }
+    
+    // Add hover effect preservation - stop animation on hover
+    elements.forEach(element => {
+        element.addEventListener('mouseenter', function() {
+            // Only pause animation, let CSS handle the hover styles
+            this.style.animationPlayState = 'paused';
+        });
+        
+        element.addEventListener('mouseleave', function() {
+            // Resume animation, let CSS handle the hover styles
+            this.style.animationPlayState = 'running';
+        });
+    });
+    
+    // Start continuous shuffling
+    startContinuousSwapping();
+}
 </script>
 
     <style>
@@ -130,6 +237,64 @@ a {
     rgba(0,0,0,.5) 80%,
     rgba(0,0,0,.95) 100%
   )
+}
+
+/* Smooth swap animation for element swapping */
+@keyframes smoothSwap {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    transform: translateX(var(--swap-x)) translateY(var(--swap-y));
+  }
+}
+
+/* Slow shift animation (3 seconds) */
+@keyframes slowShift {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  50% {
+    transform: translateX(var(--shift-x1)) translateY(var(--shift-y1));
+  }
+  100% {
+    transform: translateX(var(--shift-x2)) translateY(var(--shift-y2));
+  }
+}
+
+/* Shuffle move animation (3 seconds) */
+@keyframes shuffleMove {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  33% {
+    transform: translateX(var(--shuffle-x1)) translateY(var(--shuffle-y1));
+  }
+  66% {
+    transform: translateX(var(--shuffle-x2)) translateY(var(--shuffle-y2));
+  }
+  100% {
+    transform: translateX(0) translateY(0);
+  }
+}
+
+/* Continuous bouncing animation - stays within viewport */
+@keyframes continuousBounce {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  25% {
+    transform: translateX(var(--bounce-x1)) translateY(var(--bounce-y1));
+  }
+  50% {
+    transform: translateX(var(--bounce-x2)) translateY(var(--bounce-y2));
+  }
+  75% {
+    transform: translateX(var(--bounce-x3)) translateY(var(--bounce-y3));
+  }
+  100% {
+    transform: translateX(0) translateY(0);
+  }
 }
   
     </style>
@@ -312,7 +477,6 @@ document.addEventListener('touchmove',update)
 
 
 </script>
-
 
 
 
